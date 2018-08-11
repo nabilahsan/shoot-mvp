@@ -16,14 +16,15 @@ body {
   background-color: white;
 }
 
-ul, li{
-    list-style-type: none;
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
-html {
-  background-color: #1a1a1a;
- 
+ul, li{
+    list-style-type: none;
 }
 
 nav {
@@ -36,7 +37,7 @@ nav {
 }
  
 .nav-a {
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: black;
 }
 
@@ -60,7 +61,7 @@ nav {
   border: 2px solid black;
   border-radius: 10px;
   color: black;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
@@ -82,4 +83,16 @@ nav {
   padding-left: 15px;
 }
 
-/*end*/
+#photographers_container> h1 {
+  padding-top: 10%;
+  font-size: 3em;
+}
+
+#photographers > a > img {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+
+
