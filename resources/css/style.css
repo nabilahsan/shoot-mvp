@@ -4,7 +4,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  
 }
 
 * {
@@ -16,15 +15,16 @@ body {
   background-color: white;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-ul, li{
-    list-style-type: none;
+ul,
+li {
+  list-style-type: none;
 }
 
 nav {
@@ -35,7 +35,7 @@ nav {
 #navdiv {
   display: flex;
 }
- 
+
 .nav-a {
   font-size: 1.4em;
   color: black;
@@ -74,25 +74,34 @@ nav {
   justify-content: flex-start;
 }
 
-#items {
-  display: flex;
-  justify-content: flex-end;
-}
-
 #navbars {
   padding-left: 15px;
 }
 
-#photographers_container> h1 {
+#items {
+  display: flex;
+  flex-direction: column;
+}
+
+#items label {
+  text-align: center;
+  font-size: 1em;
+}
+
+#photographers_container {
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+#photographers_container>h1 {
   padding-top: 10%;
   font-size: 3em;
 }
 
-#photographers > a > img {
-  margin: 10px;
+#items img {
   padding: 10px;
   border: 2px solid black;
 }
-
-
-
+#items > a {
+  margin: 25px;
+}
