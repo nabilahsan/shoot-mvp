@@ -9,6 +9,7 @@ body {
 * {
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 1.5px;
+    
 }
 
 nav {
@@ -72,12 +73,20 @@ nav {
 /*Info and Rates*/
 
 #profile {
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 200px;
 }
 
-#info {}
+#info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-#propic {}
+#propic {
+    border: 2px solid black;
+}
 
 #rates {}
 
@@ -85,7 +94,7 @@ nav {
     text-align: center;
     border-radius: 50px;
     margin-top: 2%;
-    padding: 1%;
+    padding: 5% 10% 5% 10%;
     border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
@@ -93,16 +102,59 @@ nav {
 
 /*Photographer Portfolio*/
 
-#portfolio {}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+    margin-top: 100px;
 
+}
+
+/*4 equal columns, next to each other*/
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    
+}
+
+#col img {
+    border: 2px solid black;
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
 /*Back button*/
 
 #back {
     text-align: center;
-    border-radius: 50px;
-    margin-top: 2%;
-    padding: 1%;
-    border: 2px solid black;
+    width: 25%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5%;
+}
+
+#back a input {
+    font-size: 1.2em;
+    border-radius: 50px;
+    padding: 4% 2% 4% 2%;
+    border: 2px solid black;
+}
+/****Media Queries****/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
