@@ -4,7 +4,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  
 }
 
 * {
@@ -16,14 +15,9 @@ body {
   background-color: white;
 }
 
-ul, li{
-    list-style-type: none;
-}
-
-
-html {
-  background-color: #1a1a1a;
- 
+ul,
+li {
+  list-style-type: none;
 }
 
 nav {
@@ -34,7 +28,7 @@ nav {
 #navdiv {
   display: flex;
 }
- 
+
 .nav-a {
   font-size: 1.2em;
   color: black;
@@ -83,3 +77,45 @@ nav {
 }
 
 /*end*/
+
+#mc_embed_signup {
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+/*Inputs*/
+.mc-field-group {
+  padding-top: 2%;
+}
+
+/*Radio buttons*/
+
+#inputgroup ul {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/*Buttons*/
+
+.clear {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.clear>a {
+  border-radius: 50px;
+  margin-top: 2%;
+  padding: 1%;
+  border: 2px solid black;
+}
+
+#mc-embedded-subscribe {
+  border-radius: 50px;
+  margin-top: 2%;
+  padding: 1%;
+  padding-left: 8%;
+  padding-right: 8%;
+  border: 2px solid black;
+}
