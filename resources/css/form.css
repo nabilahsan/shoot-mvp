@@ -83,7 +83,13 @@ nav {
   padding-bottom: 5%;
 }
 
+#mc_embed_signup_scroll h2 {
+  text-align: center;
+  margin-top: 5%;
+}
+
 /*Inputs*/
+
 .mc-field-group {
   padding-top: 2%;
 }
@@ -91,7 +97,6 @@ nav {
 /*Radio buttons*/
 
 #inputgroup ul {
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -102,25 +107,23 @@ nav {
 .clear {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2%;
 }
 
-.clear>a {
+/*Back button*/
+
+.clear a input {
+  font-size: 1.2em;
   border-radius: 50px;
-  margin-top: 2%;
-  padding: 1%;
   border: 2px solid black;
 }
 
-#mc-embedded-subscribe {
+#mc-embedded-subscribe  {
+  font-size: 1.2em;
   border-radius: 50px;
-  margin-top: 2%;
-  padding: 1%;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding: 0 10% 0 10%;
   border: 2px solid black;
 }
-
-
 /*Media Queries*/
 
 /* 
@@ -128,47 +131,35 @@ nav {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-
-}
+@media (min-width: 1281px) {}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-
-}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-  
-
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -176,6 +167,11 @@ nav {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
- 
+  #mc_embed_signup_scroll h2 {
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+  #package {
+    margin-top: 5%;
+  }
 }
