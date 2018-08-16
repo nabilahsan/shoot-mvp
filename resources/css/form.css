@@ -88,10 +88,19 @@ nav {
   margin-top: 5%;
 }
 
+
 /*Inputs*/
 
 .mc-field-group {
   padding-top: 2%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mc-field-group input {
+  display: flex;
+  justify-content: center;
 }
 
 /*Radio buttons*/
