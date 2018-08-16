@@ -129,6 +129,7 @@ nav {
 #mc-embedded-subscribe {
   font-size: 1.2em;
   border-radius: 50px;
+  margin-left: 50px;
   padding: 0 10% 0 10%;
   border: 2px solid black;
 }
@@ -154,21 +155,48 @@ nav {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*Inputs*/
+  #inputgroup ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #inputgroup ul>li {
+    margin-top: 10%;
+  }
+}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /*Inputs*/
+  #inputgroup ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #inputgroup ul>li {
+    margin-top: 10%;
+  }
+}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+  /*Inputs*/
+  #inputgroup ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #inputgroup ul>li {
+    margin-top: 10%;
+  }
+}
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -183,14 +211,11 @@ nav {
   #package {
     margin-top: 5%;
   }
-
   /*Inputs*/
-
   #inputgroup ul {
     display: flex;
     flex-direction: column;
   }
-
   #inputgroup ul>li {
     margin-top: 10%;
   }
@@ -206,6 +231,7 @@ nav {
   #mc-embedded-subscribe {
     margin-top: 5%;
     margin-bottom: 10%;
+    margin-left: 0;
     padding: 2%;
   }
 }
