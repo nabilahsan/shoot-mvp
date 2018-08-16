@@ -88,7 +88,6 @@ nav {
   margin-top: 5%;
 }
 
-
 /*Inputs*/
 
 .mc-field-group {
@@ -115,7 +114,7 @@ nav {
 
 .clear {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 2%;
 }
 
@@ -127,12 +126,13 @@ nav {
   border: 2px solid black;
 }
 
-#mc-embedded-subscribe  {
+#mc-embedded-subscribe {
   font-size: 1.2em;
   border-radius: 50px;
   padding: 0 10% 0 10%;
   border: 2px solid black;
 }
+
 /*Media Queries*/
 
 /* 
@@ -182,5 +182,30 @@ nav {
   }
   #package {
     margin-top: 5%;
+  }
+
+  /*Inputs*/
+
+  #inputgroup ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #inputgroup ul>li {
+    margin-top: 10%;
+  }
+  /*Buttons*/
+  .clear {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column-reverse;
+    margin-top: 2%;
+  }
+  #mc-embedded-subscribe {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 2%;
   }
 }
