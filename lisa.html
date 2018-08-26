@@ -1,4 +1,3 @@
-<!--not mobile friendly yet-->
 <html lang="en">
 
 <head>
@@ -21,12 +20,12 @@
     <!--Our Stylesheet-->
     <link rel="stylesheet" href="resources/css/profile.css">
 
-    <!--SimpleLightbox files-->
-    <script src="resources/script/simpleLightbox.min.js"></script>
-    <link rel="stylesheet" href="resources/script/simpleLightbox.min.css">
-
-    <!--Our script-->
-    <script src="resources/script/gallery.js"></script>
+    <!--
+    * Lightbox Gallery v1.0 (https://kawshar.github.io/lightboxgallery/)
+    * Copyright 2017 Kawshar Ahmed
+    * Licensed GPLv3 https://www.gnu.org/licenses/gpl-3.0.en.html
+    -->
+    <link rel="stylesheet" href="vendors/css/lightboxgallery-min.css">
 
     <title>Shoot</title>
 </head>
@@ -112,4 +111,22 @@
         </div>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="vendors/js/lightboxgallery-min.js"></script>
+    <script type="text/javascript">
+    jQuery(function($) {
+      $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
+        event.preventDefault();
+        $(this).lightboxgallery({
+          showCounter: true,
+          showTitle: true,
+          showDescription: true
+        });
+      });
+    });
+    </script>
+
 </body>
+
+</html>
