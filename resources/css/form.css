@@ -123,26 +123,21 @@ nav {
   margin-top: 2%;
 }
 
-#back {
-  text-align: center;
-  border-radius: 50px;
-  margin-top: 2%;
-  padding: 5% 10% 5% 10%;
-  border: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 /*Back button*/
-
-#mc-embedded-subscribe {
-  font-size: 1.2em;
+#book {
   border-radius: 50px;
-  margin-left: 50px;
-  padding: 2% 5% 2% 5%;
+  padding: 1% 5% 1% 5%;
   border: 2px solid black;
 }
 
+#back {
+  text-align: center;
+  padding: 5% 0 5% 0;
+  border-radius: 50px;
+  border: 2px solid black;
+}
 /*Media Queries*/
 
 /* 
@@ -237,7 +232,7 @@ nav {
     flex-direction: column-reverse;
     margin-top: 2%;
   }
-  #mc-embedded-subscribe {
+  #book {
     margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 0;
