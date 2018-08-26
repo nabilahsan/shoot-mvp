@@ -90,42 +90,45 @@
         </div>
 
         <!--Using w3schools' Responsive Image Grid tutorial-->
-        <div id="portfolio" class="row">
+        <div id="portfolio lightboxgallery-gallery clearfix" class="row">
             <div id="col" class="column">
-                <a href="https://via.placeholder.com/350x150">
-                    <img src="https://via.placeholder.com/350x150" alt="">
+                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa1-min.jpg">
+                    <img src="vendors/img/lisa1.jpg" alt="">
                 </a>
 
-                <a href="https://via.placeholder.com/350x150">
-                    <img src="https://via.placeholder.com/350x150" alt="">
+                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa2-min.jpg">
+                    <img src="vendors/img/lisa2.jpg" alt="">
+                </a>
+                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa3-min.jpg">
+                    <img src="vendors/img/lisa3.jpg" alt="">
+                </a>
+
+                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa4-min.jpg">
+                    <img src="vendors/img/lisa4.jpg" alt="">
                 </a>
             </div>
-        </div>
-        <div id="backb">
-            <a href="index.html">
-                <button class="btn" id="back">Back</button>
-            </a>
-            <!-- <a href="index.html">
-                <button id="back">Back</button>
-            </a> -->
+            <div id="backb">
+                <a href="index.html">
+                    <button class="btn" id="back">Back</button>
+                </a>
+            </div>
+
         </div>
 
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="vendors/js/lightboxgallery-min.js"></script>
-    <script type="text/javascript">
-    jQuery(function($) {
-      $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
-        event.preventDefault();
-        $(this).lightboxgallery({
-          showCounter: true,
-          showTitle: true,
-          showDescription: true
-        });
-      });
-    });
-    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/lightboxgallery-min.js"></script>
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(document).on('click', '.lightboxgallery-gallery-item', function (event) {
+                    event.preventDefault();
+                    $(this).lightboxgallery({
+                        showCounter: true,
+                        showTitle: true,
+                        showDescription: true
+                    });
+                });
+            });
+        </script>
 
 </body>
 
