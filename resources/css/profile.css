@@ -11,12 +11,13 @@ body {
 * {
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 1.5px;
-    
 }
 
-a, a:hover {
+a,
+a:hover {
     text-decoration: none;
 }
+
 /*Global end*/
 
 nav {
@@ -69,9 +70,8 @@ nav {
 #logo {
     width: 20%;
     padding: 10px;
-    }
+}
 
-    
 #items {
     display: flex;
     justify-content: flex-end;
@@ -94,7 +94,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #propic {
@@ -111,7 +111,24 @@ nav {
     margin-right: auto;
 }
 
-#back {    
+/*Photographer Portfolio*/
+#lightboxgallery-gallery {
+    display: flex;
+}
+.lightboxgallery-gallery-item img {
+    width: 20%;
+    margin: 10px;
+}
+
+.lightboxgallery-gallery-item {
+    width: 100%;
+}
+
+#about h2 {
+margin-top: 50px;
+}
+
+#back {
     display: flex;
     justify-content: center;
     margin-top: 2%;
@@ -121,37 +138,14 @@ nav {
     border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
 }
 
-/*Photographer Portfolio*/
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 4px;
-    margin-top: 100px;
-
-}
-
-/*4 equal columns, next to each other*/
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-    
-}
-
-#col img {
-    border: 2px solid black;
-    margin-top: 10px;
-    vertical-align: middle;
-    width: 100%;
-}
 
 /****Media Queries****/
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
@@ -160,13 +154,13 @@ nav {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     .column {
         flex: 100%;
         max-width: 100%;
     }
 }
-
 
 /*Media Queries*/
 
@@ -175,54 +169,39 @@ nav {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-
-}
+@media (min-width: 1281px) {}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-
-}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-  
-
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
- 
-}
+@media (min-width: 320px) and (max-width: 480px) {}

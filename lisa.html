@@ -88,47 +88,77 @@
                 </a>
             </div>
         </div>
+    </div>
 
-        <!--Using w3schools' Responsive Image Grid tutorial-->
-        <div id="portfolio lightboxgallery-gallery clearfix" class="row">
-            <!-- <div id="col" class="column"> -->
-                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa1.jpg">
-                    <img src="vendors/img/lisa1-min.jpg" alt="">
-                </a>
+    <div class="container" id="portfolio">
+        <h2>Lisa's Portfolio</h2>
+        <div id="lightboxgallery-gallery clearfix" class="container ">
 
-                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa2.jpg">
-                    <img src="vendors/img/lisa2-min.jpg" alt="">
-                </a>
-                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa3.jpg">
-                    <img src="vendors/img/lisa3-min.jpg" alt="">
-                </a>
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa4.jpg">
+                <img src="vendors/img/lisa4-min.jpg" alt="">
+            </a>
 
-                <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa4.jpg">
-                    <img src="vendors/img/lisa4-min.jpg" alt="">
-                </a>
-            </div>
-            <div id="backb">
-                <a href="index.html">
-                    <button class="btn" id="back">Back</button>
-                </a>
-            </div>
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa3.jpg">
+                <img src="vendors/img/lisa3-min.jpg" alt="">
+            </a>
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa4.jpg">
+                <img src="vendors/img/lisa4-min.jpg" alt="">
+            </a>
 
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa2.jpg">
+                <img src="vendors/img/lisa2-min.jpg" alt="">
+            </a>
+
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa1.jpg">
+                <img src="vendors/img/lisa1-min.jpg" alt="">
+            </a>
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa1.jpg">
+                <img src="vendors/img/lisa1-min.jpg" alt="">
+            </a>
+
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa4.jpg">
+                <img src="vendors/img/lisa4-min.jpg" alt="">
+            </a>
+
+            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/lisa1.jpg">
+                <img src="vendors/img/lisa1-min.jpg" alt="">
+            </a>
         </div>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="vendors/js/lightboxgallery-min.js"></script>
-        <script type="text/javascript">
-            jQuery(function ($) {
-                $(document).on('click', '.lightboxgallery-gallery-item', function (event) {
-                    event.preventDefault();
-                    $(this).lightboxgallery({
-                        showCounter: true,
-                        showTitle: true,
-                        showDescription: true
-                    });
+    <div id="about" class="container">
+        <h2>About Lisa</h2>
+        <p>Hey there! My name is Lisa Martinez and I am a beauty photographer based in Houston, Texas.</p>
+
+        <p> I have 8 years of experience with photography and just recently fell in love with beauty photography in particular. <br>
+            I am completely self taught, learning from online tutorials and just plain 'ol practice. Since my images contain
+            a high level of detail I have also had to learn how to retouch.  Each and every one of my images are retouched
+            by me.
+        </p>
+        <p> I am available for commercial and personal assignments.</p>
+    </div>
+
+    <div id="backb">
+        <a href="index.html">
+            <button class="btn" id="back">Back</button>
+        </a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="vendors/js/lightboxgallery-min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(document).on('click', '.lightboxgallery-gallery-item', function (event) {
+                event.preventDefault();
+                $(this).lightboxgallery({
+                    showCounter: true,
+                    showTitle: true,
+                    showDescription: true
                 });
             });
-        </script>
+        });
+    </script>
 
 </body>
 
