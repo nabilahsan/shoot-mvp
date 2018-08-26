@@ -75,8 +75,8 @@ nav {
 }
 
 #logo {
-width: 20%;
-padding: 10px;
+  width: 20%;
+  padding: 10px;
 }
 
 #navbars {
@@ -98,17 +98,21 @@ padding: 10px;
   padding: 0;
 }
 
-#photographers_container>h1 {
+#heading {
+  display: flex;
+  justify-content: start;
+}
+#heading>h1  {
   padding-top: 10%;
   font-size: 3em;
-  text-align: center;
 }
 
 #items img {
   padding: 10px;
   border: 2px solid black;
 }
-#items > a {
+
+#items>a {
   margin: 25px;
 }
 
@@ -119,37 +123,28 @@ padding: 10px;
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-
-}
+@media (min-width: 1281px) {}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-
-}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -157,11 +152,9 @@ padding: 10px;
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
   #photographers_container>h1 {
     padding-top: 15%;
   }
-
 }
 
 /* 
@@ -170,7 +163,6 @@ padding: 10px;
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
   #photographers_container>h1 {
     padding-top: 20%;
     font-size: 2em;
