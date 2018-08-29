@@ -22,6 +22,7 @@ body {
 
 nav {
     background-color: white;
+    box-shadow: 3px 0px 8px #707070;
 }
 
 button {
@@ -85,6 +86,16 @@ h2 {
     padding-left: 15px;
 }
 
+#logolink {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  #logo {
+    width: 30%;
+    padding: 10px;
+  }
+  
 /*end*/
 
 #mc_embed_signup {
