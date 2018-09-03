@@ -163,8 +163,11 @@ nav {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  #photographers_container>h1 {
-    padding-top: 20%;
-    font-size: 2em;
+  #heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 0.75em;
   }
 }
