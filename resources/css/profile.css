@@ -115,6 +115,7 @@ nav {
 #lightboxgallery-gallery {
     display: flex;
 }
+
 .lightboxgallery-gallery-item img {
     width: 40%;
     margin: 10px;
