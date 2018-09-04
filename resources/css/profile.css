@@ -63,9 +63,10 @@ nav {
 }
 
 #logolink {
-    display: flex;
-    justify-content: flex-start;
+    width: auto;
+    overflow: hidden;
 }
+
 
 #logo {
     width: 30%;
@@ -211,6 +212,7 @@ margin-top: 50px;
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
     #profile {
         margin-top: 100px;
         margin-bottom: 100px;
