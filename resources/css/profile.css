@@ -62,12 +62,6 @@ nav {
     background-color: white;
 }
 
-#logolink {
-    width: auto;
-    overflow: hidden;
-}
-
-
 #logo {
     width: 30%;
     padding: 10px;
@@ -213,6 +207,11 @@ margin-top: 50px;
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+    /*Navigation Bar*/
+    #logolink {
+        max-width: 400px;
+    }
+    
     #profile {
         margin-top: 100px;
         margin-bottom: 100px;
