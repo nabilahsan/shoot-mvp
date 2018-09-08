@@ -94,11 +94,13 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+
 #rates {
     line-height: 10px;
 }
+
 #book {
     text-align: center;
     border-radius: 50px;
@@ -110,21 +112,14 @@ nav {
 }
 
 /*Photographer Portfolio*/
-.container {
-    display: grid;
-}
 #lightboxgallery-gallery {
     display: flex;
+    flex-direction: row;
 }
 
 .lightboxgallery-gallery-item img {
     width: 40%;
     margin: 10px;
-}
-
-#pics {
-    display: flex;
-    flex-direction: column;
 }
 
 .lightboxgallery-gallery-item {
