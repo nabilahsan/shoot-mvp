@@ -196,9 +196,9 @@ nav {
 */
 @media (min-width: 320px) and (max-width: 480px) {
 
-    /*Navigation Bar*/
-    #logolink {
-        max-width: 400px;
+    /*Profile*/
+    #propic>img {
+        width: 300px;
     }
 
     #profile {
@@ -215,9 +215,23 @@ nav {
 
     #rates {
         text-align: center;
+        line-height: 15px;
     }
 
-    #about {
+    #images {
+        flex-direction: column;
+    }
+
+    #pics {
+        width: 90%;
+    }
+
+    h1,
+    h2 {
         text-align: center;
+    }
+
+    #about > p {
+        margin: 10px 5px 40px 5px
     }
 }
