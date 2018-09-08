@@ -29,13 +29,6 @@
     <!-- Normalize.css -->
     <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
 
-    <!--
-    * Lightbox Gallery v1.0 (https://kawshar.github.io/lightboxgallery/)
-    * Copyright 2017 Kawshar Ahmed
-    * Licensed GPLv3 https://www.gnu.org/licenses/gpl-3.0.en.html
-    -->
-    <link rel="stylesheet" href="vendors/css/lightboxgallery-min.css">
-
     <!--Our Stylesheet-->
     <link rel="stylesheet" href="resources/css/profile.css">
 
@@ -104,60 +97,55 @@
         </div>
     </div>
 
-    <div class="container" id="portfolio">
+    <div class="container-fluid" id="portfolio">
         <div id="heading" class="container">
-            <h2>Angie's Portfolio</h2>
+            <h1>Angie's Portfolio</h1>
         </div>
 
-        <div id="lightboxgallery-gallery clearfix" class="container ">
-            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/angie2.jpg">
-                <div id="pics">
-                    <img src="vendors/img/angie2.jpg" alt="">
+        <div id="images" class="container">
+            <div id="pics">
+                <img src="vendors/img/angie1.jpg" alt="">
+            </div>
 
-                </div>
-            </a>
+            <div id="pics">
+                <img src="vendors/img/angie2.jpg" alt="">
+            </div>
 
-            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/angie1.jpg">
-                <div id="pics">
-                    <img src="vendors/img/angie1.jpg" alt="">
+            <div id="pics">
+                <img src="vendors/img/angie3.jpg" alt="">
+            </div>
 
-                </div>
-            </a>
-            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/angie3.jpg">
-                <div id="pics">
-                    <img src="vendors/img/angie3.jpg" alt="">
-
-                </div>
-            </a>
-            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/angie4.jpg">
-                <div id="pics">
-                    <img src="vendors/img/angie4.jpg" alt="">
-
-                </div>
-            </a>
-            <a class="lightboxgallery-gallery-item" target="_blank" href="vendors/img/angie2.jpg">
-                <div id="pics">
-                    <img src="vendors/img/angie2.jpg" alt="">
-
-                </div>
-            </a>
+            <div id="pics">
+                <img src="vendors/img/angie4.jpg" alt="">
+            </div>
 
         </div>
     </div>
 
     <div id="about" class="container">
         <h2>About Angie</h2>
-        <p>Hey there! My name is Lisa Martinez and I am a beauty photographer based in Houston, Texas.</p>
-
-        <p> I have 8 years of experience with photography and just recently fell in love with beauty photography in
-            particular.
-            <br> I am completely self taught, learning from online tutorials and just plain 'ol practice. Since my
-            images contain
-            a high level of detail I have also had to learn how to retouch. Each and every one of my images are
-            retouched
-            by me.
+        <p>
+            ANGELICA DUONG IS A WILD TRAVELER WITH A BIG APPETITE. SHE IS 20 YEARS OLD AND WAS BORN/RAISED IN HOUSTON,
+            TX. ANGELICA IS A FULL TIME PHOTOGRAPHER/VIDEOGRAPHER.
         </p>
-        <p> I am available for commercial and personal assignments.</p>
+        <p>
+            SHE STARTED ON JANUARY 25TH OF 2017. EVER SINCE ANGELICA BOUGHT HER FIRST CAMERA IN AUGUST, IT WAS LIFE
+            CHANGING. SHE STARTED TO EXPLORE MANY DIFFERENT STYLES; IT WAS AN ENDLESS ROUTE OF LEARNING TECHNIQUES. SHE
+            ALWAYS STRIVES TO MAKE PEOPLE'S VISION COME TO LIFE.
+        </p>
+
+        <p>
+            THERE IS NOTHING THAT ANGELICA LOVES MORE THAN TALKING/MEETING NEW PEOPLE AND CAPTURING THE AUTHENTIC
+            MOMENTS. IT IS AN HONOR WHEN A CLIENT CHOOSES HER TO TAKE THEIR PICTURES, BECAUSE SHE BELIEVES THAT SHE IS
+            CREATING A WAY TO MAKE THAT HAPPY MEMORY BECOME PERMANENT.
+
+        </p>
+        <p>
+            PHOTOGRAPHY ALLOWS ANGELICA TO THINK OUTSIDE OF THE BOX AND MAKE SOMETHING OUT OF NOTHING - SO GET READY
+            FOR A FUN TIME, RANDOM DATING, AND AN AWESOME ADVENTURE WITH ANGELICA DUONG.
+
+        </p>
+
     </div>
 
     <div id="backb">
@@ -165,22 +153,6 @@
             <button class="btn" id="back">Back</button>
         </a>
     </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="vendors/js/lightboxgallery-min.js"></script>
-    <script type="text/javascript">
-        jQuery(function ($) {
-            $(document).on('click', '.lightboxgallery-gallery-item', function (event) {
-                event.preventDefault();
-                $(this).lightboxgallery({
-                    showCounter: true,
-                    showTitle: true,
-                    showDescription: true
-                });
-            });
-        });
-    </script>
 
 </body>
 

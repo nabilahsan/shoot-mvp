@@ -78,7 +78,7 @@ nav {
 /*Info and Rates*/
 #profile {
     margin-top: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 #line {
@@ -112,22 +112,24 @@ nav {
 }
 
 /*Photographer Portfolio*/
-#lightboxgallery-gallery {
+#images {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-.lightboxgallery-gallery-item img {
-    width: 40%;
+#pics {
+    width: 20%;
     margin: 10px;
 }
 
-.lightboxgallery-gallery-item {
+#pics > img {
     width: 100%;
+    
 }
 
 #about h2 {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 #back {
@@ -141,23 +143,6 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
-}
-
-/****Media Queries****/
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
 }
 
 /*Media Queries*/
