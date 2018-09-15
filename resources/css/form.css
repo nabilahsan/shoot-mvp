@@ -109,10 +109,25 @@ nav {
 
 /*Radio buttons*/
 
-#inputgroup ul {
+#inputgroup {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+#inputgroup li {
+  border: 2px solid blue;
+  margin-bottom: 10px;
+}
+
+#inputgroup input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+#inputgroup label {
+  margin: 0;
+  text-align: center;
 }
 
 /*Buttons*/

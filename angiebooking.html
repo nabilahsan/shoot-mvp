@@ -103,66 +103,70 @@
 
                 <div class="mc-field-group" id="package">
                     <p>Which package would you like to choose?</p>
-                    <div id="inputgroup">
-                        <ul>
-                            <li>
-                                <label>Package 1
-                                    <input class="form-control" type="radio" value="Package 1" name="MMERGE5" id="p1 mce-MMERGE5-0">
-                                </label>
-                                <!-- <p for="mce-MMERGE5-0"></p> -->
-                            </li>
-                            <li>
-                                <label>Package 2
-                                    <input class="form-control" type="radio" value="Package 2" name="MMERGE5" id="p2 mce-MMERGE5-1">
-                                </label>
-                                <!-- <p for="mce-MMERGE5-1"></p> -->
-                            </li>
-                            <li>
-                                <label> Package 3
-                                    <input class="form-control" type="radio" value="Package 3" name="MMERGE5" id="p3 mce-MMERGE5-2">
-                                </label>
-                                <!-- <p for="mce-MMERGE5-2">Package 3</p> -->
-                            </li>
-                        </ul>
+                    <div class="row">
+                        <div id="inputgroup" class="container row col-sm-4">
+                            <ul>
+                                <li>
+                                    <label class="btn active">
+                                        <span>Package 1</span>
+                                        <input class="form-control" type="radio" value="Package 1" name="MMERGE5" id="p1 mce-MMERGE5-0">
+                                    </label>
+                                    <!-- <p for="mce-MMERGE5-0"></p> -->
+                                </li>
+                                <li>
+                                    <label class="btn active">
+                                            <span>Package 2</span>
+                                        <input class="form-control" type="radio" value="Package 2" name="MMERGE5" id="p2 mce-MMERGE5-1">
+                                    </label>
+                                    <!-- <p for="mce-MMERGE5-1"></p> -->
+                                </li>
+                                <li>
+                                    <label class="btn active">                                        <span>Package 3</span>
+                                        <input class="form-control" type="radio" value="Package 3" name="MMERGE5" id="p3 mce-MMERGE5-2">
+                                    </label>
+                                    <!-- <p for="mce-MMERGE5-2">Package 3</p> -->
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Information on Packages -->
+                        <div id="packageInfo" class="col-md-6">
+                            <div id="p1info" style='display:none'>
+                                <ul>
+                                    <!-- Hourly Rate -->
+                                    <li>876</li>
+                                    <!-- Number of Images  -->
+                                    <li>1</li>
+                                    <!-- Outfit changes -->
+                                    <li>4</li>
+                                    <!-- Anything Extra -->
+                                    <li>2</li>
+                                </ul>
+                            </div>
+                            <div id="p2info" style='display:none'>
+                                <ul>
+                                    <li>765</li>
+                                    <li>wr1</li>
+                                    <li>4333</li>
+                                    <li>22343</li>
+                                </ul>
+                            </div>
+                            <div id="p3info" style='display:none'>
+                                <ul>
+                                    <li>4</li>
+                                    <li>22221</li>
+                                    <li>67674</li>
+                                    <li>876542</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Information on Packages -->
-                    <div id="packageInfo">
-                        <div id="p1info" style='display:none'>
-                            <ul>
-                                <!-- Hourly Rate -->
-                                <li>3454</li>
-                                 <!-- Number of Images  -->
-                                <li>1</li>
-                                <!-- Outfit changes -->
-                                <li>4</li>
-                                <!-- Anything Extra -->
-                                <li>2</li>
-                            </ul>
-                        </div>
-                        <div id="p2info" style='display:none'>
-                            <ul>
-                                <li>3454</li>
-                                <li>wr1</li>
-                                <li>4333</li>
-                                <li>22343</li>
-                            </ul>
-                        </div>
-                        <div id="p3info" style='display:none'>
-                            <ul>
-                                <li>3454</li>
-                                <li>22221</li>
-                                <li>67674</li>
-                                <li>876542</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="mc-field-group">
                     <label for="mce-MMERGE3">Time Slots </label>
                     <select name="MMERGE3" class="form-control" id="mce-MMERGE3">
-                        <option value=""></option>
                         <option value="Monday, 2:00pm">Monday, 2:00pm</option>
                         <option value="Tuesday, 3:30pm">Tuesday, 3:30pm</option>
                         <option value="Wednesday, 6:30pm">Wednesday, 6:30pm</option>
@@ -177,7 +181,6 @@
                 <div class="mc-field-group">
                     <label for="mce-MMERGE6">Payments Method </label>
                     <select name="MMERGE6" class="form-control" id="mce-MMERGE6">
-                        <option value=""></option>
                         <option value="Cash">Cash</option>
                         <option value="Paypal">Paypal</option>
                         <option value="Venmo">Venmo</option>
