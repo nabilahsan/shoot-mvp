@@ -86,7 +86,6 @@ nav {
 #items {
   display: flex;
   flex-direction: column;
-  padding-right: 25px;
 }
 
 #items label {
@@ -102,7 +101,7 @@ nav {
 
 #photographers {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #heading {
