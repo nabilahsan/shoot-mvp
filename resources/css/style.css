@@ -86,11 +86,13 @@ nav {
 #items {
   display: flex;
   flex-direction: column;
+  padding-right: 25px;
 }
 
 #items label {
-  text-align: center;
-  font-size: 1em;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 1.2em;
 }
 
 #photographers_container {
@@ -98,22 +100,28 @@ nav {
   padding: 0;
 }
 
+#photographers {
+  display: flex;
+  justify-content: center;
+}
+
 #heading {
   display: flex;
   justify-content: start;
 }
-#heading>h1  {
+
+#heading>h1 {
   padding-top: 10%;
   font-size: 3em;
 }
 
 #items img {
   padding: 10px;
-  border: 2px solid black;
+  width: 300px;
 }
 
-#items>a {
-  margin: 25px;
+#categories {
+  padding-left: 25px;
 }
 
 /*Media Queries*/
@@ -130,21 +138,63 @@ nav {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  #heading>h1 {
+    text-align: center;
+  }
+
+  #items {
+    margin-top: 25px;
+    padding: 0;
+  }
+}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  #heading>h1 {
+    text-align: center;
+  }
+
+  #items {
+    margin-top: 25px;
+    padding: 0;
+  }
+}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  #heading>h1 {
+    text-align: center;
+  }
+
+  #items {
+    margin-top: 25px;
+    padding: 0;
+  }
+}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -152,8 +202,20 @@ nav {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  #photographers_container>h1 {
-    padding-top: 15%;
+  #heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  #heading>h1 {
+    text-align: center;
+  }
+
+  #items {
+    margin-top: 25px;
+    padding: 0;
   }
 }
 
@@ -167,7 +229,12 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 20%;
     font-size: 0.75em;
+  }
+
+  #items {
+    margin-top: 25px;
+    padding: 0;
   }
 }
