@@ -236,4 +236,8 @@ nav {
     margin-top: 25px;
     padding: 0;
   }
+
+  #photographers {
+    justify-content: center;
+  }
 }
