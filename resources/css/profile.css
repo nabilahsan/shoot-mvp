@@ -78,7 +78,6 @@ nav {
 /*Info and Rates*/
 #profile {
     margin-top: 150px;
-    margin-bottom: 100px;
 }
 
 #line {
@@ -109,10 +108,12 @@ nav {
 .fa-instagram {
     font-size: 40px;
     margin-right: 10px;
+    color: black;
 }
 
 .fa-twitter {
     font-size: 40px;
+    color: black;
 }
 
 #book {
@@ -124,6 +125,8 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 /*Photographer Portfolio*/
 #images {
