@@ -36,9 +36,15 @@ nav {
   display: flex;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+}
+
 .nav-a {
   font-size: 1.2em;
   color: black;
+  text-align: end;
 }
 
 .navbar {
