@@ -68,6 +68,11 @@ nav {
     margin-top: 150px;
 }
 
+#propic {
+    display: flex;
+    flex-direction: column;
+}
+
 #line {
     display: block;
     text-align: start;
@@ -86,22 +91,6 @@ nav {
 
 #rates {
     line-height: 10px;
-}
-
-#social {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.fa-instagram {
-    font-size: 40px;
-    margin-right: 10px;
-    color: black;
-}
-
-.fa-twitter {
-    font-size: 40px;
-    color: black;
 }
 
 #book {
