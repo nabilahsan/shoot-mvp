@@ -74,19 +74,20 @@ nav {
 #row1 {
   margin: 0;
 }
-#mc_embed_signup {
+
+#formDiv {
   padding-top: 7%;
   padding-bottom: 5%;
 }
 
-#mc_embed_signup_scroll h2 {
+#formDiv h2 {
   text-align: center;
   margin-top: 5%;
 }
 
 /*Inputs*/
 
-.mc-field-group {
+#formElements {
   padding-top: 2%;
   width: 50%;
   margin-left: auto;
@@ -99,9 +100,13 @@ nav {
   font-size: 1.3em;
 }
 
-.mc-field-group input {
+#formElements input {
   display: flex;
   justify-content: center;
+}
+
+#formElements label {
+  margin-top: 2%;
 }
 
 
@@ -236,12 +241,12 @@ nav {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .mc-field-group {
+  #formElements {
     margin: 10px;
     width: 80%;
   }
 
-  #mc_embed_signup_scroll h2 {
+  #formElements h2 {
     margin-top: 30%;
     margin-bottom: 10%;
   }
