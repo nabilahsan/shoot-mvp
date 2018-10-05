@@ -61,7 +61,7 @@
     
 
     <div id="formDiv" class="container form-group">
-        <form name="lisaContact" netlify>
+        <form name="lisaContact" method="POST" netlify>
             <div id="formElements">
                 <h2>Let's get some information about your shoot!</h2>
 
@@ -87,7 +87,7 @@
                 <!-- Message section -->
                 <div  id="message">
                     <label for="">Enter message here: </label>
-                    <input type="text" value="" name="" class="form-control" id="">
+                    <input type="text" value="" name="message" class="form-control" id="">
                 </div>
 
                 <!-- Radio buttons for package -->
@@ -99,21 +99,21 @@
                                 <li>
                                     <label class="btn active">
                                         <span>Bronze</span>
-                                        <input class="form-control" type="radio" value="Package 1" name="">
+                                        <input class="form-control" type="radio" value="Package 1" name="Bronze">
                                     </label>
 
                                 </li>
                                 <li>
                                     <label class="btn active">
                                         <span>Silver</span>
-                                        <input class="form-control" type="radio" value="Package 2" name="">
+                                        <input class="form-control" type="radio" value="Package 2" name="Silver">
                                     </label>
 
                                 </li>
                                 <li>
                                     <label class="btn active">
                                         <span>Gold</span>
-                                        <input class="form-control" type="radio" value="Package 3" name="">
+                                        <input class="form-control" type="radio" value="Package 3" name="Gold">
                                     </label>
                                 </li>
                             </ul>
@@ -158,7 +158,7 @@
 
                 <div >
                     <label for="">Time Slots </label>
-                    <select name="" class="form-control" id="">
+                    <select name="time" class="form-control" id="">
                         <option value="Monday, 2:00pm">Monday, 2:00pm</option>
                         <option value="Tuesday, 3:30pm">Tuesday, 3:30pm</option>
                         <option value="Wednesday, 6:30pm">Wednesday, 6:30pm</option>
