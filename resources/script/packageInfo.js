@@ -1,7 +1,7 @@
 // Clicking on radio button reveals 
 // more information on packages.
 
-$("input[name='MMERGE5']").click(function () {
+$("input[name='package']").click(function () {
 
     //Package 1
     $('#p1info').css('display', ($(this).val() === 'Package 1') ? 'block':'none');
