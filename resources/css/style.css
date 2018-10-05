@@ -117,14 +117,17 @@ nav {
 }
 
 #items img {
-  padding: 10px;
   width: 300px;
-  margin: 10px;
 }
 
 
 #categories {
+  padding-top: 15px;
   padding-left: 35px;
+}
+
+#price {
+  padding-left: 20px;
 }
 
 /*Media Queries*/
