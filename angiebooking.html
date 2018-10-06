@@ -67,27 +67,27 @@
 
                 <div >
                     <label >First Name </label>
-                    <input type="text"  name="FNAME" class="form-control" >
+                    <input type="text"  name="FNAME" class="form-control" required>
                 </div>
 
                 <div >
                     <label >Last Name </label>
-                    <input type="text"  name="LNAME" class="form-control" >
+                    <input type="text"  name="LNAME" class="form-control" required>
                 </div>
                 <div >
                     <label >Email Address</label>
-                    <input type="email"  name="EMAIL" class="form-control required email" >
+                    <input type="email"  name="EMAIL" class="form-control required email" required>
                 </div>
 
                 <div >
                     <label >Phone Number </label>
-                    <input type="text" name="PHONE" class="form-control"  >
+                    <input type="text" name="PHONE" class="form-control" required >
                 </div>
 
                 <!-- Message section -->
                 <div  id="message">
                     <label >Enter message here: </label>
-                    <input type="text"  name="message" class="form-control" >
+                    <input type="text"  name="message" class="form-control"required >
                 </div>
 
                 <!-- Radio buttons for package -->
@@ -99,20 +99,20 @@
                                 <li>
                                     <label class="btn active">
                                         <span>Bronze</span>
-                                        <input class="form-control" type="radio" value="Bronze" name="package">
+                                        <input class="form-control" type="radio" value="Bronze" name="package" required>
                                     </label>
 
                                 </li>
                                 <li>
                                     <label class="btn active">
                                         <span>Silver</span>
-                                        <input class="form-control" type="radio" value="Silver" name="package">
+                                        <input class="form-control" type="radio" value="Silver" name="package" required>
                                     </label>
 
                                 </li>
                                 <li>
                                     <label class="btn active">
-                                        <input class="form-control" type="radio" value="Gold" name="package">
+                                        <input class="form-control" type="radio" value="Gold" name="package" required>
                                         <span>Gold</span>
                                     </label>
                                 </li>
@@ -158,7 +158,7 @@
 
                 <div >
                     <label >Time Slots </label>
-                    <select name="time" class="form-control" >
+                    <select name="time" class="form-control" required>
                         <option value="Monday, 2:00pm">Monday, 2:00pm</option>
                         <option value="Tuesday, 3:30pm">Tuesday, 3:30pm</option>
                         <option value="Wednesday, 6:30pm">Wednesday, 6:30pm</option>
@@ -172,7 +172,7 @@
 
                 <div >
                     <label>Payments Method </label>
-                    <select name="payment" class="form-control" >
+                    <select name="payment" class="form-control" required>
                         <option value="Cash">Cash</option>
                         <option value="Paypal">Paypal</option>
                         <option value="Venmo">Venmo</option>
