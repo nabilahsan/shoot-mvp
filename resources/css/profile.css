@@ -141,6 +141,7 @@ nav {
 #main h2 {
     margin-top: 5%;
 }
+
 #packages {
     display: flex;
     justify-content: space-evenly;
@@ -152,8 +153,15 @@ nav {
 
 #p1 {
     border: 2px solid black;
-    padding: 50px;
+    padding: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 25px;
+    margin-right: 25px;
+}
+
+#p1:last-child {
+    margin-right: 0;
 }
 
 
