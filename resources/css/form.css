@@ -145,7 +145,12 @@ nav {
   margin: 0;
   text-align: center;
 }
-
+#message input {
+  min-height: 200px;
+  padding-top: 0;
+  padding-left: 0;
+  line-height: 1em;
+}
 /*Buttons*/
 
 .clear {
