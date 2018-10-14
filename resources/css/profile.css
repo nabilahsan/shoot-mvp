@@ -3,8 +3,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
 }
 
 * {
@@ -18,6 +16,22 @@ a:hover {
 }
 
 /*Global end*/
+
+body {
+    background-color: white;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  ul,
+  li {
+    list-style-type: none;
+  }
 nav {
     background-color: white;
     box-shadow: 3px 0px 8px #707070;
@@ -30,6 +44,7 @@ nav {
 .nav-a {
     font-size: 1.2em;
     color: black;
+    text-align: end;
 }
 
 .navbar {
@@ -127,6 +142,26 @@ nav {
 
 #about h2 {
     margin-top: 80px;
+}
+
+#packages {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+#p1 {
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+
+#packages div {
+    text-align: center;
 }
 
 #backb {
@@ -260,6 +295,18 @@ nav {
     h1,
     h2 {
         text-align: center;
+    }
+
+    #packages {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 15%;
+    }
+
+    #p1 {
+        padding: 10px;
+        margin-top: 15%;
     }
 
     #backb {
