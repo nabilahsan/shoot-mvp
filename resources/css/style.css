@@ -63,6 +63,9 @@ nav {
   margin-left: 40px;
 }
 
+label {
+  font-weight: bold;
+}
 
 #logolink {
   display: flex;
