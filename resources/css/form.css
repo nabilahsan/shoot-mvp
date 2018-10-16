@@ -105,7 +105,6 @@ nav {
 
 #inputgroup {
   display: flex;
-  flex-direction: column;
 }
 
 #inputgroup li {
@@ -133,7 +132,6 @@ nav {
 }
 
 #inputgroup label {
-  margin: 0;
   text-align: center;
 }
 
