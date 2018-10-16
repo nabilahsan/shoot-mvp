@@ -32,21 +32,6 @@ nav {
   box-shadow: 3px 0px 8px #707070;
 }
 
-#navdiv {
-  display: flex;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: end;
-}
-
-.nav-a {
-  font-size: 1.2em;
-  color: black;
-  text-align: end;
-}
-
 .navbar {
   overflow: hidden;
   top: 0;
@@ -59,27 +44,19 @@ nav {
   color: black;
 }
 
-.nav-item {
-  margin-left: 40px;
-}
-
 label {
   font-weight: bold;
 }
 
-#logolink {
-  display: flex;
-  justify-content: flex-start;
-}
-
 #logo {
   width: 154.54px;
-  padding: 10px;
 }
 
-#navbars {
-  padding-left: 15px;
+#navLogo {
+  display: flex;
+  justify-content: center;
 }
+
 
 #items {
   display: flex;

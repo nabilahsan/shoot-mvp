@@ -31,15 +31,6 @@ nav {
     box-shadow: 3px 0px 8px #707070;
 }
 
-#navdiv {
-    display: flex;
-}
-
-.nav-a {
-    font-size: 1.2em;
-    color: black;
-    text-align: end;
-}
 
 .navbar {
     overflow: hidden;
@@ -53,13 +44,13 @@ nav {
     color: black;
 }
 
-.nav-item {
-    margin-left: 40px;
-}
-
 #logo {
     width: 154.54px;
-    padding: 10px;
+}
+
+#navLogo {
+    display: flex;
+    justify-content: center;
 }
 
 #items {
@@ -67,9 +58,6 @@ nav {
     justify-content: flex-end;
 }
 
-#navbars {
-    padding-left: 15px;
-}
 
 /*end*/
 /*Info and Rates*/
@@ -138,6 +126,7 @@ nav {
 #about h2 {
     margin-top: 80px;
 }
+
 #main h2 {
     margin-top: 5%;
 }

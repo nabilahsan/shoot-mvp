@@ -46,28 +46,19 @@ nav {
   color: black;
 }
 
-.nav-item {
-  margin-left: 40px;
-}
-
-
-#logolink {
-  display: flex;
-  justify-content: flex-start;
-}
-
 #logo {
   width: 154.54px;
-  padding: 10px;
 }
+
+#navLogo {
+  display: flex;
+  justify-content: center;
+}
+
 
 #items {
   display: flex;
   justify-content: flex-end;
-}
-
-#navbars {
-  padding-left: 15px;
 }
 
 /*end*/
