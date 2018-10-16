@@ -232,7 +232,8 @@ nav {
 @media (min-width: 320px) and (max-width: 480px) {
   #formElements {
     margin: 10px;
-    width: 80%;
+    width: auto;
+    text-align: center;
   }
 
   #formElements h2 {
