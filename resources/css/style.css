@@ -27,6 +27,12 @@ li {
   list-style-type: none;
 }
 
+a, a:hover{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 nav {
   background-color: white;
   box-shadow: 3px 0px 8px #707070;
@@ -42,10 +48,6 @@ nav {
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
-}
-
-label {
-  font-weight: bold;
 }
 
 #logo {
@@ -102,12 +104,17 @@ label {
 
 
 #categories {
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 35px;
 }
 
-#price {
+#price, #pname {
   padding-left: 20px;
+}
+
+#pname {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 /*Media Queries*/
