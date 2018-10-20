@@ -66,6 +66,11 @@ nav {
   margin: 0;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+}
+
 #formDiv {
   padding-top: 7%;
   padding-bottom: 5%;
@@ -97,7 +102,7 @@ nav {
 }
 
 #formElements label {
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 
@@ -105,70 +110,69 @@ nav {
 
 #inputgroup {
   display: flex;
+  flex-direction: column;
 }
 
-#inputgroup li {
-  margin-bottom: 10px;
-  background-color: orangered;
-  color: white;
-  border: 2px solid black;
-  text-align: center;
-}
-
-#inputgroup li:hover {
-  background-color: white;
-  color: black;
-  transition: 0.1s ease-in; 
-}
-#inputgroup li::selection {
-  background-color: white;
-  color: black;
-}
-#inputgroup input {
-  position: relative;
-  opacity: 0;
-  cursor: pointer;
-  padding: 0;
+#packageMain {
+  margin-top: 50px;
 }
 
 #inputgroup label {
   text-align: center;
 }
 
-/*Buttons*/
-
-.clear {
+/* Bottom Buttons section */
+#bottomButtons {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 2%;
+  justify-content: space-around;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
-/*Back button*/
-#book {
+/* Standardized Buttons for profile */
+.btn {
   border-radius: 50px;
-  border: 2px solid black;
+  width: 125px;
 }
 
-#back {
-  border-radius: 50px;
-  border: 2px solid black;
+#botBook {
+  border: none;
+  background-color: #F15B22;
 }
+
+#botBook:hover {
+  border: none;
+  background-color: black;
+}
+
 
 /*Media Queries*/
-
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (min-width: 1281px) {
+
+  #formElements {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 70%;
+  }
+}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #formElements {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 70%;
+  }
+}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -176,15 +180,10 @@ nav {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  /*Inputs*/
-  #inputgroup ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #inputgroup ul>li {
-    margin-top: 10%;
+  #formElements {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 70%;
   }
 }
 
@@ -193,36 +192,14 @@ nav {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-  /*Inputs*/
-  #inputgroup ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #inputgroup ul>li {
-    margin-top: 10%;
-  }
-}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-
-  /*Inputs*/
-  #inputgroup ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #inputgroup ul>li {
-    margin-top: 10%;
-  }
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -233,7 +210,6 @@ nav {
   #formElements {
     margin: 10px;
     width: auto;
-    text-align: center;
   }
 
   #formElements h2 {
@@ -246,34 +222,21 @@ nav {
   }
 
   /*Inputs*/
-  #inputgroup ul {
+  #inputgroup {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+
   }
 
-  #inputgroup ul>li {
-    margin-top: 10%;
+
+  #packageMain {
+    margin-top: 0;
+    margin-left: 15px;
   }
 
   #packageInfo {
     margin-top: 25px;
     font-size: 1.4em;
-  }
-
-  /*Buttons*/
-  .clear {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-direction: column-reverse;
-    margin-top: 2%;
-  }
-
-  #book {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 0;
-    padding: 2%;
   }
 }

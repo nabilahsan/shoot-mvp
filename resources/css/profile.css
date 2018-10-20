@@ -121,17 +121,22 @@ nav {
 
 #packages {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     margin-top: 2%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 #p1 {
-    padding: 60px;
+    padding-right: 25px;
+    padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#p1 ul {
+    margin-top: 15%;
 }
 
 #p1:last-child {
@@ -148,6 +153,7 @@ nav {
     text-align: center;
 }
 
+/* Bottom Buttons section */
 #bottomButtons {
     display: flex;
     justify-content: space-around;
@@ -160,14 +166,6 @@ nav {
     border-radius: 50px;
     width: 125px;
 }
-
-/* #back{
-    background-color: black;
-    color: white
-}
-#back:hover{
-    color: black;
-} */
 
 #botBook, #topBook {
     border: none;
@@ -182,11 +180,6 @@ nav {
 #topBook {
     margin-top: 15px;
 }
-
-/* #backb > #back, #book2 {
-    padding: 5% 2% 5% 2%;
-} */
-
 
 /*Media Queries*/
 /* 

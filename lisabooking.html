@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
 
+    <link rel="stylesheet" href="vendors/css/united.css">
+
+
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="resources/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/ico/favicon-32x32.png">
@@ -107,37 +110,24 @@
                     <label>Which package would you like to choose?</label>
                     <div class="row" id="row1">
                         <div id="inputgroup" class="container row col-sm-4">
-                            <ul>
-                                <li>
-                                    <label class="btn active">
-                                        <span>Beauty Silver</span>
-                                        <input class="form-control" type="radio" value="Bronze" name="package"
-                                            required>
-                                    </label>
+                            <div id="" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="package" class="custom-control-input" value="Bronze">
+                                <label class="custom-control-label" for="customRadio1">Beauty Silver</label>
+                            </div>
 
-                                </li>
-                                <li>
-                                    <label class="btn active">
-                                        <span>Beauty Gold</span>
-                                        <input class="form-control" type="radio" value="Silver" name="package"
-                                            required>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="btn active">
-                                        <span>Portrait Silver</span>
-                                        <input class="form-control" type="radio" value="Gold" name="package"
-                                            required>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="btn active">
-                                        <span>Portrait Gold</span>
-                                        <input class="form-control" type="radio" value="Gold1" name="package"
-                                            required>
-                                    </label>
-                                </li>
-                            </ul>
+                            <div id="packageMain" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="package" class="custom-control-input" value="Silver">
+                                <label class="custom-control-label" for="customRadio2">Beauty Gold</label>
+                            </div>
+
+                            <div id="packageMain" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="package" class="custom-control-input" value="Gold">
+                                <label class="custom-control-label" for="customRadio3">Portrait Silver</label>
+                            </div>
+                            <div id="packageMain" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio4" name="package" class="custom-control-input" value="Gold1">
+                                <label class="custom-control-label" for="customRadio4">Portrait Gold</label>
+                            </div>
                         </div>
 
                         <!-- Information on Packages -->
@@ -213,13 +203,13 @@
                     </select>
                 </div>
 
+                <div id="bottomButtons" class="container">
+                    <button id="back" type="button" onclick="window.location.href= 'index.html'" class="btn btn-outline-primary btn-lg">Go
+                        Back</button>
 
-                <div class="clear">
-                    <input class="btn" type="button" id="back" value="Back" onclick="window.location.href= 'lisa.html'">
-
-
-                    <button class="btn" type="submit" value="Subscribe" name="subscribe" id="book">Book</button>
+                    <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
                 </div>
+
             </div>
         </form>
 
