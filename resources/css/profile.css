@@ -110,7 +110,8 @@ nav {
 }
 
 #pics {
-    width: 35%;
+    width: 30%;
+    height: auto;
     margin: 10px;
 }
 
