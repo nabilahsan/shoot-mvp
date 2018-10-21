@@ -128,7 +128,7 @@ nav {
 
 #packages {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     margin-top: 2%;
     padding-right: 5%;
