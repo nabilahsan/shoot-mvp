@@ -90,6 +90,13 @@ nav {
     line-height: 10px;
 }
 
+#rates p {
+    font-size: 1.3em;
+}
+
+#line{
+    margin-bottom: 50px;
+}
 /*Photographer Portfolio*/
 #portfolio {
     margin-top: 50px;
