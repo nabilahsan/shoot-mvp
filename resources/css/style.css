@@ -90,7 +90,7 @@ nav {
 
 #heading {
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 
 #heading>h1 {
