@@ -90,18 +90,13 @@ nav {
     line-height: 10px;
 }
 
-#book {
-    text-align: center;
-    border-radius: 50px;
-    margin-top: 10%;
-    padding: 5% 10% 5% 10%;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
+#rates p {
+    font-size: 1.3em;
 }
 
-
-
+#line{
+    margin-bottom: 50px;
+}
 /*Photographer Portfolio*/
 #portfolio {
     margin-top: 50px;
@@ -133,18 +128,22 @@ nav {
 
 #packages {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     margin-top: 2%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 #p1 {
-    padding: 60px;
+    padding-right: 25px;
+    padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 25px;
+}
+
+#p1 ul {
+    margin-top: 15%;
 }
 
 #p1:last-child {
@@ -161,31 +160,32 @@ nav {
     text-align: center;
 }
 
-#backb {
+/* Bottom Buttons section */
+#bottomButtons {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 4%;
-    margin-bottom: 5%;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 10%;
 }
 
-#backb a {
-    width: 200px;
-}
-
-/* #backb > #back, #book2 {
-    padding: 5% 2% 5% 2%;
-} */
-
-#back {
-    text-align: center;
+/* Standardized Buttons for profile */
+.btn {
     border-radius: 50px;
-    border: 2px solid black;
+    width: 125px;
 }
 
-#book2 {
-    text-align: center;
-    border-radius: 50px;
-    border: 2px solid black;
+#botBook, #topBook {
+    border: none;
+    background-color: #F15B22;
+}
+
+#botBook:hover, #topBook:hover {
+    border: none;
+    background-color: black;
+}
+
+#topBook {
+    margin-top: 15px;
 }
 
 /*Media Queries*/
@@ -193,25 +193,13 @@ nav {
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-@media (min-width: 1281px) {
-
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
-}
+@media (min-width: 1281px) {}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -222,10 +210,6 @@ nav {
         width: 30%;
     }
 
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
 }
 
 /* 
@@ -237,10 +221,6 @@ nav {
         width: 40%;
     }
 
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
 }
 
 /* 
@@ -253,10 +233,6 @@ nav {
         width: 40%;
     }
 
-    #back,
-    #book2 {
-        padding: 2% 5% 2% 5%;
-    }
 }
 
 /* 
@@ -292,7 +268,8 @@ nav {
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
         text-align: center;
     }
 
@@ -309,20 +286,11 @@ nav {
         margin-top: 15%;
     }
 
-    #backb {
+    #p1 #backb {
         display: flex;
         justify-content: center;
         text-align: center;
         flex-direction: column-reverse;
-    }
-
-    #back,
-    #book2 {
-        padding: 5% 2% 5% 2%;
-    }
-
-    #book2 {
-        margin-bottom: 50px;
     }
 
     #about>p {

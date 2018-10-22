@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
 
+
+    <link rel="stylesheet" href="vendors/css/united.css">
+
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="resources/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/ico/favicon-32x32.png">
@@ -91,16 +94,11 @@
             <div id="rates">
                 <h1>Lisa Martinez</h1>
                 <hr id="line">
-                <p>Portraits, Beauty,</p>
-                <p>Fashion, Editorial.</p>
-                <br>
-                <p>Price: $225 per session</p>
-                <p>Location: Houston, TX.</p>
-                <div>
-                    <a href="lisabooking.html">
-                        <button class="btn" id="book">Book</button>
-                    </a>
-                </div>
+                <p>Portraits, Beauty,</p><br>
+                <p>Fashion, and Editorial.</p><br>
+                <p> <strong>Price: </strong>$225 per session</p><br>
+                <p> <strong>Location:</strong> Houston, TX.</p>
+                <button id="topBook" type="button" onclick="window.location.href= 'lisabooking.html'" class="btn btn-primary btn-lg">Book</button>
             </div>
         </div>
     </div>
@@ -160,22 +158,27 @@
             <div id="p1">
                 <!-- Package 2 -->
                 <h2>Beauty Gold</h2>
-                <ul class="list-unstyled">
-                    <li>$325</li>
-                    <li>2 hours</li>
-                    <li>5 High Resolution Retouched images.</li>
-                    <!-- <li>1 Location</li> -->
-                </ul>
+                <div>
+                    <ul class="list-unstyled">
+                        <li>$325</li>
+                        <li>2 hours</li>
+                        <li>5 High Resolution Retouched images.</li>
+                        <!-- <li>1 Location</li> -->
+                    </ul>
+                </div>
             </div>
             <div id="p1">
                 <!-- Package 3 -->
                 <h2>Portrait Silver</h2>
-                <ul class="list-unstyled">
-                    <li>$200</li>
-                    <li>1 hour studio or On-location.</li>
-                    <li>10 High Resolution Retouched images.</li>
-                    <!-- <li>3 Location</li> -->
-                </ul>
+                <div>
+                    <ul class="list-unstyled">
+                        <li>$200</li>
+                        <li>1 hour studio or On-location.</li>
+                        <li>10 High Resolution Retouched images.</li>
+                        <!-- <li>3 Location</li> -->
+                    </ul>
+
+                </div>
             </div>
             <div id="p1">
                 <!-- Package 4 -->
@@ -194,12 +197,12 @@
         <p id="note">Any additional images are $25</p>
     </div>
 
-    <div id="backb" class="container">
+    
+    <div id="bottomButtons" class="container">
+        <button id="back" type="button" onclick="window.location.href= 'index.html'" class="btn btn-outline-primary btn-lg">Go
+            Back</button>
 
-        <input class="btn" type="button" id="back" value="Back" onclick="window.location.href= 'index.html'">
-
-        <input class="btn" type="button" id="book2" value="Book" onclick="window.location.href= 'lisabooking.html'">
-
+        <button id="botBook" type="button" onclick="window.location.href= 'angiebooking.html'" class="btn btn-primary btn-lg">Book</button>
     </div>
 
     <!-- Scripts -->
@@ -210,11 +213,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <!--flickity js script-->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!--smooth scroll js-->
-    <script src="resources/script/smooth-scroll.polyfills.min.js"></script>
-    <script src="resources/script/learnmore.js"></script>
 </body>
 
 </html>

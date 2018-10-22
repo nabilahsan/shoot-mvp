@@ -46,11 +46,13 @@
 
   gtag('config', 'UA-117171100-3');
 </script>
-
-
+<!-- Adding this line to solve some PR crap -->
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="vendors/css/united.css">
 
     <!--Font Awesome CDN Link-->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -79,53 +81,65 @@
     <div id="photographers_container" class="container">
 
         <div id="heading" class="container-fluid">
-            <h1>PHOTOGRAPHERS IN HOUSTON, TX</h1>
+            <h1>Photographers in Houston, Texas</h1>
         </div>
         <div id="photographers" class="row container-fluid">
-
-            <div id="items">
-                <a href="angie.html">
+            <!-- Angie's profile -->
+            <a href="angie.html">
+                <div id="items">
                     <img class="border_img" src="vendors/img/angie/angie4.jpg">
-                </a>
-                <div id="categories" class="row">
-                    <p id="tags" href="">#portraits</p>
-                    &nbsp;
-                    <p id="tags" href="">#headshots</p>
-                </div>
+                    <div id="categories" class="row">
+                        <p id="tags" href="">#portraits</p>
+                        &nbsp;
+                        <p id="tags" href="">#fashion</p>
+                    </div>
 
-                <label for="angie">Angie Duong</label>
-                <p id="price">Starting from $140 per hour.</p>
-            </div>
-            <div id="items">
-                <a href="jordan.html">
+                    <p for="angie" id="pname">Angie Duong</p>
+                    <p id="price">Starting from $140 per hour.</p>
+                </div>
+            </a>
+
+            <!-- Jordan's Profile -->
+            <a href="jordan.html">
+                <div id="items">
                     <img class="border_img" src="vendors/img/jordan/jordan1.jpg">
-                </a>
-                <div id="categories" class="row">
-                    <p id="tags" href="">#portraits</p>
-                    &nbsp;
-                    <p id="tags" href="">#headshots</p>
+                    <div id="categories" class="row">
+                        <p id="tags" href="">#portraits</p>
+                        &nbsp;
+                        <p id="tags" href="">#fashion</p>
+                    </div>
+
+                    <p for="jordan" id="pname">Jordan Bernard</p>
+                    <p id="price">Starting from $100 per session.</p>
+
                 </div>
+            </a>
 
-                <label for="jordan">Jordan Bernard</label>
-                <p id="price">Starting from $100 per session.</p>
-
-            </div>
-            <div id="items">
-                <a href="lisa.html">
+            <!-- Lisa's profile -->
+            <a href="lisa.html">
+                <div id="items">
                     <img class="border_img" src="vendors/img/lisa/lisa1.jpg">
-                </a>
-                <div id="categories" class="row">
-                    <p id="tags" href="">#beautyshots</p>
-                    &nbsp;
-                    <p id="tags" href="">#headshots</p>
+                    <div id="categories" class="row">
+                        <p id="tags" href="">#beauty</p>
+                        &nbsp;
+                        <p id="tags" href="">#portraits</p>
+                    </div>
+
+                    <p for="lisa" id="pname">Lisa Martinez</p>
+                    <p id="price">Starting from $225 per session.</p>
+
                 </div>
+            </a>
 
-                <label for="">Lisa Martinez</label>
-                <p id="price">Starting from $225 per session.</p>
-
-            </div>
 
         </div>
+    </div>
+
+    <div id="graduation">
+        <h1>
+            Graduating? Click <a href="graduation.shootbeta.com">here</a> to book graduation photographers
+        </h1>
+
     </div>
 
     <!-- Scripts -->
