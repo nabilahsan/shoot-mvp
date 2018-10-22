@@ -27,7 +27,8 @@ li {
   list-style-type: none;
 }
 
-a, a:hover{
+a,
+a:hover {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -69,7 +70,7 @@ nav {
 }
 
 #items:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 #items label {
@@ -108,7 +109,8 @@ nav {
   padding-left: 35px;
 }
 
-#price, #pname {
+#price,
+#pname {
   padding-left: 20px;
 }
 
@@ -117,7 +119,7 @@ nav {
   font-size: 1.5em;
 }
 
-#graduation{
+#graduation {
   display: flex;
   justify-content: center;
 }
@@ -127,6 +129,7 @@ nav {
   color: #F15B22;
   cursor: pointer;
 }
+
 
 /*Media Queries*/
 
