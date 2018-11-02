@@ -89,7 +89,7 @@ nav {
   justify-content: space-evenly;
 }
 
-#heading {    
+#heading {
   padding-top: 4%;
   padding-bottom: 3%;
   display: flex;
@@ -142,6 +142,59 @@ nav {
   cursor: pointer;
 }
 
+/* Footer */
+
+footer {
+  padding-top: 50px;
+  margin: 100px 0 0 0;
+  background-color: whitesmoke;
+}
+
+#bottomBar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#questions {
+  padding: 0 10px 0 10px;
+}
+
+#email {
+  color: #F15B22;
+}
+
+#icons {
+  font-size: 50px;
+  margin: 25px 0 25px 0;
+}
+
+#icons a {
+  color: black;
+}
+
+#twitter,
+#instagram {
+  margin-right: 20px;
+}
+
+#twitter:hover {
+  transition: 0.3s;
+  color: #1da1f2;
+}
+
+#facebook:hover {
+
+  transition: 0.3s;
+  color: #3b5998;
+}
+
+#instagram:hover {
+
+  transition: 0.3s;
+  color: #c32aa3;
+}
 
 /*Media Queries*/
 
@@ -191,7 +244,7 @@ nav {
   #items {
     margin-top: 25px;
     margin-right: 15px;
-    
+
   }
 }
 
@@ -226,7 +279,7 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   #heading>h1 {
@@ -254,7 +307,7 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 0.75em;
   }
 
