@@ -235,10 +235,10 @@ footer {
     text-align: center;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+  #profilecard {
+    margin-top: 35px;
   }
+
 }
 
 /* 
@@ -254,12 +254,14 @@ footer {
 
   #heading>h1 {
     text-align: center;
+    margin-top: 50px;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+  #profilecard {
+    margin-top: 35px;
+    margin-right: 15px;
   }
+
 }
 
 /* 
@@ -277,10 +279,11 @@ footer {
     text-align: center;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+
+  #profilecard {
+    margin-top: 35px;
   }
+
 }
 
 /* 
@@ -296,13 +299,11 @@ footer {
     margin-top: 10%;
   }
 
+  #profilecard {
+    margin-top: 35px;
+  }
   #heading>h1 {
     text-align: center;
-  }
-
-  #items {
-    margin-top: 25px;
-    padding: 0;
   }
 }
 
@@ -320,9 +321,8 @@ footer {
     font-size: 0.75em;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+  #profilecard {
+    margin-top: 35px;
   }
 
   #photographers {
