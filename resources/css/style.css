@@ -61,7 +61,8 @@ nav {
 }
 
 
-#items {
+
+#profilecard {
   display: flex;
   flex-direction: column;
   /* Add shadows to create the "card" effect */
@@ -71,8 +72,13 @@ nav {
   height: auto;
 }
 
-#items:hover {
+#profilecard:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#tags {
+  font-size: 0.8em;
 }
 
 #items label {
@@ -114,6 +120,21 @@ nav {
   width: 300px;
 }
 
+/* Photographer Profile Image for Main */
+
+#togInfo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+#proimg{
+  width: 25%;
+  height: auto;
+  border-radius: 30px;
+}
+
 #mainImg {
   object-fit: contain;
 }
@@ -124,14 +145,15 @@ nav {
   padding-left: 35px;
 }
 
-#price,
-#pname {
+figcaption {
   padding-left: 20px;
 }
 
 #pname {
+  margin-top: 15px;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  margin-bottom: -5px;
 }
 
 /* Footer */
