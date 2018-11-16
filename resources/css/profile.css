@@ -167,7 +167,7 @@ nav {
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
 /* Standardized Buttons for profile */
@@ -192,6 +192,15 @@ nav {
     margin-top: 15px;
 }
 
+#disclaimer p{
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#tdisclaimer p{
+    margin-top: 10%;
+    font-size: 0.8em;
+}
 
 /* Footer */
 
