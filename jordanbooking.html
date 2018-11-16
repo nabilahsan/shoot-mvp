@@ -15,7 +15,6 @@
         crossorigin="anonymous">
 
     <link rel="stylesheet" href="vendors/css/united.css">
-
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="resources/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/ico/favicon-32x32.png">
@@ -25,6 +24,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--End of Favicons-->
+
 
     <!-- Metatags For Facebook and Twitter Link Display -->
     <meta property="og:title" content="SHOOT">
@@ -62,7 +62,7 @@
     </script>
 
 
-    <title>Booking Andre | SHOOT</title>
+    <title>Booking Jordan| SHOOT</title>
 </head>
 
 <body>
@@ -75,11 +75,10 @@
         </div>
     </nav>
 
-
     <div id="formDiv" class="container form-group">
-        <form action="thankyou.html" name="Graduation: Booking Andre Williams" method="POST" netlify>
+        <form action="thankyou.html" name="Graduation: Booking Jordan Bernard" method="POST" netlify>
             <div id="formElements">
-                <h2>Let's get some information about your shoot with Andre!</h2>
+                <h2>Let's get some information about your shoot with Jordan!</h2>
 
                 <div>
                     <label>First Name </label>
@@ -103,16 +102,21 @@
                 <!-- Radio buttons for package -->
                 <div id="package">
                     <label>Which package would you like to choose?</label>
-                    <div class="row" id="row1">
+                    <div class="container row">
                         <div id="inputgroup" class="container row col-sm-4">
                             <div id="" class="custom-control custom-radio">
                                 <input type="radio" id="customRadio1" name="package" class="custom-control-input" value="Bronze">
-                                <label class="custom-control-label" for="customRadio1">Silver</label>
+                                <label class="custom-control-label" for="customRadio1">Bronze</label>
                             </div>
 
                             <div id="packageMain" class="custom-control custom-radio">
                                 <input type="radio" id="customRadio2" name="package" class="custom-control-input" value="Silver">
-                                <label class="custom-control-label" for="customRadio2">Gold</label>
+                                <label class="custom-control-label" for="customRadio2">Silver</label>
+                            </div>
+
+                            <div id="packageMain" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="package" class="custom-control-input" value="Gold">
+                                <label class="custom-control-label" for="customRadio3">Gold </label>
                             </div>
                         </div>
 
@@ -120,51 +124,80 @@
                         <div id="packageInfo" class="col-md-6">
                             <div id="p1info" style='display:none'>
                                 <!-- Package 1 -->
-                                <ul class="list-unstyled">
-                                    <li>$125</li>
-                                    <li>30 Photos</li>
-                                    <li>45 minutes</li>
+                                <ul>
+                                    <li>$100</li>
+                                    <!-- Hourly Rate -->
+                                    <li>10 Photos</li>
+                                    <!-- Number of Images  -->
+                                    <li>30 minutes</li>
+                                    <!-- Outfit changes -->
+                                    <li>1 Location</li>
                                 </ul>
                             </div>
                             <div id="p2info" style='display:none'>
                                 <!-- Package 2 -->
-                                <ul class="list-unstyled">
-                                    <li>$195</li>
-                                    <li>30 Photos</li>
-                                    <li>45 minutes</li>
-                                    <li>25 Tri-fold Invitations</li>
+                                <ul>
+                                    <li>$175</li>
+                                    <li>20 Photos</li>
+                                    <li>1 to 2 hours</li>
+                                    <li>1 Location</li>
+                                </ul>
+                            </div>
+                            <div id="p3info" style='display:none'>
+                                <!-- Package 3 -->
+                                <ul>
+                                    <li>$200</li>
+                                    <li>35 Photos</li>
+                                    <li>4 hours</li>
+                                    <li>3 Location</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div>
                     <label>Time Slots </label>
                     <select name="time" class="form-control" required>
-                        <option value="Monday, Morning - 8AM to 11:59AM">Monday, Morning - 8AM to 11:59AM</option>
-                        <option value="Monday, Afternoon - 12PM to 4:59PM">Monday, Afternoon - 12PM to 4:59PM</option>
+                        <option value="Monday, Afternoon - 12pm to 4:59PM">Monday, Afternoon - 12pm to 4:59PM</option>
+                        <option value="Monday, Evening - 5PM to 8:59PM">Monday, Evening - 5PM to 8:59PM</option>
+                        <option value="Monday, Night - 9PM to 11PM">Monday, Night - 9PM to 11PM</option>
 
-                        <option value="Tuesday, Morning - 8AM to 11:59AM">Tuesday, Morning - 8AM to 11:59AM</option>
-                        <option value="Tuesday, Afternoon - 12PM to 4:59PM">Tuesday, Afternoon - 12PM to 4:59PM</option>
+                        <option value="Tuesday, Afternoon - 12pm to 4:59PM">Tuesday, Afternoon - 12pm to 4:59PM</option>
+                        <option value="Tuesday, Evening - 5PM to 8:59PM">Tuesday, Evening - 5PM to 8:59PM</option>
+                        <option value="Tuesday, Night - 9PM to 11PM">Tuesday, Night - 9PM to 11PM</option>
 
-                        <option value="Thursday, Morning - 8AM to 11:59AM">Thursday, Morning - 8AM to 11:59AM</option>
-                        <option value="Thursday, Afternoon - 12PM to 4:59PM">Thursday, Afternoon - 12PM to 4:59PM</option>
+                        <option value="Wednesday, Afternoon - 12pm to 4:59PM">Wednesday, Afternoon - 12pm to 4:59PM</option>
+                        <option value="Wednesday, Evening - 5PM to 8:59PM">Wednesday, Evening - 5PM to 8:59PM</option>
+                        <option value="Wednesday, Night - 9PM to 11PM">Wednesday, Night - 9PM to 11PM</option>
 
-                        <option value="Friday, Morning - 8AM to 11:59AM">Friday, Morning - 8AM to 11:59AM</option>
-                        <option value="Friday, Afternoon - 12PM to 4:59PM">Friday, Afternoon - 12PM to 4:59PM</option>
+                        <option value="Thursday, Afternoon - 12pm to 4:59PM">Thursday, Afternoon - 12pm to 4:59PM</option>
+                        <option value="Thursday, Evening - 5PM to 8:59PM">Thursday, Evening - 5PM to 8:59PM</option>
+                        <option value="Thursday, Night - 9PM to 11PM">Thursday, Night - 9PM to 11PM</option>
 
-                        <option value="Saturday, Afternoon - 12PM to 4:59PM">Saturday, Afternoon - 12PM to 4:59PM</option>
+                        <option value="Friday, Afternoon - 12pm to 4:59PM">Friday, Afternoon - 12pm to 4:59PM</option>
+                        <option value="Friday, Evening - 5PM to 8:59PM">Friday, Evening - 5PM to 8:59PM</option>
+                        <option value="Friday, Night - 9PM to 11PM">Friday, Night - 9PM to 11PM</option>
+
+
+                        <option value="Saturday, Morning - 8AM to 11:59AM">Saturday, Morning - 8AM to 11:59AM</option>
+                        <option value="Saturday, Afternoon - 12pm to 4:59PM">Saturday, Afternoon - 12pm to 4:59PM</option>
+                        <option value="Saturday, Evening - 5PM to 8:59PM">Saturday, Evening - 5PM to 8:59PM</option>
+                        <option value="Saturday, Night - 9PM to 11PM">Saturday, Night - 9PM to 11PM</option>
+
+                        <option value="Sunday, Morning - 8AM to 11:59AM">Sunday, Morning - 8AM to 11:59AM</option>
+                        <option value="Sunday, Afternoon - 12pm to 4:59PM">Sunday, Afternoon - 12pm to 4:59PM</option>
+                        <option value="Sunday, Evening - 5PM to 8:59PM">Sunday, Evening - 5PM to 8:59PM</option>
+                        <option value="Sunday, Night - 9PM to 11PM">Sunday, Night - 9PM to 11PM</option>
                     </select>
                 </div>
-
                 <!-- Message section -->
                 <div id="message">
                     <label>Enter message here: </label>
                     <textarea placeholder="You can add information like your preferred times here" type="text" name="message"
                         cols="30" rows="5" class="form-control"></textarea>
                 </div>
-
                 <div>
                     <label>Payments Method </label>
                     <select name="payment" class="form-control" required>
@@ -176,7 +209,7 @@
                 </div>
 
                 <div id="bottomButtons" class="container">
-                    <button id="back" type="button" onclick="window.location.href= 'gp1.html'" class="btn btn-outline-primary btn-lg">Go
+                    <button id="back" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-outline-primary btn-lg">Go
                         Back</button>
 
                     <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
