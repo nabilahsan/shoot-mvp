@@ -71,8 +71,8 @@ nav {
 }
 
 #profilecard:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer; */
 }
 
 #tags {
@@ -128,9 +128,9 @@ nav {
 }
 
 #proimg{
-  width: 25%;
+  width: 15%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 50%;
 }
 
 #mainImg {
@@ -148,11 +148,38 @@ figcaption {
 }
 
 #pname {
-  margin-top: 15px;
+  margin-top: 5px;
   font-weight: bold;
   font-size: 1.3em;
   margin-bottom: -5px;
 }
+
+#price {
+  font-size: 0.95em;
+}
+
+/* Standardized Buttons for profile */
+.btn {
+  border-radius: 50px;
+  width: 175px;
+}
+
+#botBook,
+#topBook {
+  border: none;
+  background-color: #F15B22;
+}
+
+#botBook:hover,
+#topBook:hover {
+  border: none;
+  background-color: black;
+}
+
+#topBook {
+  margin-top: 15px;
+}
+
 
 #graduation {
   display: flex;
