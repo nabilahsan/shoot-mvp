@@ -68,6 +68,7 @@ nav {
   transition: 0.1s;
   width: 300px;
   height: auto;
+  border-radius: 25px;
 }
 
 #profilecard:hover {
@@ -135,6 +136,7 @@ nav {
 
 #mainImg {
   object-fit: contain;
+  border-radius: 25px 25px 0 0;
 }
 
 
