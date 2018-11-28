@@ -1,5 +1,3 @@
-/*Sets global styling*/
-
 html,
 body {
   width: 100%;
@@ -27,24 +25,16 @@ li {
   list-style-type: none;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 nav {
   background-color: white;
   box-shadow: 3px 0px 8px #707070;
-}
-
-#navdiv {
-  display: flex;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: end;
-}
-
-.nav-a {
-  font-size: 1.2em;
-  color: black;
-  text-align: end;
 }
 
 .navbar {
@@ -59,35 +49,35 @@ nav {
   color: black;
 }
 
-.nav-item {
-  margin-left: 40px;
-}
-
-
-#logolink {
-  display: flex;
-  justify-content: flex-start;
-}
-
 #logo {
   width: 154.54px;
-  padding: 10px;
 }
 
-#navbars {
-  padding-left: 15px;
+#navLogo {
+  display: flex;
+  justify-content: center;
 }
 
-#items {
+
+
+#profilecard {
   display: flex;
   flex-direction: column;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.1s;
+  width: 300px;
+  height: auto;
+  border-radius: 25px;
 }
 
-#items:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+#profilecard:hover {
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer; */
+}
+
+#tags {
+  font-size: 0.8em;
 }
 
 #items label {
@@ -107,27 +97,160 @@ nav {
 }
 
 #heading {
+  padding-top: 4%;
+  padding-bottom: 3%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 #heading>h1 {
-  padding-top: 10%;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
+#heading p {
+  font-size: 1.2em;
+}
+
+
 #items img {
+  height: auto;
   width: 300px;
+}
+
+/* Photographer Profile Image for Main */
+
+#togInfo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+#proimg{
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+}
+
+#mainImg {
+  object-fit: contain;
+  border-radius: 25px 25px 0 0;
 }
 
 
 #categories {
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 35px;
 }
 
-#price {
+figcaption {
   padding-left: 20px;
+}
+
+#pname {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: -5px;
+}
+
+#price {
+  font-size: 0.95em;
+}
+
+/* Standardized Buttons for profile */
+.btn {
+  border-radius: 50px;
+  width: 175px;
+}
+
+#botBook,
+#topBook {
+  border: none;
+  background-color: #F15B22;
+}
+
+#botBook:hover,
+#topBook:hover {
+  border: none;
+  background-color: black;
+}
+
+#topBook {
+  margin-top: 15px;
+}
+
+
+#graduation {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#graduation a {
+  text-decoration: underline;
+  color: #F15B22;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 50px;
+  margin: 100px 0 0 0;
+  background-color: whitesmoke;
+}
+
+#bottomBar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#questions {
+  padding: 0 10px 0 10px;
+}
+
+#email {
+  color: #F15B22;
+}
+
+#icons {
+  font-size: 50px;
+  margin: 25px 0 25px 0;
+}
+
+#icons a {
+  color: black;
+}
+
+#twitter,
+#instagram {
+  margin-right: 20px;
+}
+
+#twitter:hover {
+  transition: 0.3s;
+  color: #1da1f2;
+}
+
+#facebook:hover {
+
+  transition: 0.3s;
+  color: #3b5998;
+}
+
+#instagram:hover {
+
+  transition: 0.3s;
+  color: #c32aa3;
 }
 
 /*Media Queries*/
@@ -154,9 +277,8 @@ nav {
     text-align: center;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+  #profilecard {
+    margin-top: 35px;
   }
 }
 
@@ -175,10 +297,15 @@ nav {
     text-align: center;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+  #profilecard {
+    margin-top: 35px;
   }
+
+  #profilecard {
+    margin-top: 35px;
+    margin-right: 15px;
+  }
+
 }
 
 /* 
@@ -196,10 +323,10 @@ nav {
     text-align: center;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+  #profilecard {
+    margin-top: 35px;
   }
+
 }
 
 /* 
@@ -212,7 +339,7 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   #heading>h1 {
@@ -222,6 +349,11 @@ nav {
   #items {
     margin-top: 25px;
     padding: 0;
+  }
+
+  #graduation {
+    padding-left: 3px;
+    padding-right: 3px;
   }
 }
 
@@ -235,16 +367,20 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 0.75em;
   }
 
-  #items {
-    margin-top: 25px;
-    padding: 0;
+  #profilecard {
+    margin-top: 35px;
   }
 
   #photographers {
     justify-content: center;
+  }
+
+  #graduation h1 {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }

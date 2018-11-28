@@ -11,4 +11,7 @@ $("input[name='package']").click(function () {
 
     //Package 3
     $('#p3info').css('display', ($(this).val() === 'Gold') ? 'block':'none');
+
+    //Package 4
+    $('#p4info').css('display', ($(this).val() === 'Gold1') ? 'block':'none');
 });

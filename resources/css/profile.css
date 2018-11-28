@@ -3,8 +3,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
 }
 
 * {
@@ -18,19 +16,21 @@ a:hover {
 }
 
 /*Global end*/
+
+body {
+    background-color: white;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
 nav {
     background-color: white;
     box-shadow: 3px 0px 8px #707070;
 }
 
-#navdiv {
-    display: flex;
-}
-
-.nav-a {
-    font-size: 1.2em;
-    color: black;
-}
 
 .navbar {
     overflow: hidden;
@@ -44,13 +44,13 @@ nav {
     color: black;
 }
 
-.nav-item {
-    margin-left: 40px;
-}
-
 #logo {
     width: 154.54px;
-    padding: 10px;
+}
+
+#navLogo {
+    display: flex;
+    justify-content: center;
 }
 
 #items {
@@ -58,9 +58,6 @@ nav {
     justify-content: flex-end;
 }
 
-#navbars {
-    padding-left: 15px;
-}
 
 /*end*/
 /*Info and Rates*/
@@ -93,22 +90,19 @@ nav {
     line-height: 10px;
 }
 
-#book {
-    text-align: center;
-    border-radius: 50px;
-    margin-top: 10%;
-    padding: 5% 10% 5% 10%;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
+#rates p {
+    font-size: 1.3em;
 }
 
-
+#line {
+    margin-bottom: 50px;
+}
 
 /*Photographer Portfolio*/
 #portfolio {
     margin-top: 50px;
 }
+
 #images {
     display: flex;
     flex-direction: row;
@@ -117,7 +111,8 @@ nav {
 }
 
 #pics {
-    width: 35%;
+    width: 30%;
+    height: auto;
     margin: 10px;
 }
 
@@ -129,31 +124,138 @@ nav {
     margin-top: 80px;
 }
 
-#backb {
+#main> h2 {
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+#packages {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 4%;
-    margin-bottom: 5%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
-#backb a {
-    width: 200px;
+#p1 {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-/* #backb > #back, #book2 {
-    padding: 5% 2% 5% 2%;
-} */
+#p1 ul {
+    margin-top: 15%;
+}
 
-#back {
+#p1:last-child {
+    margin-right: 0;
+}
+
+
+#packages div {
     text-align: center;
-    border-radius: 50px;
-    border: 2px solid black;
 }
 
-#book2 {
+#note {
+    margin-top: 2%;
     text-align: center;
+}
+
+/* Bottom Buttons section */
+#bottomButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Standardized Buttons for profile */
+.btn {
     border-radius: 50px;
-    border: 2px solid black;
+    width: 125px;
+}
+
+#botBook,
+#topBook {
+    border: none;
+    background-color: #F15B22;
+}
+
+#botBook:hover,
+#topBook:hover {
+    border: none;
+    background-color: black;
+}
+
+#topBook {
+    margin-top: 15px;
+}
+
+#disclaimer p{
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#tdisclaimer p{
+    margin-top: 10%;
+    font-size: 0.8em;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 50px;
+    margin: 100px 0 0 0;
+    background-color: whitesmoke;
+}
+
+#bottomBar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#questions {
+    padding: 0 10px 0 10px;
+  }
+  
+
+#email {
+    color: #F15B22;
+}
+
+#icons {
+    font-size: 50px;
+    margin: 25px 0 25px 0;
+}
+
+#icons a {
+    color: black;
+}
+
+#twitter,
+#instagram {
+    margin-right: 20px;
+}
+
+#twitter:hover {
+    transition: 0.3s;
+    color: #1da1f2;
+}
+
+#facebook:hover {
+
+    transition: 0.3s;
+    color: #3b5998;
+}
+
+#instagram:hover {
+
+    transition: 0.3s;
+    color: #c32aa3;
 }
 
 /*Media Queries*/
@@ -161,23 +263,13 @@ nav {
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-@media (min-width: 1281px) {
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
-}
+@media (min-width: 1281px) {}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
-@media (min-width: 1025px) and (max-width: 1280px) {
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -188,10 +280,6 @@ nav {
         width: 30%;
     }
 
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
 }
 
 /* 
@@ -203,10 +291,6 @@ nav {
         width: 40%;
     }
 
-    #back,
-    #book2 {
-        padding: 1% 2% 1% 2%;
-    }
 }
 
 /* 
@@ -219,10 +303,6 @@ nav {
         width: 40%;
     }
 
-    #back,
-    #book2 {
-        padding: 2% 5% 2% 5%;
-    }
 }
 
 /* 
@@ -258,24 +338,29 @@ nav {
     }
 
     h1,
-    h2 {
+    h2,
+    h3 {
         text-align: center;
     }
 
-    #backb {
+    #packages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 15%;
+    }
+
+    #p1 {
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    #p1 #backb {
         display: flex;
         justify-content: center;
         text-align: center;
         flex-direction: column-reverse;
-    }
-
-    #back,
-    #book2 {
-        padding: 5% 2% 5% 2%;
-    }
-
-    #book2 {
-        margin-bottom: 50px;
     }
 
     #about>p {

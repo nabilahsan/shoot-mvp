@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
     <meta name="theme-color" content="#F15B22">
-    <meta name="author" content="Shoot Technologies">
+    <meta name="description" content="Book photographers for your portraits, graduation, and life events">
+    <meta name="keywords" content="photography, houston, graduation, photoshoot">
+    <meta name="author" content="SHOOT">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+
+    <link rel="stylesheet" href="vendors/css/united.css">
 
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="resources/ico/apple-touch-icon.png">
@@ -19,6 +22,39 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--End of Favicons-->
+
+    <!-- Metatags For Facebook and Twitter Link Display -->
+    <meta property="og:title" content="Shoot Technologies">
+    <meta property="og:description" content="Platform connecting photographer to clients">
+    <meta property="og:image" content="resources/img/meatimg.jpg">
+    <meta property="og:url" content="https://www.shootbeta.com">
+
+    <!-- Metatags For Twitter Link Display -->
+    <meta property="twitter:card" content="Shoot Technologies">
+
+
+    <!-- Hotjar Tracking Code for www.shootbeta.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1051330,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117171100-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117171100-3');
+</script>
+
 
     <!--Font Awesome CDN Link-->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -32,32 +68,18 @@
     <!--Our Stylesheet-->
     <link rel="stylesheet" href="resources/css/profile.css">
 
-    <title>Jordan W Bernard</title>
+    <title>Jordan W Bernard | SHOOT</title>
 </head>
 
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container" id="navLogo">
+            <a href="index.html">
+                <img id="logo" src="resources/img/logo-black.png">
+            </a>
 
-        <a href="index.html">
-            <img id="logo" src="resources/img/logo-black.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--button for mobile view-->
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <!--list for navbar-->
-
-                <li class="nav-item">
-                    <a class="nav-link nav-a" href="index.html">Home</a>
-                </li>
-            </ul>
         </div>
-
     </nav>
 
     <div class="container" id="profile">
@@ -66,26 +88,21 @@
         <div id="info">
             <div id="propic">
                 <img src="vendors/img/jordan/jordanp.jpg" alt="Jordan W Bernard">
-                <span>
-                    <a href="https://www.instagram.com/jordan_bernard_/">@jordan_bernard_
-                    </a>
-
-                </span>
             </div>
             <div id="rates">
                 <h1>Jordan W Bernard</h1>
                 <hr id="line">
-                <p>Graduation, Portraits, </p>
-                <p>Events & Parties, Weddings,</p>
-                <p>Vehicles, Fashion, Editorial</p>
-                <br>
-                <p>Price: $100 per hour</p>
-                <p>Location: Houston, TX.</p>
-                <div>
-                    <a href="jordanbooking.html">
-                        <button class="btn" id="book">Book</button>
-                    </a>
+                <p>Graduation, Portraits, </p><br>
+                <p>Events & Parties, Weddings,</p><br>
+                <p>Vehicles, Fashion, and Editorial.</p><br>
+                <p> <strong>Price:</strong> $100 per hour</p><br>
+                <p> <strong>Location:</strong> Houston, TX.</p>
+                <button id="topBook" type="button" onclick="window.location.href= 'jordanbooking.html'" class="btn btn-primary btn-lg">Book</button>
+
+                <div class="container" id="tdisclaimer">
+                    <p>Go ahead! You won't be charged yet.</p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -136,14 +153,88 @@
         </p>
     </div>
 
-    <div id="backb" class="container">
+    <div id="main" class="container">
+        <h2>Packages</h2>
 
-        <input class="btn" type="button" id="back" value="Back" onclick="window.location.href= 'index.html'">
+        <div id="packages" class="container-fluid">
+            <div id="p1">
+                <!-- Package 1 -->
+                <h2>Bronze</h2>
+                <ul class="list-unstyled">
 
-        <input class="btn" type="button" id="book2" value="Book" onclick="window.location.href= 'jordanbooking.html'">
+                    <li>$100</li>
+                    <!-- Hourly Rate -->
+                    <li>10 Photos</li>
+                    <!-- Number of Images  -->
+                    <li>30 minutes</li>
+                    <!-- Outfit changes -->
+                    <li>1 Location</li>
+                </ul>
+            </div>
+            <div id="p1">
+                <!-- Package 2 -->
+                <h2>Silver</h2>
+                <div>
+                    <ul class="list-unstyled">
+                        <li>$175</li>
+                        <li>20 Photos</li>
+                        <li>1 to 2 hours</li>
+                        <li>1 Location</li>
+                    </ul>
 
+                </div>
+            </div>
+            <div id="p1">
+                <!-- Package 3 -->
+                <h2>Gold</h2>
+                <ul class="list-unstyled">
+                    <li>$200</li>
+                    <li>35 Photos</li>
+                    <li>4 hours</li>
+                    <li>3 Location</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
+
+    <div id="bottomButtons" class="container">
+        <button id="back" type="button" onclick="window.location.href= 'index.html'" class="btn btn-outline-primary btn-lg">Go
+            Back</button>
+
+        <button id="botBook" type="button" onclick="window.location.href= 'jordanbooking.html'" class="btn btn-primary btn-lg">Book</button>
+    </div>
+
+    <div class="container" id="disclaimer">
+        <p>Go ahead! You won't be charged yet.</p>
+    </div>
+
+
+    <footer id="bottomBar">
+
+        <div id="questions">
+            <p>If you have any questions, feel free to email us at <a id="email" href="mailto:founders@shootbeta.com">founders@shootbeta.com</a></p>
+        </div>
+
+        <div id="icons">
+            <a id="instagram" class="fab fa-instagram" href="https://www.instagram.com/shoothouston/" target="_blank">
+            </a>
+
+            <a id="twitter" class="fab fa-twitter" href="https://twitter.com/shoothouston" target="_blank">
+
+            </a>
+
+            <a id="facebook" class="fab fa-facebook" href="https://www.facebook.com/shootbeta/" target="_blank">
+
+            </a>
+
+        </div>
+
+        <div id="copyright">
+            <p>&copy; SHOOT Technologies 2018</p>
+        </div>
+
+    </footer>
     <!-- Scripts -->
     <!--Bootstrap JS files-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -152,11 +243,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <!--flickity js script-->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!--smooth scroll js-->
-    <script src="resources/script/smooth-scroll.polyfills.min.js"></script>
-    <script src="resources/script/learnmore.js"></script>
 </body>
 
 </html>
