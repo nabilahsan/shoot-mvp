@@ -77,11 +77,37 @@
 
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <div class="container" id="navLogo">
+
+        <div id="logolink">
             <a href="index.html">
                 <img id="logo" src="resources/img/logo-black.png">
             </a>
         </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" href="index.html">Portraits</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" href="https://graduation.shootbeta.com/">Graduation</a>
+                </li>
+            </ul>
+        </div>
+
     </nav>
 
     <div id="photographers_container" class="container">
@@ -203,6 +229,8 @@
 
     <!-- Scripts -->
     <!--Bootstrap JS files-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

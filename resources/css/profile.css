@@ -26,11 +26,45 @@ li {
     list-style-type: none;
 }
 
-nav {
+.navbar {
+    margin-bottom: 20px;
+}
+
+
+/* nav {
     background-color: white;
     box-shadow: 3px 0px 8px #707070;
 }
 
+.navbar {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+#items {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+/* New NavBar Style */
+nav {
+    background-color: white;
+}
+
+#navdiv {
+    display: flex;
+}
+
+
+.nav-a {
+    font-size: 100%;
+    color: black;
+}
 
 .navbar {
     overflow: hidden;
@@ -44,8 +78,19 @@ nav {
     color: black;
 }
 
+.nav-item {
+    margin-left: 40px;
+}
+
+
+#logolink {
+    display: flex;
+    justify-content: flex-start;
+}
+
 #logo {
     width: 154.54px;
+    
 }
 
 #navLogo {
@@ -53,11 +98,15 @@ nav {
     justify-content: center;
 }
 
+
 #items {
     display: flex;
     justify-content: flex-end;
 }
 
+#navbars {
+    padding-left: 15px;
+}
 
 /*end*/
 /*Info and Rates*/
@@ -124,7 +173,7 @@ nav {
     margin-top: 80px;
 }
 
-#main> h2 {
+#main>h2 {
     margin-top: 5%;
     font-weight: bold;
 }
@@ -193,12 +242,12 @@ nav {
     margin-top: 15px;
 }
 
-#disclaimer p{
+#disclaimer p {
     text-align: center;
     font-size: 1.25em;
 }
 
-#tdisclaimer p{
+#tdisclaimer p {
     margin-top: 10%;
     font-size: 0.8em;
 }
@@ -220,8 +269,8 @@ footer {
 
 #questions {
     padding: 0 10px 0 10px;
-  }
-  
+}
+
 
 #email {
     color: #F15B22;
