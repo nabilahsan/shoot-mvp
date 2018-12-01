@@ -32,29 +32,6 @@ a:hover {
   cursor: pointer;
 }
 
-/* nav {
-  background-color: white;
-  box-shadow: 3px 0px 8px #707070;
-}
-
-.navbar {
-  overflow: hidden;
-  top: 0;
-  width: 100%;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
-
-#logo {
-  width: 154.54px;
-}
-
-#navLogo {
-  display: flex;
-  justify-content: center;
-} */
 
 /* New NavBar Style */
 nav {
@@ -70,6 +47,10 @@ nav {
 .nav-a {
   font-size: 100%;
   color: black;
+}
+
+.nav-item a:hover {
+  color: #F15B22;
 }
 
 .navbar {
@@ -118,13 +99,14 @@ nav {
   transition: 0.1s;
   width: 300px;
   height: auto;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
-#profilecard:hover {
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer; */
+#mainImg {
+  object-fit: contain;
+  border-radius: 15px 15px 0 0;
 }
+
 
 #tags {
   font-size: 0.8em;
@@ -147,7 +129,7 @@ nav {
 }
 
 #heading {
-  padding-top: 4%;
+  padding-top: 6%;
   padding-bottom: 3%;
   display: flex;
   justify-content: center;
@@ -184,10 +166,6 @@ nav {
   border-radius: 50%;
 }
 
-#mainImg {
-  object-fit: contain;
-  border-radius: 25px 25px 0 0;
-}
 
 
 #categories {
@@ -252,9 +230,35 @@ figcaption {
 /* Footer */
 
 footer {
-  padding-top: 50px;
+  padding-top: 25px;
   margin: 100px 0 0 0;
   background-color: whitesmoke;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#mainfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+  font-size: 42px;
+}
+
+#navfooter {
+  display: flex;
+  text-align: start;
+  justify-content: flex-end;
+  margin-right: 5%;
 }
 
 #bottomBar {
@@ -264,17 +268,8 @@ footer {
   flex-direction: column;
 }
 
-#questions {
-  padding: 0 10px 0 10px;
-}
-
 #email {
   color: #F15B22;
-}
-
-#icons {
-  font-size: 50px;
-  margin: 25px 0 25px 0;
 }
 
 #icons a {
