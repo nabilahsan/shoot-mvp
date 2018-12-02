@@ -74,12 +74,37 @@
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <div class="container" id="navLogo">
+
+        <div id="logolink">
             <a href="index.html">
                 <img id="logo" src="resources/img/logo-black.png">
             </a>
-
         </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" target="_blank" href="https://www.shootbeta.com/">Portraits</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" target="_blank" href="https://graduation.shootbeta.com/">Graduation</a>
+                </li>
+            </ul>
+        </div>
+
     </nav>
 
     <div class="container" id="profile">
@@ -209,25 +234,31 @@
         <p>Go ahead! You won't be charged yet.</p>
     </div>
 
-
     <footer id="bottomBar">
-
         <div id="questions">
             <p>If you have any questions, feel free to email us at <a id="email" href="mailto:founders@shootbeta.com">founders@shootbeta.com</a></p>
         </div>
+        <div id="mainfooter">
 
-        <div id="icons">
-            <a id="instagram" class="fab fa-instagram" href="https://www.instagram.com/shoothouston/" target="_blank">
-            </a>
+            <div id="icons">
+                <a id="instagram" class="fab fa-instagram" href="https://www.instagram.com/shoothouston/" target="_blank">
+                </a>
 
-            <a id="twitter" class="fab fa-twitter" href="https://twitter.com/shoothouston" target="_blank">
+                <a id="twitter" class="fab fa-twitter" href="https://twitter.com/shoothouston" target="_blank">
+                </a>
 
-            </a>
+                <a id="facebook" class="fab fa-facebook" href="https://www.facebook.com/shootbeta/" target="_blank">
+                </a>
+            </div>
 
-            <a id="facebook" class="fab fa-facebook" href="https://www.facebook.com/shootbeta/" target="_blank">
-
-            </a>
-
+            <div id="navfooter">
+                <ul id="footerlinks">
+                    <p id="bold">Navigation</p>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="https://www.shootbeta.com">Portraits</a></li>
+                    <li><a target="_blank" href="https://graduation.shootbeta.com">Graduation</a></li>
+                </ul>
+            </div>
         </div>
 
         <div id="copyright">

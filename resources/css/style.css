@@ -28,7 +28,6 @@ li {
 a,
 a:hover {
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
 }
 
@@ -47,10 +46,6 @@ nav {
 .nav-a {
   font-size: 100%;
   color: black;
-}
-
-.nav-item a:hover {
-  color: #F15B22;
 }
 
 .navbar {
@@ -89,8 +84,7 @@ nav {
   padding-left: 15px;
 }
 
-
-
+/* Main Section */
 #profilecard {
   display: flex;
   flex-direction: column;
@@ -250,8 +244,9 @@ footer {
 #icons {
   display: flex;
   justify-content: flex-start;
+  margin-top: 2%;
   margin-left: 5%;
-  font-size: 42px;
+  font-size: 55px;
 }
 
 #navfooter {
@@ -278,7 +273,7 @@ footer {
 
 #twitter,
 #instagram {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 #twitter:hover {
@@ -296,6 +291,14 @@ footer {
 
   transition: 0.3s;
   color: #c32aa3;
+}
+
+#footerlinks li{
+  margin-bottom: 15px;
+}
+
+#footerlinks li:hover{
+  color: #F15B22;
 }
 
 /*Media Queries*/
@@ -351,6 +354,28 @@ footer {
     margin-right: 15px;
   }
 
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
+
 }
 
 /* 
@@ -370,6 +395,27 @@ footer {
 
   #profilecard {
     margin-top: 35px;
+  }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
   }
 
 }
@@ -400,6 +446,27 @@ footer {
     padding-left: 3px;
     padding-right: 3px;
   }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 /* 
@@ -427,5 +494,26 @@ footer {
   #graduation h1 {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
   }
 }
