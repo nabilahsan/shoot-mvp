@@ -124,6 +124,11 @@ nav {
     margin-top: 80px;
 }
 
+#about p{
+    font-size: 120%;
+}
+
+
 #main> h2 {
     margin-top: 5%;
     font-weight: bold;
