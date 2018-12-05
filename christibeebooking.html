@@ -82,21 +82,21 @@
 
                 <div>
                     <label>First Name </label>
-                    <input type="text" name="FNAME" class="form-control" required>
+                    <input type="text" name="First Name" class="form-control" required>
                 </div>
 
                 <div>
                     <label>Last Name </label>
-                    <input type="text" name="LNAME" class="form-control" required>
+                    <input type="text" name="Last Name" class="form-control" required>
                 </div>
                 <div>
                     <label>Email Address</label>
-                    <input type="email" name="EMAIL" class="form-control required email" required>
+                    <input type="email" name="Email" class="form-control required email" required>
                 </div>
 
                 <div>
                     <label>Phone Number </label>
-                    <input type="text" name="PHONE" class="form-control" required>
+                    <input type="text" name="Phone" class="form-control" required>
                 </div>
 
                 <!-- Radio buttons for package -->
@@ -105,17 +105,17 @@
                     <div class="container row">
                         <div id="inputgroup" class="container row col-sm-4">
                             <div id="" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="package" class="custom-control-input" value="Bronze">
+                                <input type="radio" id="customRadio1" name="Package" class="custom-control-input" value="Bronze">
                                 <label class="custom-control-label" for="customRadio1">Bronze</label>
                             </div>
 
                             <div id="packageMain" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="package" class="custom-control-input" value="Silver">
+                                <input type="radio" id="customRadio2" name="Package" class="custom-control-input" value="Silver">
                                 <label class="custom-control-label" for="customRadio2">Silver</label>
                             </div>
 
                             <div id="packageMain" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio3" name="package" class="custom-control-input" value="Gold">
+                                <input type="radio" id="customRadio3" name="Package" class="custom-control-input" value="Gold">
                                 <label class="custom-control-label" for="customRadio3">Gold </label>
                             </div>
                         </div>
@@ -183,9 +183,14 @@
                     </select>
                 </div>
                 <!-- Message section -->
+
+                <div>
+                    <label>Subject</label>
+                    <input type="text" name="Subject" class="form-control" placeholder="What's the photoshoot for?" required>
+                </div>
                 <div id="message">
                     <label>Enter message here: </label>
-                    <textarea placeholder="You can add information like your preferred times here" type="text" name="message"
+                    <textarea placeholder="You can be as descriptive as possible" type="text" name="message"
                         cols="30" rows="5" class="form-control"></textarea>
                 </div>
                 <div>

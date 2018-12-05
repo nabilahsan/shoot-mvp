@@ -1,7 +1,7 @@
 // Clicking on radio button reveals 
 // more information on packages.
 
-$("input[name='package']").click(function () {
+$("input[name='Package']").click(function () {
 
     //Package 1
     $('#p1info').css('display', ($(this).val() === 'Bronze') ? 'block':'none');
