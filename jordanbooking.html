@@ -67,6 +67,9 @@
     <!-- Normalize.css -->
     <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
 
+    <!-- Pikaday Datepicker Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
     <!--Our Stylesheet-->
     <link rel="stylesheet" type="text/css" href="resources/css/form.css">
 
@@ -115,21 +118,21 @@
 
                 <div>
                     <label>First Name </label>
-                    <input type="text" name="FNAME" class="form-control" required>
+                    <input type="text" name="First Name" class="form-control" required>
                 </div>
 
                 <div>
                     <label>Last Name </label>
-                    <input type="text" name="LNAME" class="form-control" required>
+                    <input type="text" name="Last Name" class="form-control" required>
                 </div>
                 <div>
                     <label>Email Address</label>
-                    <input type="email" name="EMAIL" class="form-control required email" required>
+                    <input type="email" name="Email" class="form-control required email" required>
                 </div>
 
                 <div>
                     <label>Phone Number </label>
-                    <input type="text" name="PHONE" class="form-control" required>
+                    <input type="text" name="Phone" class="form-control" required>
                 </div>
 
                 <!-- Radio buttons for package -->
@@ -192,7 +195,7 @@
 
                 <div>
                     <label>Time Slots </label>
-                    <select name="time" class="form-control" required>
+                    <!-- <select name="time" class="form-control" required>
 
                         <option value="Monday, Afternoon - 12pm to 4:59PM">Monday, Afternoon - 12pm to 4:59PM</option>
                         <option value="Monday, Evening - 5PM to 8:59PM">Monday, Evening - 5PM to 8:59PM</option>
@@ -226,30 +229,39 @@
                         <option value="Sunday, Night - 9PM to 11PM">Sunday, Night - 9PM to 11PM</option>
 
                     </select>
-                </div>
-                <!-- Message section -->
-                <div id="message">
-                    <label>Enter message here: </label>
-                    <textarea placeholder="You can add information like your preferred times here" type="text" name="message"
-                        cols="30" rows="5" class="form-control"></textarea>
-                </div>
-                <div>
-                    <label>Payments Method </label>
-                    <select name="payment" class="form-control" required>
-                        <option value="Cash">Cash</option>
-                        <option value="Paypal">Paypal</option>
-                        <option value="Venmo">Venmo</option>
+                </div> -->
 
-                    </select>
-                </div>
+                    <div>
+                        <input placeholder="Click to select date" name="Date" class="form-control" type="text" id="datepicker" required>
+                    </div>
 
-                <div id="bottomButtons" class="container">
-                    <button id="back" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-outline-primary btn-lg">Go
-                        Back</button>
+                    <!-- Message section -->
+                    <div>
+                        <label>Subject: </label>
+                        <input placeholder="What is the photoshoot for?" type="text" name="Subject" class="form-control" required>
+                    </div>
+                    <div id="message">
+                        <label>Enter message here: </label>
+                        <textarea placeholder="You can add information like your preferred times here" type="text" name="message"
+                            cols="30" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <div>
+                        <label>Payments Method </label>
+                        <select name="payment" class="form-control" required>
+                            <option value="Cash">Cash</option>
+                            <option value="Paypal">Paypal</option>
+                            <option value="Venmo">Venmo</option>
 
-                    <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
+                        </select>
+                    </div>
+
+                    <div id="bottomButtons" class="container">
+                        <button id="back" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-outline-primary btn-lg">Go
+                            Back</button>
+
+                        <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
+                    </div>
                 </div>
-            </div>
         </form>
     </div>
 
@@ -287,6 +299,16 @@
 
     </footer>
     <!-- Scripts -->
+    <!-- Pikaday Datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="pikaday.js"></script>
+    <script>
+        var picker = new Pikaday({
+            field: document.getElementById('datepicker')
+        });
+    </script>
+
+
 
     <!--Bootstrap JS files-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
