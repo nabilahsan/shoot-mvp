@@ -85,7 +85,7 @@
     </nav>
 
 
-    <div id="formDiv" class="container form-group">
+    <div id="formDiv" class="form-group">
         <form action="thankyou.html" name="Booking Lisa Martinez" method="POST" netlify>
             <div id="formElements">
                 <h2>Let's get some information about your shoot with Lisa!</h2>
@@ -178,43 +178,44 @@
                 </div>
 
                 <div>
-                    <label>Time Slots </label>
-                    <select name="time" class="form-control" required>
-                        <option value="Monday">Monday, Morning - 8AM to 11:59AM</option>
-                        <option value="Tuesday">Tuesday, Morning - 8AM to 11:59AM</option>
-                        <option value="Wednesday">Wednesday, Morning - 8AM to 11:59AM</option>
-                        <option value="Thursday">Thursday, Morning - 8AM to 11:59AM</option>
-                        <option value="Friday">Friday, Morning - 8AM to 11:59AM</option>
-                        <option value="SaturdayM">Saturday, Morning - 8AM to 11:59AM</option>
-                        <option value="SaturdayA">Afternoon - 12PM to 4:59PM</option>
-                    </select>
+                    <label>Photshoot Date</label>
+
+                    <div>
+                        <input placeholder="Click to select date" name="Date" class="form-control" type="text" id="datepicker"
+                            required>
+                    </div>
+
+                    <!-- Message section -->
+                    <div id="message">
+                        <label>Subject: </label>
+                        <textarea placeholder="What is the photoshoot for?" type="text" name="Subject" class="form-control"
+                            cols="30" rows="1" required></textarea>
+                    </div>
+
+                    <div>
+                        <label>Message: </label>
+                        <textarea placeholder="You can add information like your preferred times and/or locations here"
+                            type="text" name="message" class="form-control"" cols=" 30" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <label>Payments Method </label>
+                        <select name="payment" class="form-control" required>
+                            <option value="Cash">Cash</option>
+                            <option value="Paypal">Paypal</option>
+                            <option value="Venmo">Venmo</option>
+
+                        </select>
+                    </div>
+
+                    <div id="bottomButtons" class="container">
+                        <button id="back" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-outline-primary btn-lg">Go
+                            Back</button>
+
+                        <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
+                    </div>
+
                 </div>
-
-                <!-- Message section -->
-                <div id="message">
-                    <label>Enter message here: </label>
-                    <textarea placeholder="You can add information like your preferred times here" type="text" name="message"
-                        cols="30" rows="5" class="form-control"></textarea>
-                </div>
-
-                <div>
-                    <label>Payments Method </label>
-                    <select name="payment" class="form-control" required>
-                        <option value="Cash">Cash</option>
-                        <option value="Paypal">Paypal</option>
-                        <option value="Venmo">Venmo</option>
-
-                    </select>
-                </div>
-
-                <div id="bottomButtons" class="container">
-                    <button id="back" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-outline-primary btn-lg">Go
-                        Back</button>
-
-                    <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
-                </div>
-
-            </div>
         </form>
     </div>
 

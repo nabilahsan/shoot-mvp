@@ -89,7 +89,7 @@ form {
 
 #formDiv {
   padding-top: 7%;
-  padding-bottom: 5%;
+  margin-bottom: 0;
 }
 
 #formDiv h2 {
@@ -160,6 +160,7 @@ form {
   border: none;
   background-color: black;
 }
+
 
 /* Footer */
 
