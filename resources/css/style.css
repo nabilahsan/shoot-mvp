@@ -28,13 +28,24 @@ li {
 a,
 a:hover {
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
 }
 
+
+/* New NavBar Style */
 nav {
   background-color: white;
   box-shadow: 3px 0px 8px #707070;
+}
+
+#navdiv {
+  display: flex;
+}
+
+
+.nav-a {
+  font-size: 100%;
+  color: black;
 }
 
 .navbar {
@@ -49,8 +60,19 @@ nav {
   color: black;
 }
 
+.nav-item {
+  margin-left: 40px;
+}
+
+
+#logolink {
+  display: flex;
+  justify-content: flex-start;
+}
+
 #logo {
   width: 154.54px;
+
 }
 
 #navLogo {
@@ -58,8 +80,11 @@ nav {
   justify-content: center;
 }
 
+#navbars {
+  padding-left: 15px;
+}
 
-
+/* Main Section */
 #profilecard {
   display: flex;
   flex-direction: column;
@@ -68,13 +93,14 @@ nav {
   transition: 0.1s;
   width: 300px;
   height: auto;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
-#profilecard:hover {
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer; */
+#mainImg {
+  object-fit: contain;
+  border-radius: 15px 15px 0 0;
 }
+
 
 #tags {
   font-size: 0.8em;
@@ -97,7 +123,7 @@ nav {
 }
 
 #heading {
-  padding-top: 4%;
+  padding-top: 6%;
   padding-bottom: 3%;
   display: flex;
   justify-content: center;
@@ -128,16 +154,12 @@ nav {
   position: relative;
 }
 
-#proimg{
+#proimg {
   width: 15%;
   height: auto;
   border-radius: 50%;
 }
 
-#mainImg {
-  object-fit: contain;
-  border-radius: 25px 25px 0 0;
-}
 
 
 #categories {
@@ -202,9 +224,36 @@ figcaption {
 /* Footer */
 
 footer {
-  padding-top: 50px;
+  padding-top: 25px;
   margin: 100px 0 0 0;
   background-color: whitesmoke;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#mainfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 55px;
+}
+
+#navfooter {
+  display: flex;
+  text-align: start;
+  justify-content: flex-end;
+  margin-right: 5%;
 }
 
 #bottomBar {
@@ -214,17 +263,8 @@ footer {
   flex-direction: column;
 }
 
-#questions {
-  padding: 0 10px 0 10px;
-}
-
 #email {
   color: #F15B22;
-}
-
-#icons {
-  font-size: 50px;
-  margin: 25px 0 25px 0;
 }
 
 #icons a {
@@ -233,7 +273,7 @@ footer {
 
 #twitter,
 #instagram {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 #twitter:hover {
@@ -251,6 +291,14 @@ footer {
 
   transition: 0.3s;
   color: #c32aa3;
+}
+
+#footerlinks li{
+  margin-bottom: 15px;
+}
+
+#footerlinks li:hover{
+  color: #F15B22;
 }
 
 /*Media Queries*/
@@ -306,6 +354,28 @@ footer {
     margin-right: 15px;
   }
 
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
+
 }
 
 /* 
@@ -325,6 +395,27 @@ footer {
 
   #profilecard {
     margin-top: 35px;
+  }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
   }
 
 }
@@ -355,6 +446,27 @@ footer {
     padding-left: 3px;
     padding-right: 3px;
   }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 /* 
@@ -382,5 +494,26 @@ footer {
   #graduation h1 {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons{
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter{
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
   }
 }

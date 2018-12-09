@@ -68,6 +68,9 @@
     <!-- Normalize.css -->
     <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
 
+    <!-- Pikaday Datepicker Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
     <!--Our Stylesheet-->
     <link rel="stylesheet" type="text/css" href="resources/css/form.css">
 
@@ -85,28 +88,28 @@
     </nav>
 
 
-    <div id="formDiv" class="container form-group">
+    <div id="formDiv" class="form-group">
         <form action="thankyou.html" name="Booking Lisa Martinez" method="POST" netlify>
             <div id="formElements">
                 <h2>Let's get some information about your shoot with Lisa!</h2>
 
                 <div>
                     <label>First Name </label>
-                    <input type="text" name="FNAME" class="form-control" required>
+                    <input type="text" name="First Name" class="form-control" required>
                 </div>
 
                 <div>
                     <label>Last Name </label>
-                    <input type="text" name="LNAME" class="form-control" required>
+                    <input type="text" name="Last Name" class="form-control" required>
                 </div>
                 <div>
                     <label>Email Address</label>
-                    <input type="email" name="EMAIL" class="form-control required email" required>
+                    <input type="email" name="Email" class="form-control required email" required>
                 </div>
 
                 <div>
                     <label>Phone Number </label>
-                    <input type="text" name="PHONE" class="form-control" required>
+                    <input type="text" name="Phone" class="form-control" required>
                 </div>
 
                 <!-- Radio buttons for package -->
@@ -178,64 +181,73 @@
                 </div>
 
                 <div>
-                    <label>Time Slots </label>
-                    <select name="time" class="form-control" required>
-                        <option value="Monday">Monday, Morning - 8AM to 11:59AM</option>
-                        <option value="Tuesday">Tuesday, Morning - 8AM to 11:59AM</option>
-                        <option value="Wednesday">Wednesday, Morning - 8AM to 11:59AM</option>
-                        <option value="Thursday">Thursday, Morning - 8AM to 11:59AM</option>
-                        <option value="Friday">Friday, Morning - 8AM to 11:59AM</option>
-                        <option value="SaturdayM">Saturday, Morning - 8AM to 11:59AM</option>
-                        <option value="SaturdayA">Afternoon - 12PM to 4:59PM</option>
-                    </select>
+                    <label>Photshoot Date</label>
+
+                    <div>
+                        <input placeholder="Click to select date" name="Date" class="form-control" type="text" id="datepicker"
+                            required autocomplete="off">
+                    </div>
+
+                    <!-- Message section -->
+                    <div id="message">
+                        <label>Subject: </label>
+                        <textarea placeholder="What is the photoshoot for?" type="text" name="Subject" class="form-control"
+                            cols="30" rows="1" required></textarea>
+                    </div>
+
+                    <div>
+                        <label>Message: </label>
+                        <textarea placeholder="You can add information like your preferred times and/or locations here"
+                            type="text" name="message" class="form-control"" cols=" 30" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <label>Payments Method </label>
+                        <select name="payment" class="form-control" required>
+                            <option value="Cash">Cash</option>
+                            <option value="Paypal">Paypal</option>
+                            <option value="Venmo">Venmo</option>
+
+                        </select>
+                    </div>
+
+                    <div id="bottomButtons" class="container">
+                        <button id="back" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-outline-primary btn-lg">Go
+                            Back</button>
+
+                        <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
+                    </div>
+
                 </div>
-
-                <!-- Message section -->
-                <div id="message">
-                    <label>Enter message here: </label>
-                    <textarea placeholder="You can add information like your preferred times here" type="text" name="message"
-                        cols="30" rows="5" class="form-control"></textarea>
-                </div>
-
-                <div>
-                    <label>Payments Method </label>
-                    <select name="payment" class="form-control" required>
-                        <option value="Cash">Cash</option>
-                        <option value="Paypal">Paypal</option>
-                        <option value="Venmo">Venmo</option>
-
-                    </select>
-                </div>
-
-                <div id="bottomButtons" class="container">
-                    <button id="back" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-outline-primary btn-lg">Go
-                        Back</button>
-
-                    <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
-                </div>
-
-            </div>
         </form>
     </div>
 
-    <footer id="bottomBar">
 
+    <footer id="bottomBar">
         <div id="questions">
             <p>If you have any questions, feel free to email us at <a id="email" href="mailto:founders@shootbeta.com">founders@shootbeta.com</a></p>
         </div>
+        <div id="mainfooter">
 
-        <div id="icons">
-            <a id="instagram" class="fab fa-instagram" href="https://www.instagram.com/shoothouston/" target="_blank">
-            </a>
+            <div id="icons">
+                <a id="instagram" class="fab fa-instagram" href="https://www.instagram.com/shoothouston/" target="_blank">
+                </a>
 
-            <a id="twitter" class="fab fa-twitter" href="https://twitter.com/shoothouston" target="_blank">
+                <a id="twitter" class="fab fa-twitter" href="https://twitter.com/shoothouston" target="_blank">
+                </a>
 
-            </a>
+                <a id="facebook" class="fab fa-facebook" href="https://www.facebook.com/shootbeta/" target="_blank">
+                </a>
+            </div>
 
-            <a id="facebook" class="fab fa-facebook" href="https://www.facebook.com/shootbeta/" target="_blank">
-
-            </a>
-
+            <div id="navfooter">
+                <ul id="footerlinks">
+                    <p id="bold">Navigation</p>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="index.html">Portraits</a></li>
+                    <li><a target="_blank" href="https://graduation.shootbeta.com">Graduation</a></li>
+                </ul>
+            </div>
         </div>
 
         <div id="copyright">
@@ -245,6 +257,14 @@
     </footer>
 
     <!-- Scripts -->
+    <!-- Pikaday Datepicker -->
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="pikaday.js"></script>
+    <script>
+        var picker = new Pikaday({
+            field: document.getElementById('datepicker')
+        });
+    </script>
 
     <!--Bootstrap JS files-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
