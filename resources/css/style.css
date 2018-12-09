@@ -34,6 +34,8 @@ a:hover {
   cursor: pointer;
 }
 
+/* Navigation Bar */
+
 nav {
   background-color: white;
   box-shadow: 3px 0px 8px #707070;
@@ -59,6 +61,8 @@ nav {
   display: flex;
   justify-content: center;
 }
+/* Nav Bar end */
+
 
 
 #profilecard {
@@ -187,9 +191,36 @@ figcaption {
 /* Footer */
 
 footer {
-  padding-top: 50px;
+  padding-top: 25px;
   margin: 100px 0 0 0;
   background-color: whitesmoke;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#mainfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+#icons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 55px;
+}
+
+#navfooter {
+  display: flex;
+  text-align: start;
+  justify-content: flex-end;
+  margin-right: 5%;
 }
 
 #bottomBar {
@@ -199,17 +230,8 @@ footer {
   flex-direction: column;
 }
 
-#questions {
-  padding: 0 10px 0 10px;
-}
-
 #email {
   color: #F15B22;
-}
-
-#icons {
-  font-size: 50px;
-  margin: 25px 0 25px 0;
 }
 
 #icons a {
@@ -218,7 +240,7 @@ footer {
 
 #twitter,
 #instagram {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 #twitter:hover {
@@ -238,6 +260,13 @@ footer {
   color: #c32aa3;
 }
 
+#footerlinks li {
+  margin-bottom: 15px;
+}
+
+#footerlinks li:hover {
+  color: #F15B22;
+}
 
 /*Media Queries*/
 

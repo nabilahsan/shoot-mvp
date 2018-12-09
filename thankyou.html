@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Book photographers for your portraits, graduation, and life events">
-    <meta name="keywords" content="photography, houston, graduation, photoshoot">
-    <meta name="author" content="SHOOT">
-
     <meta name="theme-color" content="#F15B22">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -21,14 +17,13 @@
     <!--End of Favicons-->
 
     <!-- Metatags For Facebook and Twitter Link Display -->
-    <meta property="og:title" content="SHOOT">
-    <meta property="og:description" content="Book photographers for your portraits, graduation, and life events">
-    <meta property="og:image" content="https://s3.amazonaws.com/lp2-media-files/LinkImg1.png">
+    <meta property="og:title" content="Shoot Technologies">
+    <meta property="og:description" content="Platform connecting photographer to clients">
+    <meta property="og:image" content="resources/img/meatimg.jpg">
     <meta property="og:url" content="https://graduation.shootbeta.com">
 
     <!-- Metatags For Twitter Link Display -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://s3.amazonaws.com/lp2-media-files/LinkImg1.png">
+    <meta property="twitter:card" content="Shoot Technologies">
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
@@ -72,50 +67,85 @@
 
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <div class="container" id="navLogo">
+
+        <div id="logolink">
             <a href="index.html">
                 <img id="logo" src="resources/img/logo-black.png">
             </a>
         </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" target="_blank" href="https://www.shootbeta.com/">Portraits</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-a" target="_blank" href="https://graduation.shootbeta.com/">Graduation</a>
+                </li>
+            </ul>
+        </div>
+
     </nav>
 
     <div class="container" id="center">
         <h1>Thank you for booking with SHOOT!</h1>
 
-        <h5>
+        <h4>
             We will be contacting you shortly with all the information regarding your photoshoot.
             <br> <br>
             Expect an email from <a href="mailto:founders@shootbeta.com">founders@shootbeta.com</a>
 
-            <br> <br> <br> <br>
+            <br> <br> <br>
             In the meantime, click below to go home to browse through more photographers.
 
-            <br> <br> <br> <br>
+            <br> <br> <br>
             Alternatively, you can click <a href="https://in.hotjar.com/s?siteId=1051330&surveyId=121040">HERE</a> to
             take a survey. We love hearing more about the website
             and the work that we are doing!
-        </h5>
+        </h4>
     </div>
     <div id="bottomButtons" class="container">
         <button id="botBook" onclick="window.location.href= 'index.html'" class="btn btn-primary btn-lg">Home</button>
     </div>
 
     <footer id="bottomBar">
-
         <div id="questions">
             <p>If you have any questions, feel free to email us at <a id="email" href="mailto:founders@shootbeta.com">founders@shootbeta.com</a></p>
         </div>
+        <div id="mainfooter">
 
-        <div id="icons">
-            <a id="instagram" class="fab fa-instagram" href="https://www.instagram.com/shoothouston/" target="_blank">
-            </a>
+            <div id="icons">
+                <a id="instagram" class="fab fa-instagram" href="https://www.instagram.com/shoothouston/" target="_blank">
+                </a>
 
-            <a id="twitter" class="fab fa-twitter" href="https://twitter.com/shoothouston" target="_blank">
-            </a>
+                <a id="twitter" class="fab fa-twitter" href="https://twitter.com/shoothouston" target="_blank">
+                </a>
 
-            <a id="facebook" class="fab fa-facebook" href="https://www.facebook.com/shootbeta/" target="_blank">
-            </a>
+                <a id="facebook" class="fab fa-facebook" href="https://www.facebook.com/shootbeta/" target="_blank">
+                </a>
+            </div>
 
+            <div id="navfooter">
+                <ul id="footerlinks">
+                    <p id="bold">Navigation</p>
+                    <li><a target="_blank" href="index.html">Home</a></li>
+                    <li><a target="_blank" href="index.html">Portraits</a></li>
+                    <li><a target="_blank" href="https://graduation.shootbeta.com">Graduation</a></li>
+                </ul>
+            </div>
         </div>
 
         <div id="copyright">
