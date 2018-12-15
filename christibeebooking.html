@@ -36,6 +36,12 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="https://s3.amazonaws.com/lp2-media-files/LinkImg1.png">
 
+    <!-- jQuery Date Picker  -->
+    <link href="vendors/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="vendors/js/datepicker.min.js"></script>
+
+    <!-- Include English language -->
+    <script src="vendors/js/i18n/datepicker.en.js"></script>
 
     <!--Font Awesome CDN Link-->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -49,9 +55,9 @@
     <!--Our Stylesheet-->
     <link rel="stylesheet" type="text/css" href="resources/css/form.css">
 
-<!-- Hotjar Tracking Code for https://graduation.shootbeta.com/ -->
-<script>
-    (function(h,o,t,j,a,r){
+    <!-- Hotjar Tracking Code for https://graduation.shootbeta.com/ -->
+    <script>
+        (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:1121275,hjsv:6};
         a=o.getElementsByTagName('head')[0];
@@ -182,12 +188,10 @@
                 </div>
 
                 <div>
-
                     <label>Photshoot Date</label>
-
                     <div>
-                        <input placeholder="Click to select date" name="Date" class="form-control" type="text" id="datepicker"
-                            required autocomplete="off">
+                        <input placeholder="Click to select date" name="Date" type='text' class="form-control datepicker-here"
+                            data-date-format="DD, MM dd, yyyy" data-language='en' />
                     </div>
 
                     <!-- Message section -->
@@ -256,16 +260,6 @@
 
     </footer>
     <!-- Scripts -->
-
-    <!-- Pikaday Datepicker -->
-    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-    <script src="pikaday.js"></script>
-    <script>
-        var picker = new Pikaday({
-            field: document.getElementById('datepicker')
-        });
-    </script>
-
     <!--Bootstrap JS files-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
