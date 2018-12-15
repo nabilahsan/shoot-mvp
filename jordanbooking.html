@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book photographers for your portraits, graduation, and life events">
+    <meta name="keywords" content="photography, houston, graduation, photoshoot">
+    <meta name="author" content="SHOOT">
+
+    <meta name="theme-color" content="#F15B22">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--End of Favicons-->
+
+
+    <!-- Metatags For Facebook and Twitter Link Display -->
+    <meta property="og:title" content="Shoot Technologies">
+    <meta property="og:description" content="Platform connecting photographer to clients">
+    <meta property="og:image" content="resources/img/meatimg.jpg">
+    <meta property="og:url" content="https://www.shootbeta.com">
+
+    <!-- Metatags For Twitter Link Display -->
+    <meta property="twitter:card" content="Shoot Technologies">
+
+    <!--Font Awesome CDN Link-->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+
+    <link href="/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="/dist/js/datepicker.min.js"></script>
+
+    <!-- Include English language -->
+    <script src="/dist/js/i18n/datepicker.en.js"></script>
+
+    <!--Our Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="form.css">
+
+    <title>Booking Jordan | SHOOT</title>
+</head>
+
+<body>
+
+    <div id="formDiv" class="form-group">
+        <form action="thankyou.html" name="Booking Jordan Bernard" method="POST" netlify>
+            <div id="formElements">
+                <h2>Let's get some information about your shoot with Jordan!</h2>
+
+                <div>
+                    <label>First Name </label>
+                    <input type="text" name="First Name" class="form-control" required>
+                </div>
+
+                <div>
+                    <label>Last Name </label>
+                    <input type="text" name="Last Name" class="form-control" required>
+                </div>
+                <div>
+                    <label>Email Address</label>
+                    <input type="email" name="Email" class="form-control required email" required>
+                </div>
+
+                <div>
+                    <label>Phone Number </label>
+                    <input type="text" name="Phone" class="form-control" required>
+                </div>
+
+                <!-- Radio buttons for package -->
+                <div id="package">
+                    <label>Which package would you like to choose?</label>
+                    <div class="container row">
+                        <div id="inputgroup" class="container row col-sm-4">
+                            <div id="" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="package" class="custom-control-input" value="Bronze">
+                                <label class="custom-control-label" for="customRadio1">Bronze</label>
+                            </div>
+
+                            <div id="packageMain" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="package" class="custom-control-input" value="Silver">
+                                <label class="custom-control-label" for="customRadio2">Silver</label>
+                            </div>
+
+                            <div id="packageMain" class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="package" class="custom-control-input" value="Gold">
+                                <label class="custom-control-label" for="customRadio3">Gold </label>
+                            </div>
+                        </div>
+
+                        <!-- Information on Packages -->
+                        <div id="packageInfo" class="col-md-6">
+                            <div id="p1info" style='display:none'>
+                                <!-- Package 1 -->
+                                <ul>
+                                    <li>$100</li>
+                                    <!-- Hourly Rate -->
+                                    <li>10 Photos</li>
+                                    <!-- Number of Images  -->
+                                    <li>30 minutes</li>
+                                    <!-- Outfit changes -->
+                                    <li>1 Location</li>
+                                </ul>
+                            </div>
+                            <div id="p2info" style='display:none'>
+                                <!-- Package 2 -->
+                                <ul>
+                                    <li>$175</li>
+                                    <li>20 Photos</li>
+                                    <li>1 to 2 hours</li>
+                                    <li>1 Location</li>
+                                </ul>
+                            </div>
+                            <div id="p3info" style='display:none'>
+                                <!-- Package 3 -->
+                                <ul>
+                                    <li>$200</li>
+                                    <li>35 Photos</li>
+                                    <li>4 hours</li>
+                                    <li>3 Location</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <label>Photshoot Date</label>
+
+                    <div>
+                        <input type='text' class="datepicker-here" required autocomplete="off">
+
+                        <input type="text"
+                        class="datepicker-here"
+                        data-language='en'
+                        data-multiple-dates="3"
+                        data-multiple-dates-separator=", "
+                        data-position='top left'/>
+
+                    <!-- Message section -->
+                    <div id="message">
+                        <label>Subject: </label>
+                        <textarea placeholder="What is the photoshoot for?" type="text" name="Subject" class="form-control"
+                            cols="30" rows="1" required></textarea>
+                    </div>
+
+                    <div>
+                        <label>Message: </label>
+                        <textarea placeholder="You can add information like your preferred times and/or locations here"
+                            type="text" name="message" class="form-control"" cols=" 30" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <label>Payments Method </label>
+                        <select name="payment" class="form-control" required>
+                            <option value="Cash">Cash</option>
+                            <option value="Paypal">Paypal</option>
+                            <option value="Venmo">Venmo</option>
+
+                        </select>
+                    </div>
+
+                    <div id="bottomButtons" class="container">
+                        <button id="back" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-outline-primary btn-lg">Go
+                            Back</button>
+
+                        <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
+                    </div>
+                </div>
+        </form>
+    </div>
+
+    
+    <!-- Scripts -->
+
+    <!--Bootstrap JS files-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script src="resources/script/packageInfo.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!--flickity js script-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--smooth scroll js-->
+    <!-- <script src="resources/script/smooth-scroll.polyfills.min.js"></script>
+    <script src="resources/script/learnmore.js"></script> -->
+</body>
+
+</html>
