@@ -437,6 +437,10 @@ footer {
   }
 
 
+  #insta{
+    width: 100%;
+  }
+
   #hour,
   #minute,
   #ampm {
@@ -493,6 +497,9 @@ footer {
     width: 100%;
   }
 
+  #insta{
+    width: 100%;
+  }
 
   #hour,
   #minute,
@@ -550,6 +557,9 @@ footer {
     width: 100%;
   }
 
+  #insta{
+    width: 100%;
+  }
 
   #hour,
   #minute,
@@ -604,6 +614,10 @@ footer {
   }
 
   #names div {
+    width: 100%;
+  }
+
+  #insta{
     width: 100%;
   }
 
