@@ -61,9 +61,8 @@ nav {
   display: flex;
   justify-content: center;
 }
+
 /* Nav Bar end */
-
-
 
 #profilecard {
   display: flex;
@@ -74,6 +73,16 @@ nav {
   width: 300px;
   height: auto;
   border-radius: 25px;
+  margin-right: 50px;
+}
+
+#profilecard:last-child{
+  margin-right: 0;
+}
+
+#items img {
+  height: auto;
+  width: 300px;
 }
 
 #tags {
@@ -93,7 +102,7 @@ nav {
 
 #photographers {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 5%;
 }
 
@@ -114,11 +123,6 @@ nav {
   font-size: 1.2em;
 }
 
-
-#items img {
-  height: auto;
-  width: 300px;
-}
 
 /* Photographer Profile Image for Main */
 
@@ -316,7 +320,14 @@ footer {
 
   #profilecard {
     margin-top: 35px;
-    margin-right: 15px;
+    margin-right: 25px;
+  }
+
+  #photographers {
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
 
 }
@@ -341,6 +352,11 @@ footer {
     margin-top: 35px;
   }
 
+  #photographers {
+    justify-content: center;
+    margin: 0;
+  }
+
 }
 
 /* 
@@ -363,6 +379,28 @@ footer {
   #heading>h1 {
     text-align: center;
   }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons {
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter {
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 /* 
@@ -381,9 +419,33 @@ footer {
 
   #profilecard {
     margin-top: 35px;
+    margin-right: 0;
   }
 
   #photographers {
+    justify-content: center;
+    margin: 0;
+  }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+
+  #mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icons {
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  #navfooter {
+    margin-top: 10%;
+    text-align: center;
     justify-content: center;
   }
 }
