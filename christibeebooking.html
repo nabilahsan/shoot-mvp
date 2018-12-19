@@ -127,7 +127,17 @@
                         <label>Last Name </label>
                         <input type="text" name="Last Name" class="form-control" required>
                     </div>
-
+                </div>
+                <div id="insta">
+                    <label>Instagram Handle</label>
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input name="Instagram Handle" type="text" class="form-control" id="inlineFormInputGroup"
+                            placeholder="Username">
+                    </div>
                 </div>
 
                 <div id="contact">
@@ -139,6 +149,29 @@
                     <div>
                         <label>Phone Number </label>
                         <input type="text" name="Phone" class="form-control" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Preferred Method of Contact</label>
+                    <div id="prefer" class="form-check">
+                        <input name="Preferred Method of Contact" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label id="checkbox" class="form-check-label" for="defaultCheck1">
+                            Email
+                        </label>
+
+                    </div>
+                    <div id="prefer" class="form-check">
+                        <input name="Preferred Method of Contact" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label id="checkbox" class="form-check-label" for="defaultCheck1">
+                            Phone
+                        </label>
+                    </div>
+                    <div id="prefer" class="form-check">
+                        <input name="Preferred Method of Contact" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label id="checkbox" class="form-check-label" for="defaultCheck1">
+                            Instagram
+                        </label>
                     </div>
 
                 </div>
@@ -236,7 +269,8 @@
                                 <option value="AM">AM</option>
                             </select>
                         </div>
-                        <p id="note">NOTE: Timing is subject to change based on communication with the photographer.</p>
+                        <p id="note">NOTE: Timing is subject to change based on communication with the
+                            photographer.</p>
                     </div>
 
                     <!-- Message section -->
@@ -252,7 +286,7 @@
                             type="text" name="message" class="form-control" cols=" 30" rows="5" required></textarea>
                     </div>
 
-                    <div id="payment" >
+                    <div id="payment">
                         <label>Payments Method </label>
                         <select name="payment" class="form-control" required>
                             <option value="Cash">Cash</option>

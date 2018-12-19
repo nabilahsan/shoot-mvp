@@ -98,29 +98,6 @@ form {
   margin-top: 5%;
 }
 
-/* Name */
-
-#names {
-  display: flex;
-  justify-content: row;
-}
-
-#names div {
-  margin-right: 50px;
-  width: 30%;
-}
-
-/* Contact */
-#contact {
-  display: flex;
-  justify-content: row;
-}
-
-
-#contact div {
-  width: 30%;
-  margin-right: 50px;
-}
 
 /*Inputs*/
 
@@ -144,6 +121,39 @@ form {
 
 #formElements label {
   margin-top: 4%;
+}
+
+/* Name */
+
+#names {
+  display: flex;
+  justify-content: row;
+}
+
+#names div {
+  margin-right: 50px;
+  width: 30%;
+}
+
+#insta{
+  width: 40%;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  justify-content: row;
+}
+
+#contact div {
+  width: 30%;
+  margin-right: 50px;
+}
+
+
+#prefer #checkbox {
+  margin-top: 0;
 }
 
 
