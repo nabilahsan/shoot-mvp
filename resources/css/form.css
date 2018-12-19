@@ -78,6 +78,7 @@ nav {
 }
 
 /*end*/
+
 #row1 {
   margin: 0;
 }
@@ -95,6 +96,30 @@ form {
 #formDiv h2 {
   text-align: center;
   margin-top: 5%;
+}
+
+/* Name */
+
+#names {
+  display: flex;
+  justify-content: row;
+}
+
+#names div {
+  margin-right: 50px;
+  width: 30%;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  justify-content: row;
+}
+
+
+#contact div {
+  width: 30%;
+  margin-right: 50px;
 }
 
 /*Inputs*/
@@ -135,6 +160,36 @@ form {
 
 #inputgroup label {
   text-align: center;
+}
+
+#calendar {
+  width: 50%;
+}
+
+/* Time Picker */
+#hour,
+#minute,
+#ampm {
+  width: 20%;
+  margin-right: 25px;
+}
+
+#note {
+  margin-top: 15px;
+  color: #707070;
+}
+
+#timepick {
+  display: flex;
+  justify-content: row;
+}
+
+#payment select {
+  width: 30%;
+}
+
+#message {
+  width: 80%;
 }
 
 /* Bottom Buttons section */
@@ -248,12 +303,40 @@ footer {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width: 1366px) {
 
   #formElements {
     margin-right: 100px;
     margin-left: 100px;
     width: 70%;
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
   }
 }
 
@@ -267,6 +350,30 @@ footer {
     margin-right: 100px;
     margin-left: 100px;
     width: 70%;
+  }
+
+
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 20%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 80%;
   }
 }
 
@@ -303,6 +410,34 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
+  }
 }
 
 /* 
@@ -331,6 +466,34 @@ footer {
     margin-top: 10%;
     text-align: center;
     justify-content: center;
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
   }
 }
 
@@ -361,6 +524,34 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
+  }
 }
 
 /* 
@@ -389,6 +580,34 @@ footer {
     flex-direction: row;
     justify-content: center;
 
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
   }
 
 

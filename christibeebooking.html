@@ -129,16 +129,19 @@
                     </div>
 
                 </div>
-                <div>
-                    <label>Email Address</label>
-                    <input type="email" name="Email" class="form-control required email" required>
-                </div>
 
-                <div>
-                    <label>Phone Number </label>
-                    <input type="text" name="Phone" class="form-control" required>
-                </div>
+                <div id="contact">
+                    <div>
+                        <label>Email Address</label>
+                        <input type="email" name="Email" class="form-control required email" required>
+                    </div>
 
+                    <div>
+                        <label>Phone Number </label>
+                        <input type="text" name="Phone" class="form-control" required>
+                    </div>
+
+                </div>
 
                 <!-- Radio buttons for package -->
                 <div id="package">
@@ -201,18 +204,40 @@
                 <div>
 
                     <div id="datetime">
-
                         <label>Photshoot Date</label>
                         <div>
-                            <input placeholder="March 19th, 2019" name="Date" type='text' class="form-control datepicker-here"
+                            <input id="calendar" placeholder="March 19th, 2019" name="Date" type='text' class="form-control datepicker-here"
                                 data-date-format="DD, MM dd, yyyy" data-language='en' required autocomplete="off">
                         </div>
 
                         <label>Time of photoshoot</label>
-                        <div>
+                        <div id="timepick">
+                            <select name="Hour" id="hour" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
 
-                            
+                            <select name="Minute" id="minute" class="form-control">
+                                <option value="00">00</option>
+                                <option value="30">30</option>
+                            </select>
+
+                            <select name="AM/PM" id="ampm" class="form-control">
+                                <option value="PM">PM</option>
+                                <option value="AM">AM</option>
+                            </select>
                         </div>
+                        <p id="note">NOTE: Timing is subject to change based on communication with the photographer.</p>
                     </div>
 
                     <!-- Message section -->
@@ -228,7 +253,7 @@
                             type="text" name="message" class="form-control" cols=" 30" rows="5" required></textarea>
                     </div>
 
-                    <div>
+                    <div id="payment" >
                         <label>Payments Method </label>
                         <select name="payment" class="form-control" required>
                             <option value="Cash">Cash</option>
