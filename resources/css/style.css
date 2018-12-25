@@ -90,7 +90,7 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.1s;
   width: 300px;
-  height: auto;
+  height: 525px;
   border-radius: 15px;
   margin: 50px;
   margin-top: 15px;
@@ -117,6 +117,14 @@ nav {
   width: 300px;
 }
 
+#items {
+  max-width: 350px;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Photographer Profile Image for Main */
 
 #togInfo {
@@ -127,9 +135,10 @@ nav {
 }
 
 #proimg {
-  width: 15%;
+  width: 25%;
   height: auto;
   border-radius: 50%;
+  
 }
 
 #categories {
@@ -142,26 +151,28 @@ figcaption {
 }
 
 #pname {
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: -5px;
 }
 
 #price {
   font-size: 0.95em;
+  margin-top: 5px;
 }
 
 /* Standardized Buttons for profile */
 .btn {
   border-radius: 50px;
-  width: 175px;
+  width: 150px;
 }
 
 #botBook,
 #topBook {
   border: none;
   background-color: #F15B22;
+  font-size: 1em;
 }
 
 #botBook:hover,
@@ -171,7 +182,7 @@ figcaption {
 }
 
 #topBook {
-  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 /* Footer */
