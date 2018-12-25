@@ -76,45 +76,51 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-        <div id="logolink">
-            <a href="index.html">
-                <img id="logo" src="resources/img/logo-black.png">
-            </a>
+    <div>
+        <nav class="navbar navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div id="logolink">
+                <a href="index.html">
+                    <img id="logo" src="resources/img/logo-black.png">
+                </a>
+            </div>
+        </nav>
+
+
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-white p-4">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" href="index.html">Home
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" target="_blank" href="https://www.shootbeta.com/">Portraits</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" target="_blank" href="https://graduation.shootbeta.com/">Graduation</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-
-                <li class="nav-item">
-                    <a class="nav-link nav-a" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
+    </div>
 
 
-                <li class="nav-item">
-                    <a class="nav-link nav-a" target="_blank" href="https://www.shootbeta.com/">Portraits</a>
-                </li>
+    <div id="photographers_container" class="container-fluid neededmargin">
 
-                <li class="nav-item">
-                    <a class="nav-link nav-a" target="_blank" href="https://graduation.shootbeta.com/">Graduation</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <div id="photographers_container" class="container">
-
-        <div id="heading" class="container-fluid">
-            <h1>Photographers in Houston, Texas</h1>
-            <p>Book a local photographer for your next photoshoot</p>
+        <div id="heading" class="container">
+            <h1>#RelationshipGoals</h1>
+            <p>This should be a witty catchphrase but I can't write one off the top of my head so this'll have to do.</p>
         </div>
         <div id="photographers" class="row container-fluid">
 
@@ -194,11 +200,174 @@
         </div>
     </div>
 
-    <div id="graduation">
-        <h1>
-            Graduating? Click <a target="_blank" href="https://graduation.shootbeta.com">here</a> to book graduation photographers
-        </h1>
 
+    <div id="photographers_container" class="container-fluid">
+
+        <div id="heading" class="container">
+            <h1>#Graduation</h1>
+            <p>This should be a witty catchphrase but I can't write one off the top of my head so this'll have to do.</p>
+        </div>
+        <div id="photographers" class="row container-fluid">
+
+            <!-- Angie's profile -->
+            <div id="profilecard">
+                <div id="items">
+                    <img id="mainImg" src="vendors/img/angie/angie4.jpg">
+                </div>
+
+                <figure id="togInfo" class="container">
+                    <img id="proimg" src="vendors/img/angie/angiep_min.PNG" alt="Angie Profile Photo">
+
+                    <figcaption>
+                        <p for="Andre" id="pname">Angie Duong</p>
+                        <p id="tags">#portraits #fashion</p>
+                    </figcaption>
+
+
+                    <p id="price">Starting from $140 per hour</p>
+                    <div id="buttonsec" class="container">
+                        <button id="topBook" type="button" onclick="window.location.href= 'angie.html'" class="btn btn-primary btn-lg">View
+                            Profile</button>
+                    </div>
+
+                </figure>
+            </div>
+
+
+            <!-- Jordan's Profile -->
+            <div id="profilecard">
+                <div id="items">
+                    <img id="mainImg" src="vendors/img/jordan/jordan1.jpg">
+                </div>
+
+                <figure id="togInfo" class="container">
+                    <img id="proimg" src="vendors/img/jordan/jordanp_min.jpg" alt="Jordan Profile Photo">
+
+                    <figcaption>
+                        <p for="Andre" id="pname">Jordan Bernard</p>
+                        <p id="tags">#portraits #fashion</p>
+                    </figcaption>
+
+
+                    <p id="price">Starting from $100 per session</p>
+                    <div id="buttonsec" class="container">
+                        <button id="topBook" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-primary btn-lg">View
+                            Profile</button>
+                    </div>
+
+                </figure>
+            </div>
+
+            <!-- Lisa's profile -->
+            <div id="profilecard">
+                <div id="items">
+                    <img id="mainImg" src="vendors/img/lisa/lisa1.jpg">
+                </div>
+
+                <figure id="togInfo" class="container">
+                    <img id="proimg" src="vendors/img/lisa/lisap_min.JPG" alt="Lisa Profile Photo">
+
+                    <figcaption>
+                        <p for="Andre" id="pname">Lisa Martinez</p>
+                        <p id="tags">#portraits #beauty</p>
+                    </figcaption>
+
+                    <p id="price">Starting from $225 per session</p>
+
+                    <div id="buttonsec" class="container">
+                        <button id="topBook" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-primary btn-lg">View
+                            Profile</button>
+                    </div>
+
+                </figure>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="photographers_container" class="container-fluid">
+
+        <div id="heading" class="container">
+            <h1>#Fashion</h1>
+            <p>This should be a witty catchphrase but I can't write one off the top of my head so this'll have to do.</p>
+        </div>
+        <div id="photographers" class="row container-fluid">
+
+            <!-- Angie's profile -->
+            <div id="profilecard">
+                <div id="items">
+                    <img id="mainImg" src="vendors/img/angie/angie4.jpg">
+                </div>
+
+                <figure id="togInfo" class="container">
+                    <img id="proimg" src="vendors/img/angie/angiep_min.PNG" alt="Angie Profile Photo">
+
+                    <figcaption>
+                        <p for="Andre" id="pname">Angie Duong</p>
+                        <p id="tags">#portraits #fashion</p>
+                    </figcaption>
+
+
+                    <p id="price">Starting from $140 per hour</p>
+                    <div id="buttonsec" class="container">
+                        <button id="topBook" type="button" onclick="window.location.href= 'angie.html'" class="btn btn-primary btn-lg">View
+                            Profile</button>
+                    </div>
+
+                </figure>
+            </div>
+
+
+            <!-- Jordan's Profile -->
+            <div id="profilecard">
+                <div id="items">
+                    <img id="mainImg" src="vendors/img/jordan/jordan1.jpg">
+                </div>
+
+                <figure id="togInfo" class="container">
+                    <img id="proimg" src="vendors/img/jordan/jordanp_min.jpg" alt="Jordan Profile Photo">
+
+                    <figcaption>
+                        <p for="Andre" id="pname">Jordan Bernard</p>
+                        <p id="tags">#portraits #fashion</p>
+                    </figcaption>
+
+
+                    <p id="price">Starting from $100 per session</p>
+                    <div id="buttonsec" class="container">
+                        <button id="topBook" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-primary btn-lg">View
+                            Profile</button>
+                    </div>
+
+                </figure>
+            </div>
+
+            <!-- Lisa's profile -->
+            <div id="profilecard">
+                <div id="items">
+                    <img id="mainImg" src="vendors/img/lisa/lisa1.jpg">
+                </div>
+
+                <figure id="togInfo" class="container">
+                    <img id="proimg" src="vendors/img/lisa/lisap_min.JPG" alt="Lisa Profile Photo">
+
+                    <figcaption>
+                        <p for="Andre" id="pname">Lisa Martinez</p>
+                        <p id="tags">#portraits #beauty</p>
+                    </figcaption>
+
+                    <p id="price">Starting from $225 per session</p>
+
+                    <div id="buttonsec" class="container">
+                        <button id="topBook" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-primary btn-lg">View
+                            Profile</button>
+                    </div>
+
+                </figure>
+            </div>
+
+        </div>
     </div>
 
     <footer id="bottomBar">
@@ -219,13 +388,13 @@
             </div>
 
             <div id="navfooter">
-                    <ul id="footerlinks">
-                        <p id="bold">Navigation</p>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a target="_blank" href="index.html">Portraits</a></li>
-                        <li><a target="_blank" href="https://graduation.shootbeta.com">Graduation</a></li>
-                    </ul>
-                </div>
+                <ul id="footerlinks">
+                    <p id="bold">Navigation</p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Portraits</a></li>
+                    <li><a href="https://graduation.shootbeta.com">Graduation</a></li>
+                </ul>
+            </div>
         </div>
 
         <div id="copyright">

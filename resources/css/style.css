@@ -31,60 +31,58 @@ a:hover {
   cursor: pointer;
 }
 
-
 /* New NavBar Style */
 nav {
   background-color: white;
   box-shadow: 3px 0px 8px #707070;
-}
-
-#navdiv {
-  display: flex;
-}
-
-
-.nav-a {
-  font-size: 100%;
-  color: black;
+  position: relative;
 }
 
 .navbar {
-  overflow: hidden;
-  top: 0;
-  /* Position the navbar at the top of the page */
-  width: 100%;
-  /* Full width */
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
-
-.nav-item {
-  margin-left: 40px;
-}
-
-
-#logolink {
   display: flex;
   justify-content: flex-start;
 }
 
+
 #logo {
   width: 154.54px;
-
+  margin-left: 25px;
 }
 
-#navLogo {
-  display: flex;
-  justify-content: center;
-}
-
-#navbars {
-  padding-left: 15px;
-}
 
 /* Main Section */
+
+/* Standard heading for each category */
+
+#heading {
+  display: flex;
+  flex-direction: column;
+}
+
+#heading>h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#heading p {
+  font-size: 1.2em;
+}
+
+
+#photographers_container {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#photographers {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 #profilecard {
   display: flex;
   flex-direction: column;
@@ -94,6 +92,8 @@ nav {
   width: 300px;
   height: auto;
   border-radius: 15px;
+  margin: 50px;
+  margin-top: 15px;
 }
 
 #mainImg {
@@ -111,34 +111,6 @@ nav {
   padding-left: 20px;
   font-size: 1.2em;
 }
-
-#photographers_container {
-  margin-bottom: 100px;
-  padding: 0;
-}
-
-#photographers {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#heading {
-  padding-top: 6%;
-  padding-bottom: 3%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-#heading>h1 {
-  font-size: 2.5em;
-}
-
-#heading p {
-  font-size: 1.2em;
-}
-
 
 #items img {
   height: auto;
@@ -159,8 +131,6 @@ nav {
   height: auto;
   border-radius: 50%;
 }
-
-
 
 #categories {
   padding-top: 5px;
@@ -202,23 +172,6 @@ figcaption {
 
 #topBook {
   margin-top: 15px;
-}
-
-
-#graduation {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 50px;
-
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#graduation a {
-  text-decoration: underline;
-  color: #F15B22;
-  cursor: pointer;
 }
 
 /* Footer */
@@ -293,11 +246,11 @@ footer {
   color: #c32aa3;
 }
 
-#footerlinks li{
+#footerlinks li {
   margin-bottom: 15px;
 }
 
-#footerlinks li:hover{
+#footerlinks li:hover {
   color: #F15B22;
 }
 
@@ -358,19 +311,20 @@ footer {
   #questions {
     margin: 0 15px 0 15px;
   }
+
   #mainfooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #icons{
+  #icons {
     justify-content: center;
     font-size: 50px;
     margin: 0;
   }
 
-  #navfooter{
+  #navfooter {
     margin-top: 10%;
     text-align: center;
     justify-content: center;
@@ -400,19 +354,20 @@ footer {
   #questions {
     margin: 0 15px 0 15px;
   }
+
   #mainfooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #icons{
+  #icons {
     justify-content: center;
     font-size: 50px;
     margin: 0;
   }
 
-  #navfooter{
+  #navfooter {
     margin-top: 10%;
     text-align: center;
     justify-content: center;
@@ -442,27 +397,23 @@ footer {
     padding: 0;
   }
 
-  #graduation {
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-
   #questions {
     margin: 0 15px 0 15px;
   }
+
   #mainfooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #icons{
+  #icons {
     justify-content: center;
     font-size: 50px;
     margin: 0;
   }
 
-  #navfooter{
+  #navfooter {
     margin-top: 10%;
     text-align: center;
     justify-content: center;
@@ -483,35 +434,33 @@ footer {
     font-size: 0.75em;
   }
 
+  .neededmargin {
+    margin-top: 10%;
+  }
+
+  /* Profile Cards */
+  /* Smaller to fit two side by side */
   #profilecard {
-    margin-top: 35px;
-  }
-
-  #photographers {
-    justify-content: center;
-  }
-
-  #graduation h1 {
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 25px;
   }
 
   #questions {
     margin: 0 15px 0 15px;
   }
+
   #mainfooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  #icons{
+  #icons {
     justify-content: center;
     font-size: 50px;
     margin: 0;
   }
 
-  #navfooter{
+  #navfooter {
     margin-top: 10%;
     text-align: center;
     justify-content: center;
