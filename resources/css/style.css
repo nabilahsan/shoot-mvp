@@ -102,6 +102,12 @@ nav {
 }
 
 
+#items img {
+  height: auto;
+  width: 300px;
+}
+
+
 #tags {
   font-size: 0.8em;
 }
@@ -110,11 +116,6 @@ nav {
   padding-top: 5px;
   padding-left: 20px;
   font-size: 1.2em;
-}
-
-#items img {
-  height: auto;
-  width: 300px;
 }
 
 #items {
@@ -272,7 +273,13 @@ footer {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (min-width: 1024px) {
+  /* Slider for mobile */
+  #mobileslider {
+    display: none;
+  }
+
+}
 
 /* 
   ##Device = Laptops, Desktops
@@ -408,6 +415,11 @@ footer {
     padding: 0;
   }
 
+
+  #photographers_container {
+    display: none;
+  }
+
   #questions {
     margin: 0 15px 0 15px;
   }
@@ -439,8 +451,6 @@ footer {
 @media (min-width: 320px) and (max-width: 480px) {
   #heading {
     display: flex;
-    justify-content: center;
-    text-align: center;
     margin-top: 10%;
     font-size: 0.75em;
   }
@@ -455,9 +465,11 @@ footer {
     margin: 25px;
   }
 
+
   #questions {
     margin: 0 15px 0 15px;
   }
+
 
   #mainfooter {
     display: flex;
@@ -476,4 +488,9 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  #photographers_container {
+    display: none;
+  }
+
 }
