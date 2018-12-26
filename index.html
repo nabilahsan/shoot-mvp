@@ -119,100 +119,16 @@
         </div>
     </div>
 
-
-    <!-- Desktop view only -->
-    <div id="photographers_container" class="container-fluid neededmargin">
-
-        <div id="heading" class="container">
-            <h1><a href="">#RelationshipGoals</a></h1>
-            <p>This should be a witty catchphrase but I can't write one off the top of my head so this'll have to do.</p>
-        </div>
-        <div id="photographers" class="row container-fluid">
-
-            <!-- Angie's profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/angie/angie4.jpg">
-                </div>
-
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/angie/angiep_min.PNG" alt="Angie Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Angie Duong</p>
-                        <!-- <p id="tags">#portraits #fashion</p> -->
-                        <p id="price">Starting from <br> $140 per hour</p>
-                    </figcaption>
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'angie.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
-                    </div>
-
-                </figure>
-            </div>
-
-
-            <!-- Jordan's Profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/jordan/jordan1.jpg">
-                </div>
-
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/jordan/jordanp_min.jpg" alt="Jordan Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Jordan Bernard</p>
-                        <!-- <p id="tags">#portraits #fashion</p> -->
-                        <p id="price">Starting from <br> $100 per session</p>
-                    </figcaption>
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
-                    </div>
-
-                </figure>
-            </div>
-
-            <!-- Lisa's profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/lisa/lisa1.jpg">
-                </div>
-
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/lisa/lisap_min.JPG" alt="Lisa Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Lisa Martinez</p>
-                        <!-- <p id="tags">#portraits #beauty</p> -->
-                        <p id="price">Starting from <br> $225 per session</p>
-                    </figcaption>
-
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
-                    </div>
-
-                </figure>
-            </div>
-
-        </div>
-    </div>
-
     <!-- Experiment with flickity.js -->
     <!-- Mobile view only -->
 
-    <div id="mobileslider">
+    <div id="mobileslider" class="container-fluid">
 
         <div id="heading" class="container">
             <h1><a href="">#RelationshipGoals</a></h1>
             <p>This should be a witty catchphrase but I can't write one off the top of my head so this'll have to do.</p>
         </div>
-        <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+        <div class="carousel" data-flickity='{ "freeScroll": true, "imagesLoaded": true, "percentPosition": false, "initialIndex": 1, "contain": true }'>
 
             <figure>
                 <div id="profilecard" class="gallery-cell">
@@ -285,174 +201,173 @@
                     </figure>
                 </div>
             </figure>
-
         </div>
     </div>
 
-    <div id="photographers_container" class="container-fluid">
+    <div id="mobileslider" class="container-fluid">
 
         <div id="heading" class="container">
             <h1><a href="">#Graduation</a></h1>
             <p>This should be a witty catchphrase but I can't write one off the top of my head so this'll have to do.</p>
         </div>
-        <div id="photographers" class="row container-fluid">
+        <div class="carousel" data-flickity='{ "freeScroll": true, "imagesLoaded": true, "percentPosition": false, "initialIndex": 1, "contain": true }'>
 
-            <!-- Angie's profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/angie/angie4.jpg">
-                </div>
-
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/angie/angiep_min.PNG" alt="Angie Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Angie Duong</p>
-                        <!-- <p id="tags">#portraits #fashion</p> -->
-                        <p id="price">Starting from <br> $140 per hour</p>
-                    </figcaption>
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'angie.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
+            <figure>
+                <div id="profilecard" class="gallery-cell">
+                    <div id="items">
+                        <img id="mainImg" src="vendors/img/lisa/lisa1.jpg">
                     </div>
 
-                </figure>
-            </div>
+                    <figure id="togInfo" class="container">
+                        <img id="proimg" src="vendors/img/lisa/lisap_min.JPG" alt="Lisa Profile Photo">
+
+                        <figcaption>
+                            <p for="Andre" id="pname">Lisa Martinez</p>
+                            <!-- <p id="tags">#portraits #beauty</p> -->
+                            <p id="price">Starting from <br> $225 per session</p>
+                        </figcaption>
 
 
-            <!-- Jordan's Profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/jordan/jordan1.jpg">
+                        <div id="buttonsec" class="container">
+                            <button id="topBook" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-primary btn-lg">View
+                                Profile</button>
+                        </div>
+                    </figure>
                 </div>
+            </figure>
 
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/jordan/jordanp_min.jpg" alt="Jordan Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Jordan Bernard</p>
-                        <!-- <p id="tags">#portraits #fashion</p> -->
-                        <p id="price">Starting from <br> $100 per session</p>
-                    </figcaption>
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
+            <figure>
+                <div id="profilecard" class="gallery-cell">
+                    <div id="items">
+                        <img id="mainImg" src="vendors/img/angie/angie4.jpg">
                     </div>
 
-                </figure>
-            </div>
+                    <figure id="togInfo" class="container">
+                        <img id="proimg" src="vendors/img/angie/angiep_min.PNG" alt="Angie Profile Photo">
 
-            <!-- Lisa's profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/lisa/lisa1.jpg">
+                        <figcaption>
+                            <p for="Andre" id="pname">Angie Duong</p>
+                            <!-- <p id="tags">#portraits #fashion</p> -->
+                            <p id="price">Starting from <br> $140 per hour</p>
+                        </figcaption>
+
+                        <div id="buttonsec" class="container">
+                            <button id="topBook" type="button" onclick="window.location.href= 'angie.html'" class="btn btn-primary btn-lg">View
+                                Profile</button>
+                        </div>
+
+                    </figure>
                 </div>
+            </figure>
 
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/lisa/lisap_min.JPG" alt="Lisa Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Lisa Martinez</p>
-                        <!-- <p id="tags">#portraits #beauty</p> -->
-                        <p id="price">Starting from <br> $225 per session</p>
-                    </figcaption>
-
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
+            <figure>
+                <div id="profilecard" class="gallery-cell">
+                    <div id="items">
+                        <img id="mainImg" src="vendors/img/jordan/jordan1.jpg">
                     </div>
 
-                </figure>
-            </div>
+                    <figure id="togInfo" class="container">
+                        <img id="proimg" src="vendors/img/jordan/jordanp_min.jpg" alt="Jordan Profile Photo">
 
+                        <figcaption>
+                            <p for="Andre" id="pname">Jordan Bernard</p>
+                            <!-- <p id="tags">#portraits #fashion</p> -->
+                            <p id="price">Starting from <br> $100 per session</p>
+                        </figcaption>
+
+                        <div id="buttonsec" class="container">
+                            <button id="topBook" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-primary btn-lg">View
+                                Profile</button>
+                        </div>
+
+                    </figure>
+                </div>
+            </figure>
         </div>
     </div>
 
-
-    <div id="photographers_container" class="container-fluid">
+    <div id="mobileslider" class="container-fluid">
 
         <div id="heading" class="container">
             <h1><a href="">#Fashion</a></h1>
             <p>This should be a witty catchphrase but I can't write one off the top of my head so this'll have to do.</p>
         </div>
-        <div id="photographers" class="row container-fluid">
+        <div class="carousel" data-flickity='{ "freeScroll": true, "imagesLoaded": true, "percentPosition": false, "initialIndex": 1, "contain": true }'>
 
-            <!-- Angie's profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/angie/angie4.jpg">
-                </div>
-
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/angie/angiep_min.PNG" alt="Angie Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Angie Duong</p>
-                        <!-- <p id="tags">#portraits #fashion</p> -->
-                        <p id="price">Starting from <br> $140 per hour</p>
-                    </figcaption>
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'angie.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
+            <figure>
+                <div id="profilecard" class="gallery-cell">
+                    <div id="items">
+                        <img id="mainImg" src="vendors/img/lisa/lisa1.jpg">
                     </div>
 
-                </figure>
-            </div>
+                    <figure id="togInfo" class="container">
+                        <img id="proimg" src="vendors/img/lisa/lisap_min.JPG" alt="Lisa Profile Photo">
+
+                        <figcaption>
+                            <p for="Andre" id="pname">Lisa Martinez</p>
+                            <!-- <p id="tags">#portraits #beauty</p> -->
+                            <p id="price">Starting from <br> $225 per session</p>
+                        </figcaption>
 
 
-            <!-- Jordan's Profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/jordan/jordan1.jpg">
+                        <div id="buttonsec" class="container">
+                            <button id="topBook" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-primary btn-lg">View
+                                Profile</button>
+                        </div>
+                    </figure>
                 </div>
+            </figure>
 
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/jordan/jordanp_min.jpg" alt="Jordan Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Jordan Bernard</p>
-                        <!-- <p id="tags">#portraits #fashion</p> -->
-                        <p id="price">Starting from <br> $100 per session</p>
-                    </figcaption>
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
+            <figure>
+                <div id="profilecard" class="gallery-cell">
+                    <div id="items">
+                        <img id="mainImg" src="vendors/img/angie/angie4.jpg">
                     </div>
 
-                </figure>
-            </div>
+                    <figure id="togInfo" class="container">
+                        <img id="proimg" src="vendors/img/angie/angiep_min.PNG" alt="Angie Profile Photo">
 
-            <!-- Lisa's profile -->
-            <div id="profilecard">
-                <div id="items">
-                    <img id="mainImg" src="vendors/img/lisa/lisa1.jpg">
+                        <figcaption>
+                            <p for="Andre" id="pname">Angie Duong</p>
+                            <!-- <p id="tags">#portraits #fashion</p> -->
+                            <p id="price">Starting from <br> $140 per hour</p>
+                        </figcaption>
+
+                        <div id="buttonsec" class="container">
+                            <button id="topBook" type="button" onclick="window.location.href= 'angie.html'" class="btn btn-primary btn-lg">View
+                                Profile</button>
+                        </div>
+
+                    </figure>
                 </div>
+            </figure>
 
-                <figure id="togInfo" class="container">
-                    <img id="proimg" src="vendors/img/lisa/lisap_min.JPG" alt="Lisa Profile Photo">
-
-                    <figcaption>
-                        <p for="Andre" id="pname">Lisa Martinez</p>
-                        <!-- <p id="tags">#portraits #beauty</p> -->
-                        <p id="price">Starting from <br> $225 per session</p>
-                    </figcaption>
-
-
-                    <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'lisa.html'" class="btn btn-primary btn-lg">View
-                            Profile</button>
+            <figure>
+                <div id="profilecard" class="gallery-cell">
+                    <div id="items">
+                        <img id="mainImg" src="vendors/img/jordan/jordan1.jpg">
                     </div>
 
-                </figure>
-            </div>
+                    <figure id="togInfo" class="container">
+                        <img id="proimg" src="vendors/img/jordan/jordanp_min.jpg" alt="Jordan Profile Photo">
 
+                        <figcaption>
+                            <p for="Andre" id="pname">Jordan Bernard</p>
+                            <!-- <p id="tags">#portraits #fashion</p> -->
+                            <p id="price">Starting from <br> $100 per session</p>
+                        </figcaption>
+
+                        <div id="buttonsec" class="container">
+                            <button id="topBook" type="button" onclick="window.location.href= 'jordan.html'" class="btn btn-primary btn-lg">View
+                                Profile</button>
+                        </div>
+
+                    </figure>
+                </div>
+            </figure>
         </div>
     </div>
+
 
     <footer id="bottomBar">
         <div id="questions">
