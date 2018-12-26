@@ -460,11 +460,9 @@ footer {
   }
 
   /* Profile Cards */
-  /* Smaller to fit two side by side */
   #profilecard {
     margin: 25px;
   }
-
 
   #questions {
     margin: 0 15px 0 15px;
