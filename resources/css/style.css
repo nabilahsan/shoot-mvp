@@ -1,5 +1,3 @@
-/*Sets global styling*/
-
 html,
 body {
   width: 100%;
@@ -30,39 +28,68 @@ li {
 a,
 a:hover {
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
 }
 
-/* Navigation Bar */
+/* New NavBar Style */
+#navdiv {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
 
 nav {
   background-color: white;
   box-shadow: 3px 0px 8px #707070;
+  position: relative;
 }
 
 .navbar {
-  overflow: hidden;
-  top: 0;
-  /* Position the navbar at the top of the page */
-  width: 100%;
-  /* Full width */
+  display: flex;
+  justify-content: flex-start;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
 
 #logo {
-  width: 154.54px;
+  width: 120.54px;
+  margin-left: 25px;
 }
 
-#navLogo {
+
+
+/* Main Section */
+
+/* Standard heading for each category */
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+#heading>h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#heading p {
+  font-size: 1.2em;
+}
+
+#photographers_container {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#photographers {
   display: flex;
   justify-content: center;
+  margin-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-/* Nav Bar end */
 
 #profilecard {
   display: flex;
@@ -71,13 +98,31 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.1s;
   width: 300px;
-  height: auto;
-  border-radius: 25px;
-  margin-right: 50px;
+  height: 525px;
+  border-radius: 15px;
+  margin: 15px;
+  margin-top: 15px;
 }
 
-#profilecard:last-child{
-  margin-right: 0;
+#mainImg {
+  object-fit: contain;
+  border-radius: 15px 15px 0 0;
+}
+
+#items label {
+  padding-top: 5px;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+#items {
+  /* We are limiting the size of the div the image is in. This way, the image can overflow just slightly without affecting the other elements in the card.
+   */
+  max-width: 300px;
+  height: 375px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #items img {
@@ -89,41 +134,6 @@ nav {
   font-size: 0.8em;
 }
 
-#items label {
-  padding-top: 5px;
-  padding-left: 20px;
-  font-size: 1.2em;
-}
-
-#photographers_container {
-  margin-bottom: 100px;
-  padding: 0;
-}
-
-#photographers {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-}
-
-#heading {
-  padding-top: 4%;
-  padding-bottom: 3%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-#heading>h1 {
-  font-size: 2.5em;
-}
-
-#heading p {
-  font-size: 1.2em;
-}
-
-
 /* Photographer Profile Image for Main */
 
 #togInfo {
@@ -134,14 +144,10 @@ nav {
 }
 
 #proimg {
-  width: 15%;
+  width: 25%;
   height: auto;
   border-radius: 50%;
-}
 
-#mainImg {
-  object-fit: contain;
-  border-radius: 25px 25px 0 0;
 }
 
 #categories {
@@ -154,27 +160,28 @@ figcaption {
 }
 
 #pname {
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: -5px;
 }
 
 #price {
   font-size: 0.95em;
+  margin-top: 5px;
 }
 
 /* Standardized Buttons for profile */
 .btn {
   border-radius: 50px;
-  width: 175px;
-  text-align: center;
+  width: 150px;
 }
 
 #botBook,
 #topBook {
   border: none;
   background-color: #F15B22;
+  font-size: 1em;
 }
 
 #botBook:hover,
@@ -184,12 +191,7 @@ figcaption {
 }
 
 #topBook {
-  margin-top: 15px;
-}
-
-#buttonsec {
-  display: flex;
-  justify-content: center;
+  margin-bottom: 5px;
 }
 
 /* Footer */
@@ -279,28 +281,18 @@ footer {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (min-width: 1025px) {
+  #mobileslider {
+    display: none;
+  }
+}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-  #heading {
-    display: flex;
-    justify-content: center;
-  }
-
-  #heading>h1 {
-    text-align: center;
-  }
-
-  #profilecard {
-    margin-top: 35px;
-  }
-
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -308,26 +300,31 @@ footer {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  #heading {
+
+  #photographers_container {
+    display: none;
+  }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+
+  #mainfooter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
-  #heading>h1 {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  #profilecard {
-    margin-top: 35px;
-    margin-right: 25px;
-  }
-
-  #photographers {
+  #icons {
     justify-content: center;
+    font-size: 50px;
     margin: 0;
-    flex-wrap: wrap;
-    align-content: flex-start;
+  }
+
+  #navfooter {
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
   }
 
 }
@@ -338,23 +335,30 @@ footer {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #heading {
+  #photographers_container {
+    display: none;
+  }
+
+  #questions {
+    margin: 0 15px 0 15px;
+  }
+
+  #mainfooter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
-  #heading>h1 {
-    text-align: center;
-  }
-
-
-  #profilecard {
-    margin-top: 35px;
-  }
-
-  #photographers {
+  #icons {
     justify-content: center;
+    font-size: 50px;
     margin: 0;
+  }
+
+  #navfooter {
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
   }
 
 }
@@ -367,17 +371,16 @@ footer {
 @media (min-width: 481px) and (max-width: 767px) {
   #heading {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
-  #profilecard {
-    margin-top: 35px;
+  #items {
+    margin-top: 25px;
+    padding: 0;
   }
 
-  #heading>h1 {
-    text-align: center;
+  #photographers_container {
+    display: none;
   }
 
   #questions {
@@ -411,25 +414,24 @@ footer {
 @media (min-width: 320px) and (max-width: 480px) {
   #heading {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20%;
-    font-size: 0.75em;
+    margin-top: 5%;
+    font-size: 0.6em;
+    padding: 0;
   }
 
+  #heading p {
+    font-size: 1.6em;
+  }
+
+  /* Profile Cards */
   #profilecard {
-    margin-top: 35px;
-    margin-right: 0;
-  }
-
-  #photographers {
-    justify-content: center;
-    margin: 0;
+    margin: 25px;
   }
 
   #questions {
     margin: 0 15px 0 15px;
   }
+
 
   #mainfooter {
     display: flex;
@@ -448,4 +450,9 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  #photographers_container {
+    display: none;
+  }
+
 }
