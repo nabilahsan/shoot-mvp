@@ -40,6 +40,7 @@ a:hover {
 
 nav {
   background-color: white;
+  box-shadow: 3px 0px 8px #707070;
 }
 
 .navbar {
@@ -65,8 +66,8 @@ nav {
   margin-top: 3%;
 }
 
-#heading>h1 {
-  font-size: 3em;
+#heading h1 {
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -280,9 +281,6 @@ footer {
 */
 
 @media (min-width: 1025px) {
-  #mobileslider {
-    display: none;
-  }
 }
 
 /* 
@@ -299,7 +297,7 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  #photographers_container {
+  #mobileslider {
     display: none;
   }
 
