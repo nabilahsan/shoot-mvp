@@ -42,6 +42,7 @@ nav {
   width: 120.54px;
   margin-left: 25px;
 }
+
 /*end*/
 
 #row1 {
@@ -58,7 +59,6 @@ form {
 }
 
 #formDiv h2 {
-  text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -100,7 +100,7 @@ form {
   width: 30%;
 }
 
-#insta{
+#insta {
   width: 40%;
   margin-bottom: 15px;
 }
@@ -402,7 +402,7 @@ footer {
   }
 
 
-  #insta{
+  #insta {
     width: 100%;
   }
 
@@ -462,7 +462,7 @@ footer {
     width: 100%;
   }
 
-  #insta{
+  #insta {
     width: 100%;
   }
 
@@ -522,7 +522,7 @@ footer {
     width: 100%;
   }
 
-  #insta{
+  #insta {
     width: 100%;
   }
 
@@ -552,8 +552,12 @@ footer {
   }
 
   #formElements h2 {
-    margin-top: 30%;
     margin-bottom: 10%;
+  }
+
+
+  #formDiv {
+    padding: 0 15px 0 15px;
   }
 
   #package {
@@ -582,7 +586,7 @@ footer {
     width: 100%;
   }
 
-  #insta{
+  #insta {
     width: 100%;
   }
 
