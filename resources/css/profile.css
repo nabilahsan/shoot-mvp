@@ -10,6 +10,13 @@ body {
     letter-spacing: 1.5px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
 a,
 a:hover {
     text-decoration: none;
@@ -31,31 +38,37 @@ li {
     width: auto;
     padding: 0;
     margin: 0;
-  }
-  
-  nav {
+}
+
+nav {
     background-color: white;
     box-shadow: 3px 0px 8px #707070;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
     justify-content: flex-start;
-  }
-  
-  
-  #logo {
+}
+
+
+#logo {
     width: 120.54px;
     margin-left: 25px;
-  }
+}
+
 /*Info and Rates*/
 #profile {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 #propic {
     display: flex;
     flex-direction: column;
+}
+
+#propic img {
+    height: 500px;
+    width: auto;
 }
 
 #line {
@@ -99,7 +112,7 @@ li {
 }
 
 #pics {
-    width: 30%;
+    width: 20%;
     height: auto;
     margin: 10px;
 }
@@ -108,27 +121,25 @@ li {
     width: 100%;
 }
 
-#about h2 {
+#about h1 {
     margin-top: 80px;
 }
 
-#main>h2 {
+#main h1 {
     margin-top: 5%;
     font-weight: bold;
 }
 
 #packages {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     margin-top: 2%;
-    padding-right: 5%;
-    padding-left: 5%;
 }
 
 #p1 {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
