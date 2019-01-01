@@ -54,13 +54,13 @@ form {
 }
 
 #formDiv {
-  padding-top: 7%;
   margin-bottom: 0;
 }
 
 #formDiv h2 {
   text-align: center;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 
