@@ -40,8 +40,6 @@ a:hover {
 
 nav {
   background-color: white;
-  box-shadow: 3px 0px 8px #707070;
-  position: relative;
 }
 
 .navbar {
@@ -169,6 +167,7 @@ figcaption {
 #price {
   font-size: 0.95em;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 /* Standardized Buttons for profile */
@@ -412,20 +411,44 @@ footer {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+  #logo {
+    width: 100px;
+  }
+
   #heading {
     display: flex;
     margin-top: 5%;
-    font-size: 0.6em;
     padding: 0;
   }
 
+  #heading h1 {
+    font-size: 1.2em;
+  }
+
   #heading p {
-    font-size: 1.6em;
+    font-size: 0.8em;
   }
 
   /* Profile Cards */
   #profilecard {
-    margin: 25px;
+    margin: 0 25px 5px 25px;
+    height: 400px;
+  }
+
+  #pname {
+    font-size: 1em;
+  }
+
+  #items {
+    height: 300px;
+  }
+
+  #proimg {
+    width: 20%;
+  }
+
+  #topBook, #price {
+    font-size: 0.8em;
   }
 
   #questions {
