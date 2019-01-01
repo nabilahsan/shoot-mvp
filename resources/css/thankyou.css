@@ -29,32 +29,28 @@ li {
 
 /* Navigation Bar */
 
-nav {
+/* New NavBar Style */
+#navdiv {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
     background-color: white;
     box-shadow: 3px 0px 8px #707070;
-}
-
-.navbar {
-    overflow: hidden;
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-}
-
-#logo {
-    width: 154.54px;
-}
-
-#navLogo {
+  }
+  
+  .navbar {
     display: flex;
-    justify-content: center;
-}
-/* Nav Bar end */
+    justify-content: flex-start;
+  }
+  
+  
+  #logo {
+    width: 120.54px;
+    margin-left: 25px;
+  }
 
 /* Main Section */
 

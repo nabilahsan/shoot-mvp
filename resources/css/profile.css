@@ -27,58 +27,27 @@ li {
 }
 
 /* New NavBar Style */
-nav {
+#navdiv {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
     background-color: white;
     box-shadow: 3px 0px 8px #707070;
-}
-
-#navdiv {
-    display: flex;
-}
-
-
-.nav-a {
-    font-size: 100%;
-    color: black;
-}
-
-.navbar {
-    overflow: hidden;
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-}
-
-.nav-item {
-    margin-left: 40px;
-}
-
-
-#logolink {
+  }
+  
+  .navbar {
     display: flex;
     justify-content: flex-start;
-}
-
-#logo {
-    width: 154.54px;
-
-}
-
-#navLogo {
-    display: flex;
-    justify-content: center;
-}
-
-#navbars {
-    padding-left: 15px;
-}
-
-/*end*/
+  }
+  
+  
+  #logo {
+    width: 120.54px;
+    margin-left: 25px;
+  }
 /*Info and Rates*/
 #profile {
     margin-top: 150px;
