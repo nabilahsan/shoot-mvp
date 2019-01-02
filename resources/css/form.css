@@ -695,6 +695,10 @@ footer {
     transform: translate(-50%, -50%);
   }
 
+  form {
+    padding: 0 15px 0 15px;
+  }
+
   #formElements {
     margin: 10px;
     width: auto;
@@ -702,11 +706,6 @@ footer {
 
   #formElements h2 {
     margin-bottom: 10%;
-  }
-
-
-  #formDiv {
-    padding: 0 15px 0 15px;
   }
 
   #package {
@@ -753,6 +752,10 @@ footer {
     width: 100%;
   }
 
+  #payment, #fullmsg {
+    width: 100%;
+  }
+
 
   #packageMain {
     margin-top: 0;
@@ -762,6 +765,16 @@ footer {
   #packageInfo {
     margin-top: 25px;
     font-size: 1.4em;
+  }
+
+  .btn {
+    margin-top: 25px;
+    width: 150px;
+
+  }
+
+  #disclaimer p {
+    font-size: 14px;
   }
 
   #questions {
