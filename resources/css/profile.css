@@ -67,7 +67,7 @@ nav {
 }
 
 #propic img {
-    height: 500px;
+    height: 400px;
     width: auto;
 }
 
@@ -401,13 +401,16 @@ footer {
 */
 @media (min-width: 320px) and (max-width: 480px) {
 
+    #logo {
+        width: 100px;
+    }
     /*Profile*/
-    #propic>img {
-        width: 300px;
+    #propic img {
+        height: 250px;
+        width: auto;
     }
 
     #profile {
-        margin-top: 100px;
         margin-bottom: 50px;
     }
 
@@ -455,6 +458,10 @@ footer {
 
     #about>p {
         margin: 10px 5px 40px 5px
+    }
+
+    #tdisclaimer, #disclaimer {
+        font-size: 0.7em;
     }
 
     #questions {
