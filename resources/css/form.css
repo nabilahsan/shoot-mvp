@@ -45,6 +45,45 @@ nav {
 
 /*end*/
 
+
+/* Header Image */
+#heading {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#imgdiv {
+  background-color: black;
+  text-align: center;
+  position: relative;
+  width: 60%;
+  border-radius: 10px;
+}
+
+#heading h2 {
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  text-align: start;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#imgdiv img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+#headingtext {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #row1 {
   margin: 0;
 }
@@ -89,35 +128,31 @@ form {
 }
 
 /* Name */
-
-#names {
-  display: flex;
-  justify-content: row;
-}
-
 #names div {
   margin-right: 50px;
-  width: 30%;
+  width: 40%;
+  margin-top: 25px;
 }
 
 #insta {
   width: 40%;
   margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 /* Contact */
-#contact {
-  display: flex;
-  justify-content: row;
-}
 
 #contact div {
-  width: 30%;
+  width: 40%;
   margin-right: 50px;
+  margin-top: 25px;
 }
 
 
 /*Radio buttons*/
+#package {
+  margin-top: 25px;
+}
 
 #inputgroup {
   display: flex;
@@ -130,6 +165,10 @@ form {
 
 #inputgroup label {
   text-align: center;
+}
+
+#datetime {
+  margin-top: 25px;
 }
 
 #calendar {
@@ -154,11 +193,14 @@ form {
   justify-content: row;
 }
 
-#payment select {
+#payment {
   width: 30%;
+  margin-top: 25px;
 }
 
-#message {
+#message,
+#fullmsg {
+  margin-top: 25px;
   width: 80%;
 }
 
@@ -279,7 +321,25 @@ footer {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) and (max-width: 1366px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
+  #heading h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 70%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
   #formElements {
     margin-right: 100px;
@@ -322,13 +382,29 @@ footer {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  #heading h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 90%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #formElements {
     margin-right: 100px;
     margin-left: 100px;
     width: 70%;
   }
-
-
 
   #contact div {
     width: 100%;
@@ -359,6 +435,23 @@ footer {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  #heading h2 {
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #formElements {
     margin-right: 100px;
     margin-left: 100px;
@@ -426,6 +519,24 @@ footer {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #heading h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #questions {
     margin: 0 15px 0 15px;
   }
@@ -486,6 +597,25 @@ footer {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+  #heading h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #questions {
     margin: 0 15px 0 15px;
   }
@@ -546,6 +676,25 @@ footer {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  #heading h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   #formElements {
     margin: 10px;
     width: auto;

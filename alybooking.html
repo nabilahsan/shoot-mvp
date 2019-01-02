@@ -75,7 +75,7 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-    <title>Booking Andre | SHOOT</title>
+    <title>Booking Aly | SHOOT</title>
 </head>
 
 <body>
@@ -116,11 +116,20 @@
         </div>
     </div>
 
+    <div class="container-fluid" id="heading">
+        <div id="imgdiv">
+            <img src="vendors/img/gp8/Aly_desktop (1).jpg" alt="Houston Graduation Photographer">
+
+            <div id="headingtext" class="container-fluid">
+                <h2>Let's get some information about your shoot with Aly!</h2>
+            </div>
+
+        </div>
+    </div>
 
     <div id="formDiv" class="form-group">
-        <form action="thankyou.html" name="Graduation: Booking Andre Williams" method="POST" netlify>
+        <form action="thankyou.html" name="Graduation: Booking Aly Hester" method="POST" netlify>
             <div id="formElements">
-                <h2>Let's get some information about your shoot with Andre!</h2>
 
                 <div id="names">
                     <div>
@@ -165,35 +174,51 @@
                 <div id="package">
                     <label>Which package would you like to choose?</label>
                     <div class="row" id="row1">
-                        <div id="inputgroup" class="container row col-sm-4">
-                            <div id="" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="Package" class="custom-control-input" value="Bronze">
-                                <label class="custom-control-label" for="customRadio1">Silver</label>
-                            </div>
-
-                            <div id="packageMain" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="Package" class="custom-control-input" value="Silver">
-                                <label class="custom-control-label" for="customRadio2">Gold</label>
-                            </div>
-                        </div>
+                            <div id="inputgroup" class="container row col-sm-4">
+                                    <div id="" class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="Package" class="custom-control-input" value="Bronze">
+                                        <label class="custom-control-label" for="customRadio1">Bronze</label>
+                                    </div>
+        
+                                    <div id="packageMain" class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="Package" class="custom-control-input" value="Silver">
+                                        <label class="custom-control-label" for="customRadio2">Silver</label>
+                                    </div>
+        
+                                    <div id="packageMain" class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio3" name="Package" class="custom-control-input" value="Gold">
+                                        <label class="custom-control-label" for="customRadio3">Gold</label>
+                                    </div>
+                                </div>
 
                         <!-- Information on Packages -->
                         <div id="packageInfo" class="col-md-6">
                             <div id="p1info" style='display:none'>
                                 <!-- Package 1 -->
                                 <ul class="list-unstyled">
-                                    <li>$125</li>
-                                    <li>30 Photos</li>
-                                    <li>45 minutes</li>
+                                    <li>$175</li>
+                                    <li>5 Photos</li>
+                                    <li>30 minutes</li>
+                                    <li>1 outfit change</li>
                                 </ul>
                             </div>
                             <div id="p2info" style='display:none'>
                                 <!-- Package 2 -->
                                 <ul class="list-unstyled">
-                                    <li>$195</li>
-                                    <li>30 Photos</li>
-                                    <li>45 minutes</li>
-                                    <li>25 Tri-fold Invitations</li>
+                                    <li>$225</li>
+                                    <li>15 Photos</li>
+                                    <li>1 hour</li>
+                                    <li>1 outfit change</li>
+                                </ul>
+                            </div>
+
+                            <div id="p3info" style='display:none'>
+                                    <!-- Package 3 -->
+                                <ul class="list-unstyled">
+                                    <li>$285</li>
+                                    <li>25 Photos</li>
+                                    <li>1.5 hours</li>
+                                    <li>2 outfit changes</li>
                                 </ul>
                             </div>
                         </div>
@@ -246,7 +271,7 @@
                             cols="20" rows="1" required></textarea>
                     </div>
 
-                    <div>
+                    <div id="fullmsg">
                         <label>Message: </label>
                         <textarea placeholder="Something like, 'Hello! I can't wait to shoot with you. I really want my graduation to stand out on Instagram.'"
                             type="text" name="message" class="form-control" cols=" 30" rows="5" required></textarea>
