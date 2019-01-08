@@ -1,0 +1,231 @@
+/* New NavBar Style */
+#navdiv {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: white;
+    box-shadow: 3px 0px 8px #707070;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  
+  #logo {
+    width: 120.54px;
+    margin-left: 25px;
+  }
+
+/* Footer */
+
+footer {
+    padding-top: 25px;
+    margin: 100px 0 0 0;
+    background-color: whitesmoke;
+  }
+  
+  #bold {
+    font-weight: bold;
+  }
+  
+  #mainfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  
+  #icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 55px;
+  }
+  
+  #navfooter {
+    display: flex;
+    text-align: start;
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+  
+  #bottomBar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  #email {
+    color: #F15B22;
+  }
+  
+  #icons a {
+    color: black;
+  }
+  
+  #twitter,
+  #instagram {
+    margin-right: 25px;
+  }
+  
+  #twitter:hover {
+    transition: 0.3s;
+    color: #1da1f2;
+  }
+  
+  #facebook:hover {
+  
+    transition: 0.3s;
+    color: #3b5998;
+  }
+  
+  #instagram:hover {
+  
+    transition: 0.3s;
+    color: #c32aa3;
+  }
+  
+  #footerlinks li {
+    margin-bottom: 15px;
+  }
+  
+  #footerlinks li:hover {
+    color: #F15B22;
+  }
+/*Media Queries*/
+
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    #questions {
+      margin: 0 15px 0 15px;
+    }
+  
+    #mainfooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #icons {
+      justify-content: center;
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    #navfooter {
+      margin-top: 5%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        
+    #questions {
+      margin: 0 15px 0 15px;
+    }
+  
+    #mainfooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #icons {
+      justify-content: center;
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    #navfooter {
+      margin-top: 10%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    #questions {
+      margin: 0 15px 0 15px;
+    }
+  
+    #mainfooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #icons {
+      justify-content: center;
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    #navfooter {
+      margin-top: 10%;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    #logo {
+      width: 100px;
+    }
+  
+    #questions {
+      margin: 0 15px 0 15px;
+    }
+  
+  
+    #mainfooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #icons {
+      justify-content: center;
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    #navfooter {
+      margin-top: 10%;
+      text-align: center;
+      justify-content: center;
+    }
+      
+  }
