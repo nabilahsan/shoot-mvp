@@ -31,32 +31,6 @@ a:hover {
   cursor: pointer;
 }
 
-/* New NavBar Style */
-#navdiv {
-  width: auto;
-  padding: 0;
-  margin: 0;
-}
-
-nav {
-  background-color: white;
-  box-shadow: 3px 0px 8px #707070;
-  position: relative;
-}
-
-.navbar {
-  display: flex;
-  justify-content: flex-start;
-}
-
-
-#logo {
-  width: 120.54px;
-  margin-left: 25px;
-}
-
-
-
 /* Main Section */
 
 /* Standard heading for each category */
@@ -67,15 +41,14 @@ nav {
   margin-top: 3%;
 }
 
-#heading>h1 {
-  font-size: 3em;
+#heading h1 {
+  font-size: 2em;
   font-weight: bold;
 }
 
 #heading p {
   font-size: 1.2em;
 }
-
 
 #photographers_container {
   padding: 0;
@@ -86,6 +59,7 @@ nav {
 #photographers {
   display: flex;
   justify-content: center;
+  margin-top: 1%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -109,17 +83,6 @@ nav {
   border-radius: 15px 15px 0 0;
 }
 
-
-#items img {
-  height: auto;
-  width: 300px;
-}
-
-
-#tags {
-  font-size: 0.8em;
-}
-
 #items label {
   padding-top: 5px;
   padding-left: 20px;
@@ -127,11 +90,22 @@ nav {
 }
 
 #items {
-  max-width: 350px;
+  /* We are limiting the size of the div the image is in. This way, the image can overflow just slightly without affecting the other elements in the card.
+   */
+  max-width: 300px;
+  height: 375px;
   overflow: hidden;
-
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#items img {
+  height: auto;
+  width: 300px;
+}
+
+#tags {
+  font-size: 0.8em;
 }
 
 /* Photographer Profile Image for Main */
@@ -194,85 +168,7 @@ figcaption {
   margin-bottom: 5px;
 }
 
-/* Footer */
 
-footer {
-  padding-top: 25px;
-  margin: 100px 0 0 0;
-  background-color: whitesmoke;
-}
-
-#bold {
-  font-weight: bold;
-}
-
-#mainfooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 2%;
-  margin-bottom: 5%;
-}
-
-#icons {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 2%;
-  margin-left: 5%;
-  font-size: 55px;
-}
-
-#navfooter {
-  display: flex;
-  text-align: start;
-  justify-content: flex-end;
-  margin-right: 5%;
-}
-
-#bottomBar {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-#email {
-  color: #F15B22;
-}
-
-#icons a {
-  color: black;
-}
-
-#twitter,
-#instagram {
-  margin-right: 25px;
-}
-
-#twitter:hover {
-  transition: 0.3s;
-  color: #1da1f2;
-}
-
-#facebook:hover {
-
-  transition: 0.3s;
-  color: #3b5998;
-}
-
-#instagram:hover {
-
-  transition: 0.3s;
-  color: #c32aa3;
-}
-
-#footerlinks li {
-  margin-bottom: 15px;
-}
-
-#footerlinks li:hover {
-  color: #F15B22;
-}
 
 /*Media Queries*/
 
@@ -281,13 +177,11 @@ footer {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
-  /* Slider for mobile */
   #mobileslider {
     display: none;
   }
-
 }
 
 /* 
@@ -297,9 +191,6 @@ footer {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-  #profilecard {
-    margin-top: 35px;
-  }
 }
 
 /* 
@@ -309,38 +200,9 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  #profilecard {
-    margin-top: 35px;
+  #mobileslider {
+    display: none;
   }
-
-  #profilecard {
-    margin-top: 35px;
-    margin-right: 15px;
-  }
-
-
-  #questions {
-    margin: 0 15px 0 15px;
-  }
-
-  #mainfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #icons {
-    justify-content: center;
-    font-size: 50px;
-    margin: 0;
-  }
-
-  #navfooter {
-    margin-top: 10%;
-    text-align: center;
-    justify-content: center;
-  }
-
 }
 
 /* 
@@ -349,30 +211,8 @@ footer {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #profilecard {
-    margin-top: 35px;
-  }
-
-  #questions {
-    margin: 0 15px 0 15px;
-  }
-
-  #mainfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #icons {
-    justify-content: center;
-    font-size: 50px;
-    margin: 0;
-  }
-
-  #navfooter {
-    margin-top: 10%;
-    text-align: center;
-    justify-content: center;
+  #mobileslider {
+    display: none;
   }
 
 }
@@ -393,32 +233,10 @@ footer {
     padding: 0;
   }
 
-
   #photographers_container {
     display: none;
   }
 
-  #questions {
-    margin: 0 15px 0 15px;
-  }
-
-  #mainfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #icons {
-    justify-content: center;
-    font-size: 50px;
-    margin: 0;
-  }
-
-  #navfooter {
-    margin-top: 10%;
-    text-align: center;
-    justify-content: center;
-  }
 }
 
 /* 
@@ -427,47 +245,24 @@ footer {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
   #heading {
     display: flex;
-    margin-top: 15%;
-    font-size: 0.6em;
+    margin-top: 5%;
     padding: 0;
   }
 
-  #heading p {
-    font-size: 1.6em;
+  #heading h1 {
+    font-size: 1.2em;
   }
 
-  .neededmargin {
-    margin-top: 10%;
+  #heading p {
+    font-size: 0.8em;
   }
 
   /* Profile Cards */
   #profilecard {
     margin: 25px;
-  }
-
-  #questions {
-    margin: 0 15px 0 15px;
-  }
-
-
-  #mainfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #icons {
-    justify-content: center;
-    font-size: 50px;
-    margin: 0;
-  }
-
-  #navfooter {
-    margin-top: 10%;
-    text-align: center;
-    justify-content: center;
   }
 
   #photographers_container {
