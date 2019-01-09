@@ -258,6 +258,10 @@ figcaption {
     font-size: 0.8em;
   }
 
+  #mobileslider {
+    margin-bottom: 65px;
+  }
+
   /* Profile Cards */
   #profilecard {
     margin: 25px;
