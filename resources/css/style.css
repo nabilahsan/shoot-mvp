@@ -33,8 +33,6 @@ a:hover {
 
 /* Main Section */
 
-/* Standard heading for each category */
-
 #heading {
   display: flex;
   flex-direction: column;
@@ -53,15 +51,15 @@ a:hover {
 #photographers_container {
   padding: 0;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 85px;
 }
 
 #photographers {
   display: flex;
-  justify-content: center;
   margin-top: 1%;
   margin-right: auto;
   margin-left: auto;
+  padding: 0;
 }
 
 

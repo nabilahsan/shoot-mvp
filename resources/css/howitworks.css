@@ -25,6 +25,10 @@ li {
     list-style-type: none;
 }
 
+#header {
+    margin-top: 25px;
+}
+
 #header, #content {
     margin-left: 85px;
 }
