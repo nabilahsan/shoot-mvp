@@ -33,8 +33,6 @@ a:hover {
 
 /* Main Section */
 
-/* Standard heading for each category */
-
 #heading {
   display: flex;
   flex-direction: column;
@@ -42,7 +40,7 @@ a:hover {
 }
 
 #heading h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
@@ -53,15 +51,17 @@ a:hover {
 #photographers_container {
   padding: 0;
   margin-right: auto;
-  margin-left: auto;
+
+  /* Change this 85px to have it left skewed */
+  margin-left: auto; 
 }
 
 #photographers {
   display: flex;
-  justify-content: center;
   margin-top: 1%;
-  margin-right: auto;
+  margin-right: 0;
   margin-left: auto;
+  padding: 0;
 }
 
 
@@ -118,7 +118,7 @@ a:hover {
 }
 
 #proimg {
-  width: 25%;
+  width: 20%;
   height: auto;
   border-radius: 50%;
 
@@ -253,11 +253,15 @@ figcaption {
   }
 
   #heading h1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   #heading p {
     font-size: 0.8em;
+  }
+
+  #mobileslider {
+    margin-bottom: 65px;
   }
 
   /* Profile Cards */
