@@ -7,7 +7,7 @@ body {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 36px;
 }
 
@@ -34,9 +34,11 @@ li {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     color: #F15B22;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 h2, h3, h4 {
@@ -48,9 +50,14 @@ h2, h3, h4 {
 }
 
 #aboutus h2 {
-    font-size: 3em;
     color: #F15B22;
 }
+
+h3 {
+    font-size: 1.5em;
+}
+
+
 
 /*Media Queries*/
 /* 

@@ -53,7 +53,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
 
     <!--Our Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="resources/css/howitworks.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/options.css">
     <!-- Header and Footer -->
     <link rel="stylesheet" type="text/css" href="resources/css/headerfooter.css">
 
@@ -99,9 +99,13 @@
                         </a>
                     </li>
 
-
                     <li class="nav-item">
                         <a class="nav-link nav-a" href="howitworks.html">How it works
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" href="options.html">More options
                         </a>
                     </li>
 
@@ -113,70 +117,59 @@
         </div>
     </div>
 
-    <div class="container" id="header">
-        <h1>Welcome to SHOOT! <br> Here’s how it works!</h1>
-    </div>
+    <div class="container-fluid" id="header">
+        <h1>Need something more specific <br> for your photoshoot?</h1>
 
-    <div class="container" id="content">
-        <div id="details">
-            <h3>1. Find a photographer</h3>
-            <p>Scroll through the website, check out our different photographers, and find the perfect one for you!
-            </p>
-        </div>
+        <div id="content">
+            <div id="details">
+                <h3>We have all kinds of photographers, and not all of them are on our website yet. </h3>
+                <p>We are still growing and building SHOOT. If you need a photographer for anything from your
+                    babyshower to your dog's birthday, we'd be happy to find a photographer for you!</p>
 
-        <div id="details">
-            <h3>2. Send a Booking Request</h3>
-            <p>Choose from one of the package options on the photographer's profile and give us your contact
-                information, so that your photographer and the SHOOT team can get a hold of you.
-            </p>
+                <h3>
+                    You can fill out the form below <br> and we will get in touch with you!
+                </h3>
 
-            <p>
-                We will reach out to you in less than 12 hours to confirm all the details and help you prepare
-                everything that you will need to have for a perfect photoshoot. Then, your photographer will contact
-                you to
-                make the SHOOT happen!
-            </p>
-        </div>
+                <form action="" name="Contact: Options" method="POST" netlify><input type="hidden" name="form-name"
+                        value="Contact: Options">
+                    <div id="formElements">
+                        <div>
+                            <label>What is your Name? </label>
+                            <input type="text" name="Full Name" class="form-control" required="">
+                        </div>
 
-        <div id="details">
-            <h3>3. Pay online!</h3>
-            <p>Pay for your photoshoot online! No need to worry about deposits and proofs because SHOOT holds the
-                payment until the photographer delivers all of your finished photos and they meet our standards.
-            </p>
-        </div>
+                        <div>
+                            <label>What is your Email Address?</label>
+                            <input type="email" name="Email" class="form-control required email" required="">
+                        </div>
 
-        <div id="details">
-            <h3>4. Enjoy your photoshoot!</h3>
-            <p>Meet up with your photographer. Relax, dress your best, and don’t forget to pack a smile.
-            </p>
+                        <!-- Message section -->
+                        <div>
+                            <label>Subject: </label>
+                            <textarea placeholder="E.g. I want a photographer for a babyshower event." type="text" name="Subject"
+                                class="form-control" rows="2" required=""></textarea>
+                        </div>
 
-            <p>
-                You will receive all your photos from SHOOT via Google Drive in the time specified on the
-                photographer's profile.
-            </p>
+                        <div>
+                            <label>Message: </label>
+                            <textarea placeholder="Hello! I have a friend’s babyshower coming up in a few weeks and I am looking for a photographer to cover the event. My budget is $$ and the event should be around 4 hours."
+                                type="text" name="Message" class="form-control" rows="5" required=""></textarea>
+                        </div>
 
-            <p>
-                Be sure to tag SHOOT in your <a href="https://www.facebook.com/shootbeta/">Facebook</a>, <a href="https://www.instagram.com/shoothouston/">Instagram</a>,
-                <a href="https://twitter.com/shoothouston">Twitter</a>,
-                and <a href="https://www.linkedin.com/company/shoottechnologyinc/?viewAsMember=true">LinkedIn</a> posts
-                for the chance to win a
-                free photoshoot!
-            </p>
-        </div>
+                        <div id="bottomButtons">
+                            <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-        <div id="aboutus">
-            <h1>About us</h1>
-            <p>
-                SHOOT is a startup being built by two students at the University of Houston that are passionate about
-                photography, technology, and storytelling.
+            <div id="imagediv">
+                <img src="vendors/img/SVG/undraw_booking_33fn.svg" alt="Photoshoot Booking Illustration">
+            </div>
 
-                We will do whatever it takes to make sure that you have an
-                amazing experience. If you have any questions at all, run into any issues or just want to let us know
-                what
-                you think, please send an email to <a id="email" href="mailto:founders@shootbeta.com">founders@shootbeta.com</a>.
-            </p>
         </div>
     </div>
+
 
     <footer id="bottomBar">
         <div id="questions">
@@ -201,7 +194,8 @@
                     <p id="bold">Navigation</p>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="howitworks.html">How it works</a></li>
-                    <li><a href="index.html">Graduation</a></li>
+                    <li><a href="options.html">More options</a></li>
+                    <li><a href="https://graduation.shootbeta.com/">Graduation</a></li>
                 </ul>
             </div>
         </div>
