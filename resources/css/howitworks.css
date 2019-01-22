@@ -25,10 +25,6 @@ li {
     list-style-type: none;
 }
 
-#header {
-    margin-top: 25px;
-}
-
 #header, #content {
     margin-left: 85px;
 }
@@ -38,11 +34,14 @@ h1 {
     font-weight: bold;
     color: #F15B22;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 h2, h3, h4 {
     font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 #details {
@@ -50,14 +49,9 @@ h2, h3, h4 {
 }
 
 #aboutus h2 {
+    font-size: 3em;
     color: #F15B22;
 }
-
-h3 {
-    font-size: 1.5em;
-}
-
-
 
 /*Media Queries*/
 /* 
