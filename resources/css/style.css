@@ -104,7 +104,8 @@ button:visited {
 #heading {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  padding-top: 50px;
+  margin-left: 100px;
 }
 
 #heading h2 {
@@ -121,7 +122,7 @@ button:visited {
   margin-right: auto;
 
   /* Change this 85px to have it left skewed */
-  margin-left: 85px;
+  margin-left: 100px;
 }
 
 #photographers {
