@@ -418,8 +418,9 @@ figcaption {
 
   #heading {
     display: flex;
-    margin-top: 25px;
-    padding: 0;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
   }
 
   #heading h2 {
