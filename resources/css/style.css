@@ -31,15 +31,84 @@ a:hover {
   cursor: pointer;
 }
 
+button,
+button:hover,
+button:visited {
+  border: none;
+}
+
+/* Jumbotron */
+
+#hero-image {
+  height: 100vh;
+  width: auto;
+  /* dark overlay Image location */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), hsla(0, 0%, 0%, 0.603)),
+    url('https://images.unsplash.com/photo-1537758069025-b07fb3548d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1976&q=80');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+}
+
+
+#main-text {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 30vh;
+  margin-bottom: 100px;
+  padding: 0;
+  width: 80%;
+}
+
+#cta-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+
+#cta-button button {
+  font-size: 2em;
+  width: 250px;
+}
+
+#cta-button button:hover {
+  background-color: black;
+}
+
+#main-text h1 {
+  /* Text properties */
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+}
+
 /* Main Section */
 
 #heading {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  padding-top: 50px;
+  margin-left: 100px;
 }
 
-#heading h1 {
+#heading h2 {
   font-size: 2em;
   font-weight: bold;
 }
@@ -53,7 +122,7 @@ a:hover {
   margin-right: auto;
 
   /* Change this 85px to have it left skewed */
-  margin-left: 85px;
+  margin-left: 100px;
 }
 
 #photographers {
@@ -173,6 +242,7 @@ figcaption {
   margin-top: 25px;
   margin-left: 15px;
 }
+
 #view a i {
   font-size: 1.5em;
   margin-left: 5px;
@@ -217,7 +287,7 @@ figcaption {
     margin-left: auto;
   }
 
-  #heading h1 {
+  #heading h2 {
     font-size: 2em;
   }
 }
@@ -236,8 +306,48 @@ figcaption {
     /* Change this 85px to have it left skewed */
     margin-left: auto;
   }
+
   #mobileslider {
     display: none;
+  }
+
+  /* Jumbotron */
+
+  #hero-image {
+    width: 100%;
+  }
+
+
+  #main-text {
+    display: flex;
+    margin: 30vh 100px 50px 25px;
+    padding: 0;
+    width: auto;
+  }
+
+
+  #cta-button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px;
+  }
+
+
+  #main-text h1 {
+    /* Text properties */
+    font-size: 3em;
+  }
+
+  #cta-button button {
+    font-size: 1.5em;
+    width: 200px;
+  }
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: auto;
   }
 }
 
@@ -251,6 +361,19 @@ figcaption {
     display: none;
   }
 
+
+  #hero-image {
+    width: 100%;
+  }
+
+
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
 }
 
 /* 
@@ -273,6 +396,13 @@ figcaption {
     display: none;
   }
 
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
 }
 
 /* 
@@ -282,13 +412,39 @@ figcaption {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  #heading {
+  /* Hero Image */
+
+  #main-text {
     display: flex;
-    margin-top: 5%;
+    margin: 25vh 25px 50px 25px;
     padding: 0;
   }
 
-  #heading h1 {
+  #cta-button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px;
+  }
+
+  #cta-button button {
+    font-size: 1em;
+    width: 150px;
+  }
+
+  #main-text h1 {
+    /* Text properties */
+    font-size: 2.5em;
+  }
+
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
+
+  #heading h2 {
     font-size: 1.5em;
   }
 

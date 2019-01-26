@@ -128,15 +128,32 @@
         </div>
     </div>
 
-    <!--------------------- Graduation  --------------------->
-    <!-- Desktop view only -->
-    <div id="photographers_container" class="container">
+    <!-- Jumbotron -->
 
-        <div id="heading" class="container-fluid">
-            <h1><a href="index.html">#Graduation</a> photographers in Houston, Texas</h1>
-            <p>Book a photographer to make your graduation experience memorable.</p>
+    <div class="jumbotron-fluid" id="header-div">
+        <div id="hero-image" class="container-fluid">
+            <div id="main-text" class="container-fluid">
+                <h1>Booking a photographer <br> has never been easier.</h1>
+            </div>
+
+            <div id="cta-button">
+                <a href="#heading">
+                    <button type="button" class="btn btn-large btn-primary">Show me!</button>
+                </a>
+            </div>
         </div>
 
+    </div>
+
+    <!--------------------- Graduation  --------------------->
+
+    <div id="heading" class="container">
+            <h2><a href="index.html">#Graduation</a> photographers in Houston, Texas</h2>
+            <p>Book a photographer to make your graduation experience memorable.</p>
+    </div>
+
+    <!-- Desktop view only -->
+    <div id="photographers_container" class="container">
         <!-- Row 1, 3 Photographers -->
         <div id="photographers" class="row container-fluid">
             <!-- Christi's profile -->
@@ -150,7 +167,7 @@
 
                     <figcaption>
                         <p for="Christi" id="pname">Christi Balderas</p>
-                        <p id="price">Starting from <br> $75 per session.</p>
+                        <p id="price">Starting from <br> $85 per session.</p>
                     </figcaption>
 
                     <div id="buttonsec" class="container">
@@ -172,7 +189,7 @@
 
                     <figcaption>
                         <p for="Andre" id="pname">Andre Williams</p>
-                        <p id="price">Starting from <br> $125 per session.</p>
+                        <p id="price">Starting from <br> $140 per session.</p>
                     </figcaption>
 
                     <div id="buttonsec" class="container">
@@ -195,7 +212,7 @@
 
                     <figcaption>
                         <p for="Monika" id="pname">Monika Cabading</p>
-                        <p id="price">Starting from <br> $50 per session.</p>
+                        <p id="price">Starting from <br> $60 per session.</p>
                     </figcaption>
 
                     <div id="buttonsec" class="container">
@@ -217,11 +234,12 @@
 
                     <figcaption>
                         <p for="Jordan" id="pname">Jordan Bernard</p>
-                        <p id="price">Starting from <br> $100 per session.</p>
+                        <p id="price">Starting from <br> $115 per session.</p>
                     </figcaption>
 
                     <div id="buttonsec" class="container">
-                        <button id="topBook" type="button" onclick="window.location.href= 'https://graduation.shootbeta.com/jordan.html'" class="btn btn-primary btn-lg">View
+                        <button id="topBook" type="button" onclick="window.location.href= 'https://graduation.shootbeta.com/jordan.html'"
+                            class="btn btn-primary btn-lg">View
                             Profile</button>
                     </div>
                 </figure>
@@ -240,10 +258,6 @@
     <!-- Mobile View -->
     <div id="mobileslider" class="container-fluid">
 
-        <div id="heading" class="container">
-            <h1><a href="index.html">#Graduation</a> photographers in Houston, Texas</h1>
-            <p>Book a photographer to make your graduation experience memorable.</p>
-        </div>
 
         <div class="carousel" data-flickity='{  }'>
 
@@ -259,7 +273,7 @@
 
                         <figcaption>
                             <p for="Christi" id="pname">Christi Balderas</p>
-                            <p id="price">Starting from <br> $75 per session.</p>
+                            <p id="price">Starting from <br> $85 per session.</p>
                         </figcaption>
 
                         <div id="buttonsec" class="container">
@@ -283,7 +297,7 @@
 
                         <figcaption>
                             <p for="Andre" id="pname">Andre Williams</p>
-                            <p id="price">Starting from <br> $125 per session.</p>
+                            <p id="price">Starting from <br> $140 per session.</p>
                         </figcaption>
 
                         <div id="buttonsec" class="container">
@@ -307,7 +321,7 @@
 
                         <figcaption>
                             <p for="Monika" id="pname">Monika Cabading</p>
-                            <p id="price">Starting from <br> $50 per session.</p>
+                            <p id="price">Starting from <br> $60 per session.</p>
                         </figcaption>
 
                         <div id="buttonsec" class="container">
@@ -331,11 +345,12 @@
 
                         <figcaption>
                             <p for="Jordan" id="pname">Jordan Bernard</p>
-                            <p id="price">Starting from <br> $100 per session.</p>
+                            <p id="price">Starting from <br> $115 per session.</p>
                         </figcaption>
 
                         <div id="buttonsec" class="container">
-                            <button id="topBook" type="button" onclick="window.location.href= 'https://graduation.shootbeta.com/jordan.html'" class="btn btn-primary btn-lg">View
+                            <button id="topBook" type="button" onclick="window.location.href= 'https://graduation.shootbeta.com/jordan.html'"
+                                class="btn btn-primary btn-lg">View
                                 Profile</button>
                         </div>
                     </figure>
@@ -388,6 +403,15 @@
     </footer>
 
     <!-- Scripts -->
+    <!-- Smoothscoll.js -->
+    <script src="vendors/js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+        var linear = new SmoothScroll('[data-easing="linear"]', {
+            easing: "linear"
+        });
+    </script>
+
     <!-- Mailchimp Popup -->
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
         data-dojo-config="usePlainJson: true, isDebug: false"></script>
