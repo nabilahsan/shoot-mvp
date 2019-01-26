@@ -342,6 +342,13 @@ figcaption {
     font-size: 1.5em;
     width: 200px;
   }
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: auto;
+  }
 }
 
 /* 
@@ -360,6 +367,13 @@ figcaption {
   }
 
 
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
 }
 
 /* 
@@ -382,6 +396,13 @@ figcaption {
     display: none;
   }
 
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
 }
 
 /* 
