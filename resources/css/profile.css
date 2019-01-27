@@ -71,6 +71,7 @@ li {
 
 #rates p {
     font-size: 1.3em;
+    margin-bottom: 25px;
 }
 
 #line {
@@ -158,6 +159,10 @@ li {
 #topBook {
     border: none;
     background-color: #F15B22;
+}
+
+#tdisclaimer {
+    padding: 0;
 }
 
 #botBook:hover,
@@ -248,10 +253,14 @@ li {
     }
 
     #rates {
-        text-align: center;
-        line-height: 15px;
+        line-height: 25px;
     }
 
+    #rates p {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+ 
     #pics {
         width: 90%;
     }
@@ -286,7 +295,12 @@ li {
         margin: 10px 5px 40px 5px
     }
 
-    #tdisclaimer, #disclaimer {
-        font-size: 0.7em;
+    #tdisclaimer,
+    #disclaimer {
+        font-size: 1em;
+    }
+
+    #disclaimer {
+        margin-top: 25px;
     }
 }
