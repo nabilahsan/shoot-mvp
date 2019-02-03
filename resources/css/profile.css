@@ -47,6 +47,7 @@ li {
 #propic img {
     height: 400px;
     width: auto;
+    margin-right: 25px;
 }
 
 #line {
@@ -91,7 +92,7 @@ li {
 }
 
 #pics {
-    width: 30%;
+    width: 25%;
     height: auto;
     margin: 10px;
 }
