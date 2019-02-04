@@ -215,6 +215,12 @@ figcaption {
   margin-top: 5px;
 }
 
+/* Dots for slider */
+
+.flickity-page-dots {
+  bottom: 0;
+}
+
 /* Standardized Buttons for profile */
 .btn {
   border-radius: 50px;
@@ -251,7 +257,6 @@ figcaption {
 #mobileslider #view {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
   margin-left: 0px;
 }
 
@@ -450,10 +455,6 @@ figcaption {
 
   #heading p {
     font-size: 0.8em;
-  }
-
-  #mobileslider {
-    margin-bottom: 65px;
   }
 
   /* Profile Cards */
