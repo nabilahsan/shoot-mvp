@@ -31,16 +31,24 @@ a:hover {
   cursor: pointer;
 }
 
+button,
+button:hover,
+button:visited {
+  border: none;
+}
+
+
 /* Main Section */
 
 #heading {
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
+  padding-top: 50px;
+  margin-left: 85px;
 }
 
-#heading h1 {
-  font-size: 2.5em;
+#heading h2 {
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -49,18 +57,17 @@ a:hover {
 }
 
 #photographers_container {
-  width: 90%;
   padding: 0;
+  margin-right: auto;
 
   /* Change this 85px to have it left skewed */
-  margin-left: 85px;
+  margin-left: 100px;
 }
 
 #photographers {
   display: flex;
   margin-top: 1%;
   margin-right: 0;
-  margin-left: auto;
   padding: 0;
 }
 
@@ -71,8 +78,8 @@ a:hover {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.1s;
-  width: 300px;
-  height: 525px;
+  width: 250px;
+  height: 445px;
   border-radius: 15px;
   margin: 15px;
   margin-top: 15px;
@@ -101,7 +108,7 @@ a:hover {
 
 #items img {
   height: auto;
-  width: 300px;
+  width: 250px;
 }
 
 #tags {
@@ -115,6 +122,7 @@ a:hover {
   justify-content: end;
   align-items: center;
   position: relative;
+  /* padding-bottom: 25px; */
 }
 
 #proimg {
@@ -130,18 +138,18 @@ a:hover {
 }
 
 figcaption {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 #pname {
   margin-top: 10px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: -5px;
 }
 
 #price {
-  font-size: 0.95em;
+  font-size: 0.8em;
   margin-top: 5px;
 }
 
@@ -155,7 +163,7 @@ figcaption {
 #topBook {
   border: none;
   background-color: #F15B22;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 #botBook:hover,
@@ -166,6 +174,23 @@ figcaption {
 
 #topBook {
   margin-bottom: 5px;
+}
+
+#view {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+#view a i {
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+#mobileslider #view {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  margin-left: 0px;
 }
 
 
@@ -189,27 +214,78 @@ figcaption {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+  #photographers_container {
+    padding: 0;
+    margin-right: auto;
+
+    /* Change this 85px to have it left skewed */
+    margin-left: auto;
+  }
+
+  #heading h2 {
+    font-size: 2em;
+  }
+}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #photographers_container {
+    padding: 0;
+    margin-right: auto;
+
+    /* Change this 85px to have it left skewed */
+    margin-left: auto;
+  }
 
   #mobileslider {
     display: none;
   }
 
+  /* Jumbotron */
 
-  #photographers_container {
+  #hero-image {
     width: 100%;
-    padding: 0;
+  }
 
-    /* Change this 85px to have it left skewed */
-    margin-left: 15px;
-    margin-right: 15px;
+
+  #main-text {
+    display: flex;
+    margin: 30vh 100px 50px 25px;
+    padding: 0;
+    width: auto;
+  }
+
+
+  #cta-button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px;
+  }
+
+
+  #main-text h1 {
+    /* Text properties */
+    font-size: 3em;
+  }
+
+  #cta-button button {
+    font-size: 1.5em;
+    width: 200px;
+  }
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: auto;
   }
 }
 
@@ -223,6 +299,19 @@ figcaption {
     display: none;
   }
 
+
+  #hero-image {
+    width: 100%;
+  }
+
+
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
 }
 
 /* 
@@ -245,6 +334,13 @@ figcaption {
     display: none;
   }
 
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
 }
 
 /* 
@@ -254,13 +350,39 @@ figcaption {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  #heading {
+  /* Hero Image */
+
+  #main-text {
     display: flex;
-    margin-top: 5%;
+    margin: 25vh 25px 50px 25px;
     padding: 0;
   }
 
-  #heading h1 {
+  #cta-button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px;
+  }
+
+  #cta-button button {
+    font-size: 1em;
+    width: 150px;
+  }
+
+  #main-text h1 {
+    /* Text properties */
+    font-size: 2.5em;
+  }
+
+
+  #heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    margin-left: 0px;
+  }
+
+  #heading h2 {
     font-size: 1.5em;
   }
 
