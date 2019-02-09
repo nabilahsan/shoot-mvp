@@ -1,0 +1,608 @@
+/*Sets global styling*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+body {
+  background-color: white;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+
+/* Header Image */
+#heading {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#imgdiv {
+  background-color: black;
+  text-align: center;
+  position: relative;
+  width: 60%;
+  border-radius: 10px;
+}
+
+#heading h2 {
+  font-size: 4em;
+  font-weight: bold;
+  color: white;
+  text-align: start;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#imgdiv img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+#headingtext {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#row1 {
+  margin: 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#formDiv {
+  margin-bottom: 0;
+}
+
+#formDiv h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+/*Inputs*/
+
+#formElements {
+  padding-top: 2%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#packageInfo {
+  padding-top: 5%;
+  margin-left: auto;
+  font-size: 1.3em;
+}
+
+#formElements input {
+  display: flex;
+  justify-content: center;
+}
+
+#formElements label {
+  margin-top: 4%;
+}
+
+/* Name */
+#names div {
+  margin-right: 50px;
+  width: 40%;
+  margin-top: 25px;
+}
+
+#insta {
+  width: 40%;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+/* Contact */
+
+#contact div {
+  width: 40%;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+
+/*Radio buttons*/
+#package {
+  margin-top: 25px;
+}
+
+#inputgroup {
+  display: flex;
+  flex-direction: column;
+}
+
+#packageMain {
+  margin-top: 50px;
+}
+
+#inputgroup label {
+  text-align: center;
+}
+
+#datetime {
+  margin-top: 25px;
+}
+
+#calendar {
+  width: 50%;
+}
+
+/* Time Picker */
+#hour,
+#minute,
+#ampm {
+  width: 20%;
+  margin-right: 25px;
+}
+
+#note {
+  margin-top: 15px;
+  color: #707070;
+}
+
+#timepick {
+  display: flex;
+  justify-content: row;
+}
+
+#payment {
+  width: 30%;
+  margin-top: 25px;
+}
+
+#message,
+#fullmsg {
+  margin-top: 25px;
+  width: 80%;
+}
+
+/* Bottom Buttons section */
+#bottomButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Standardized Buttons for profile */
+.btn {
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+}
+
+#botBook {
+  border: none;
+  background-color: #F15B22;
+}
+
+#botBook:hover {
+  border: none;
+  background-color: black;
+}
+
+#disclaimer p {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+
+/*Media Queries*/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  #heading h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 70%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  #formElements {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 70%;
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #heading h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 90%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #formElements {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 70%;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 20%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 80%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #heading h2 {
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #formElements {
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 70%;
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+
+  #insta {
+    width: 100%;
+  }
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #heading h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+  #insta {
+    width: 100%;
+  }
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  #heading h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+  #insta {
+    width: 100%;
+  }
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #heading h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+  }
+
+  #imgdiv {
+    width: 100%;
+  }
+
+  #headingtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  form {
+    padding: 0 15px 0 15px;
+  }
+
+  #formElements {
+    margin: 10px;
+    width: auto;
+  }
+
+  #formElements h2 {
+    margin-bottom: 10%;
+  }
+
+  #package {
+    margin-top: 5%;
+  }
+
+  /*Inputs*/
+  #inputgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  #names,
+  #contact {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #contact div {
+    width: 100%;
+  }
+
+  #names div {
+    width: 100%;
+  }
+
+  #insta {
+    width: 100%;
+  }
+
+
+  #hour,
+  #minute,
+  #ampm {
+    width: 30%;
+    margin-right: 25px;
+  }
+
+  #calendar,
+  #message,
+  #payment select {
+    width: 100%;
+  }
+
+  #payment, #fullmsg {
+    width: 100%;
+  }
+
+
+  #packageMain {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+
+  #packageInfo {
+    margin-top: 25px;
+    font-size: 1.4em;
+  }
+
+  .btn {
+    margin-top: 25px;
+    width: 150px;
+
+  }
+
+  #disclaimer p {
+    font-size: 14px;
+  }
+}

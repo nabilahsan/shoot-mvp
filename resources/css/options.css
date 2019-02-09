@@ -1,0 +1,167 @@
+/*Sets global styling*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 1em;
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+body {
+    background-color: white;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #F15B22;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+
+h3 {
+    font-size: 1.5em;
+}
+
+
+#header {
+    margin-top: 25px;
+    padding-left: 100px;
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+#details {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#details p {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+/* Form */
+form {
+    margin-top: 50px;
+}
+
+#formElements div {
+    margin-top: 25px;
+    width: 70%;
+}
+
+/* Button */
+
+/* Bottom Buttons section */
+#bottomButtons {
+    display: flex;
+    justify-content: start;
+    margin-top: 75px;
+}
+
+/* Standardized Buttons for profile */
+.btn {
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+}
+
+#botBook {
+    border: none;
+    background-color: #F15B22;
+}
+
+#botBook:hover {
+    border: none;
+    background-color: black;
+}
+
+
+#imagediv {
+    width: 80%;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 100px;
+}
+
+#imagediv img {
+    width: 100%;
+}
+
+
+
+
+/*Media Queries*/
+
+@media (max-width: 1024px) {
+    #content {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    
+    #header {
+        padding: 0 100px 0 100px;
+    }
+
+    #imagediv {
+        margin: auto;
+        padding: 0;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    #header {
+        padding: 0 25px 0 25px;
+    }
+
+    #header h1 {
+        font-size: 2em;
+    }
+
+    #imagediv {
+        width: 80%;
+    }
+
+    #formElements div{
+        width: 100%;
+    }
+
+
+#bottomButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+}

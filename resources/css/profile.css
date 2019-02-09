@@ -1,0 +1,307 @@
+/*Global start*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/*Global end*/
+
+body {
+    background-color: white;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+
+/*Info and Rates*/
+#profile {
+    margin-top: 50px;
+}
+
+#propic {
+    display: flex;
+    flex-direction: column;
+}
+
+#propic img {
+    height: 400px;
+    width: auto;
+    margin-right: 25px;
+}
+
+#line {
+    display: block;
+    text-align: start;
+    border: none;
+    margin-top: -1rem;
+    height: 5px;
+    background: linear-gradient(45deg, #DD0C8B, #E52127, #F15B22, #FDD31C);
+}
+
+#info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#rates {
+    line-height: 10px;
+}
+
+#rates p {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+}
+
+#line {
+    margin-bottom: 50px;
+}
+
+/*Photographer Portfolio*/
+#portfolio {
+    margin-top: 50px;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pics {
+    width: 25%;
+    height: auto;
+    margin: 10px;
+}
+
+#pics>img {
+    width: 100%;
+}
+
+#about h1 {
+    margin-top: 80px;
+}
+
+#main h2 {
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+#packages {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+#p1 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#p1 ul {
+    margin-top: 15%;
+}
+
+#p1:last-child {
+    margin-right: 0;
+}
+
+
+#packages div {
+    text-align: center;
+}
+
+#note {
+    margin-top: 2%;
+    text-align: center;
+}
+
+/* Bottom Buttons section */
+#bottomButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Standardized Buttons for profile */
+.btn {
+    border-radius: 50px;
+    width: 125px;
+}
+
+#botBook,
+#topBook {
+    border: none;
+    background-color: #F15B22;
+}
+
+#tdisclaimer {
+    padding: 0;
+}
+
+#botBook:hover,
+#topBook:hover {
+    border: none;
+    background-color: black;
+}
+
+#topBook {
+    margin-top: 15px;
+}
+
+#disclaimer p {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#tdisclaimer p {
+    margin-top: 10%;
+    font-size: 0.8em;
+}
+
+/*Media Queries*/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    #pics {
+        width: 30%;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #pics {
+        width: 40%;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #pics {
+        width: 40%;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /*Profile*/
+    #propic img {
+        height: 250px;
+        width: auto;
+    }
+
+    #profile {
+        margin-bottom: 50px;
+    }
+
+    #info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #rates {
+        line-height: 25px;
+    }
+
+    #rates p {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+ 
+    #pics {
+        width: 90%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    #packages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 15%;
+    }
+
+    #p1 {
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    #p1 #backb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    #about>p {
+        margin: 10px 5px 40px 5px
+    }
+
+    #tdisclaimer,
+    #disclaimer {
+        font-size: 1em;
+    }
+
+    #disclaimer {
+        margin-top: 25px;
+    }
+}
