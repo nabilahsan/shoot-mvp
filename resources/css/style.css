@@ -106,6 +106,7 @@ button:visited {
   flex-direction: column;
   padding-top: 50px;
   margin-left: 100px;
+  padding-left: 0px;
 }
 
 #heading h2 {
