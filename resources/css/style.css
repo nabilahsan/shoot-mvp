@@ -37,67 +37,6 @@ button:visited {
   border: none;
 }
 
-/* Jumbotron */
-
-#hero-image {
-  height: 100vh;
-  width: auto;
-  /* dark overlay Image location */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.603), hsla(0, 0%, 0%, 0.603)),
-    url('https://images.unsplash.com/photo-1537758069025-b07fb3548d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1976&q=80');
-
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #464646;
-
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-
-}
-
-
-#main-text {
-  display: flex;
-  margin-left: 100px;
-  margin-top: 30vh;
-  margin-bottom: 100px;
-  padding: 0;
-  width: 80%;
-}
-
-#cta-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 200px;
-}
-
-#cta-button button {
-  font-size: 2em;
-  width: 250px;
-}
-
-#cta-button button:hover {
-  background-color: black;
-}
-
-#main-text h1 {
-  /* Text properties */
-  font-size: 5em;
-  font-weight: bold;
-  color: white;
-}
 
 /* Main Section */
 
@@ -105,8 +44,7 @@ button:visited {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  margin-left: 100px;
-  padding-left: 0px;
+  margin-left: 85px;
 }
 
 #heading h2 {
@@ -130,7 +68,6 @@ button:visited {
   display: flex;
   margin-top: 1%;
   margin-right: 0;
-  margin-left: auto;
   padding: 0;
 }
 
@@ -216,12 +153,6 @@ figcaption {
   margin-top: 5px;
 }
 
-/* Dots for slider */
-
-.flickity-page-dots {
-  bottom: 0;
-}
-
 /* Standardized Buttons for profile */
 .btn {
   border-radius: 50px;
@@ -258,6 +189,7 @@ figcaption {
 #mobileslider #view {
   display: flex;
   justify-content: center;
+  padding-top: 25px;
   margin-left: 0px;
 }
 
@@ -270,25 +202,12 @@ figcaption {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1025px) and (max-width: 1439px) {
-
-  #heading {
-    margin-left: 85px;
-  }
-
-  #photographers {
-    margin-left: 85px;
-  }
-}
-
-
 @media (min-width: 1025px) {
+
   #mobileslider {
     display: none;
   }
-
 }
-
 
 /* 
   ##Device = Laptops, Desktops
@@ -309,11 +228,6 @@ figcaption {
   #heading h2 {
     font-size: 2em;
   }
-
-  #mobileslider {
-    display: none;
-  }
-
 }
 
 /* 
@@ -389,6 +303,8 @@ figcaption {
   #hero-image {
     width: 100%;
   }
+
+
 
   #heading {
     display: flex;
@@ -472,6 +388,10 @@ figcaption {
 
   #heading p {
     font-size: 0.8em;
+  }
+
+  #mobileslider {
+    margin-bottom: 65px;
   }
 
   /* Profile Cards */
