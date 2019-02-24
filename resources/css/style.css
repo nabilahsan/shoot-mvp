@@ -56,22 +56,6 @@ button:visited {
   font-size: 1.2em;
 }
 
-#photographers_container {
-  padding: 0;
-  margin-right: auto;
-
-  /* Change this 85px to have it left skewed */
-  margin-left: 100px;
-}
-
-#photographers {
-  display: flex;
-  margin-top: 1%;
-  margin-right: 0;
-  padding: 0;
-}
-
-
 #profilecard {
   display: flex;
   flex-direction: column;
@@ -195,6 +179,7 @@ figcaption {
 
 
 
+
 /*Media Queries*/
 
 /* 
@@ -204,9 +189,6 @@ figcaption {
 
 @media (min-width: 1025px) {
 
-  #mobileslider {
-    display: none;
-  }
 }
 
 /* 
@@ -217,13 +199,6 @@ figcaption {
 @media (min-width: 1025px) and (max-width: 1280px) {
 
 
-  #photographers_container {
-    padding: 0;
-    margin-right: auto;
-
-    /* Change this 85px to have it left skewed */
-    margin-left: auto;
-  }
 
   #heading h2 {
     font-size: 2em;
@@ -236,18 +211,6 @@ figcaption {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  #photographers_container {
-    padding: 0;
-    margin-right: auto;
-
-    /* Change this 85px to have it left skewed */
-    margin-left: auto;
-  }
-
-  #mobileslider {
-    display: none;
-  }
 
   /* Jumbotron */
 
@@ -295,10 +258,6 @@ figcaption {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #mobileslider {
-    display: none;
-  }
-
 
   #hero-image {
     width: 100%;
@@ -329,11 +288,6 @@ figcaption {
     margin-top: 25px;
     padding: 0;
   }
-
-  #photographers_container {
-    display: none;
-  }
-
 
   #heading {
     display: flex;
@@ -398,9 +352,4 @@ figcaption {
   #profilecard {
     margin: 25px;
   }
-
-  #photographers_container {
-    display: none;
-  }
-
 }
