@@ -65,17 +65,19 @@ li {
     justify-content: space-evenly;
 }
 
-#rates {
-    line-height: 10px;
+.fa-star {
+    margin-bottom: 15px;
+    margin-right: -2px;
+    font-size: 24px;
+    color: #F15B22;
 }
 
 #rates p {
     font-size: 1.3em;
-    margin-bottom: 25px;
 }
 
 #line {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 /*Photographer Portfolio*/
