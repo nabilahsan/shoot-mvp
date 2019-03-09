@@ -166,21 +166,19 @@ figcaption {
   width: 150px;
 }
 
-#botBook,
 #topBook {
   border: none;
   background-color: #F15B22;
   font-size: 0.9em;
 }
 
-#botBook:hover,
 #topBook:hover {
   border: none;
   background-color: black;
 }
 
 #topBook {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #view {
