@@ -38,6 +38,69 @@ button:visited {
 }
 
 
+/* Jumbotron */
+
+#hero-image {
+  height: 100vh;
+  width: auto;
+  /* dark overlay Image location */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603), hsla(0, 0%, 0%, 0.603)),
+    url('https://images.unsplash.com/photo-1485811843447-c0989c7b9aae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+}
+
+
+#main-text {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 25vh;
+  margin-bottom: 100px;
+  padding: 0;
+  width: 80%;
+}
+
+#cta-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+
+#cta-button button {
+  font-size: 2em;
+  width: 250px;
+}
+
+#cta-button button:hover {
+  background-color: black;
+}
+
+#main-text h1 {
+  /* Text properties */
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+}
+
+
 /* Main Section */
 
 #heading {
@@ -360,7 +423,7 @@ figcaption {
 
   #main-text {
     display: flex;
-    margin: 25vh 25px 50px 25px;
+    margin: 15vh 25px 50px 25px;
     padding: 0;
   }
 
