@@ -154,6 +154,7 @@ li {
 /* Standardized Buttons for profile */
 .btn {
     border-radius: 50px;
+    font-weight: bold;
     width: 125px;
 }
 

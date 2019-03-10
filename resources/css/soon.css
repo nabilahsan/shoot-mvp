@@ -37,6 +37,7 @@ h1 {
 .btn {
     margin-top: 50px;
     font-size: 150%;
+    font-weight: bold;
     color: white;
     padding-right: 30px;
     padding-left: 30px;
