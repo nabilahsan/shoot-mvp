@@ -433,6 +433,13 @@
 
 
     <!-- Scripts -->
+    <script src="vendors/js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+        var linear = new SmoothScroll('[data-easing="linear"]', {
+            easing: "linear"
+        });
+    </script>
     <!--Bootstrap JS files-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -446,7 +453,6 @@
 
     <!--smooth scroll js-->
     <script src="resources/script/smooth-scroll.polyfills.min.js"></script>
-    <script src="resources/script/learnmore.js"></script>
 </body>
 
 </html>
