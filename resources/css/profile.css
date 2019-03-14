@@ -85,22 +85,18 @@ li {
     margin-top: 50px;
 }
 
-#images {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.carousel-image {
+    display: block;
+    min-width: 150px;
+    max-width: 100%;
+    margin-left: 25px;
 }
 
-#pics {
-    width: 20%;
+.carousel.is-fullscreen .carousel-image{
     height: auto;
-    margin: 10px;
+    max-height: 100%;
 }
 
-#pics>img {
-    width: 100%;
-}
 
 #about h1 {
     margin-top: 80px;
@@ -205,9 +201,7 @@ li {
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {
-    #pics {
-        width: 30%;
-    }
+    
 }
 
 /* 
@@ -215,9 +209,7 @@ li {
   ##Screen = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    #pics {
-        width: 40%;
-    }
+
 }
 
 /* 
@@ -226,9 +218,6 @@ li {
 */
 @media (min-width: 481px) and (max-width: 767px) {
 
-    #pics {
-        width: 40%;
-    }
 }
 
 /* 
@@ -261,10 +250,6 @@ li {
     #rates p {
         font-size: 1.3em;
         margin-bottom: 15px;
-    }
- 
-    #pics {
-        width: 90%;
     }
 
     h1,

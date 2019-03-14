@@ -54,6 +54,12 @@
 
     <!--Our Stylesheet-->
     <link rel="stylesheet" href="resources/css/profile.css">
+
+    <!-- Flickity Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Flickity Fullscreen Stylesheet -->
+    <link rel="stylesheet" href="vendors/css/fullscreen.css">
+
     <!-- Header and Footer -->
     <link rel="stylesheet" type="text/css" href="resources/css/headerfooter.css">
 
@@ -158,51 +164,24 @@
             <h1>Bethany's Portfolio</h1>
         </div>
 
-        <div id="images" class="container-fluid">
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b1.jpg" alt="Houston Couples Photographer">
+        <div class="container" id="photoslider">
+
+            <div class="carousel flickity-enabled is-draggable" data-flickity='{ "wrapAround": true, "fullscreen": true, "lazyLoad": 2}'>
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b1.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b2.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b5.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b3.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b4.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b6.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b10.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b11.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b7.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b8.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b9.jpg">
+                <img alt="Houston Couples Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/bethany/couples_b12.jpg">
+
             </div>
 
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b2.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b4.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b3.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b5.jpg" alt="Houston Couples Photographer">
-            </div>
-
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b10.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b11.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b12.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b6.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b7.jpg" alt="Houston Couples Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/bethany/couples_b8.jpg" alt="Houston Couples Photographer">
-            </div>
         </div>
     </div>
 
@@ -319,6 +298,14 @@
 
 
     <!-- Scripts -->
+
+    <!--flickity js script-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Flickity Fullscreen script -->
+    <script src="vendors/js/fullscreen.js"></script>
+
+
     <!--Bootstrap JS files-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
