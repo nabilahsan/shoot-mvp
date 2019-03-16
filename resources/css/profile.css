@@ -101,7 +101,8 @@ li {
 }
 
 .carousel.is-fullscreen .carousel-image {
-    height: auto;
+    height: 800px;
+    width: auto;
 }
 
 
