@@ -89,12 +89,19 @@ li {
     display: block;
     min-width: 150px;
     max-width: 100%;
-    margin-left: 25px;
+    margin-left: 5px;
+
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%)
 }
 
-.carousel.is-fullscreen .carousel-image{
+.carousel img {
+    height: 500px;
+}
+
+.carousel.is-fullscreen .carousel-image {
     height: auto;
-    max-height: 100%;
 }
 
 
@@ -200,25 +207,19 @@ li {
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) and (max-width: 1024px) {
-    
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
-@media (min-width: 481px) and (max-width: 767px) {
-
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
