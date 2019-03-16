@@ -54,6 +54,12 @@
 
     <!--Our Stylesheet-->
     <link rel="stylesheet" href="resources/css/profile.css">
+
+    <!-- Flickity Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Flickity Fullscreen Stylesheet -->
+    <link rel="stylesheet" href="vendors/css/fullscreen.css">
     <!-- Header and Footer -->
     <link rel="stylesheet" type="text/css" href="resources/css/headerfooter.css">
 
@@ -155,43 +161,42 @@
         </div>
     </div>
 
-    <div class="container" id="portfolio">
+    <div class="container-fluid" id="portfolio">
         <div id="heading" class="container">
             <h1>Dayton's Portfolio</h1>
         </div>
 
-        <div id="images" class="container-fluid">
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad8.jpg" alt="Houston Graduation photographer">
+        <div class="container" id="photoslider">
+
+            <div class="carousel flickity-enabled is-draggable" data-flickity='{ "wrapAround": true, "fullscreen": true, "lazyLoad": 2}'>
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad1.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad.jpg">
+                                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad2.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad3.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad4.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad5.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad6.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad7.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad8.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad9.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad10.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad11.jpg">
+                
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp7/dayton-grad12.jpg">
+                
             </div>
 
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad3.jpg" alt="Houston Graduation photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad6.jpg" alt="Houston Graduation photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad12.jpg" alt="Houston Graduation photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad2.jpg" alt="Houston Graduation photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad4.jpg" alt="Houston Graduation photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad5.jpg" alt="Houston Graduation photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp7/dayton-grad.jpg" alt="Houston Graduation photographer">
-            </div>
         </div>
     </div>
 
@@ -290,7 +295,14 @@
     </footer>
 
 
-    <!-- Scripts -->
+        <!-- Scripts -->
+
+    <!--flickity js script-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Flickity Fullscreen script -->
+    <script src="vendors/js/fullscreen.js"></script>
+
     <!--Bootstrap JS files-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

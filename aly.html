@@ -54,6 +54,14 @@
 
     <!--Our Stylesheet-->
     <link rel="stylesheet" href="resources/css/profile.css">
+
+    <!-- Flickity Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Flickity Fullscreen Stylesheet -->
+    <link rel="stylesheet" href="vendors/css/fullscreen.css">
+
+
     <!-- Header and Footer -->
     <link rel="stylesheet" type="text/css" href="resources/css/headerfooter.css">
 
@@ -161,24 +169,18 @@
             <h1>Aly's Portfolio</h1>
         </div>
 
-        <div id="images" class="container-fluid">
+        <div class="container" id="photoslider">
 
-            <div id="pics">
-                <img src="vendors/img/gp8/gp8_1.jpg" alt="Houston Graduation Photographer">
+            <div class="carousel flickity-enabled is-draggable" data-flickity='{ "wrapAround": true, "fullscreen": true, "lazyLoad": 2}'>
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp8/gp8_1.jpg">
+
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp8/gp8_2.jpg">
+
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp8/gp8_3.jpg">
+
+                <img alt="Houston Graduation Photographer" class="carousel-image" data-flickity-lazyload="vendors/img/gp8/gp8_4.jpg">
+
             </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp8/gp8_2.jpg" alt="Houston Graduation Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp8/gp8_3.jpg" alt="Houston Graduation Photographer">
-            </div>
-
-            <div id="pics">
-                <img src="vendors/img/gp8/gp8_4.jpg" alt="Houston Graduation Photographer">
-            </div>
-
 
         </div>
     </div>
@@ -287,7 +289,14 @@
 
     </footer>
     
-    <!-- Scripts -->
+        <!-- Scripts -->
+
+    <!--flickity js script-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Flickity Fullscreen script -->
+    <script src="vendors/js/fullscreen.js"></script>
+
     <!--Bootstrap JS files-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
