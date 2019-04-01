@@ -184,7 +184,7 @@ button:visited {
   justify-content: end;
   align-items: center;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 #proimg {
@@ -238,6 +238,7 @@ figcaption {
   border: none;
   background-color: #F15B22;
   font-size: 0.9em;
+  font-weight: bold;
 }
 
 #topBook:hover {
@@ -246,7 +247,7 @@ figcaption {
 }
 
 #topBook {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 #view {
