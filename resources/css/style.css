@@ -86,6 +86,7 @@ button:visited {
 #cta-button button {
   font-size: 2em;
   width: 250px;
+  font-weight: bold;
 }
 
 #cta-button button:hover {
