@@ -10,6 +10,29 @@ nav {
   box-shadow: 3px 0px 8px #707070;
 }
 
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+}
+
+.nav-link i {
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+#col1 label,
+#col2 label {
+  font-weight: bold;
+  color: #080808;
+  margin-bottom: 0px;
+}
+
+#col2 {
+  margin-left: 100px;
+}
+
+
 .navbar {
   display: flex;
   justify-content: flex-start;
@@ -210,6 +233,24 @@ footer {
     margin: 0 15px 0 15px;
   }
 
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+  }
+
+  .nav-link i {
+    font-size: 1.5em;
+    margin-right: 15px;
+  }
+
+  #col2 label {
+    margin-top: 15px;
+  }
+
+  #col2 {
+    margin-left: 0px;
+  }
 
   #mainfooter {
     display: flex;
