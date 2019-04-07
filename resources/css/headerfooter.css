@@ -102,7 +102,7 @@ footer {
 }
 
 #twitter,
-#instagram {
+#instagram, #facebook {
   margin-right: 25px;
 }
 
@@ -118,9 +118,13 @@ footer {
 }
 
 #instagram:hover {
-
   transition: 0.3s;
   color: #c32aa3;
+}
+
+#youtube:hover {
+  transition: 0.3s;
+  color:#c4302b;
 }
 
 #footerlinks li {
