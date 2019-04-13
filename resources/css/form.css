@@ -20,6 +20,57 @@ li {
   list-style-type: none;
 }
 
+label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Testing purposes */
+
+.labl {
+  display: block;
+  width: 300px;
+}
+
+.labl p {
+  font-size: 1.1em;
+}
+
+.labl p, h2 {
+  font-weight: bold;
+}
+
+.labl>input {
+  /* HIDE RADIO */
+  visibility: hidden;
+  /* Makes input not-clickable */
+  position: absolute;
+  /* Remove input from document flow */
+}
+
+.labl>input+div {
+  /* DIV STYLES */
+  cursor: pointer;
+  padding: 10px 10px;
+  background: aliceblue;
+}
+
+.labl>input:hover+div {
+  /* (RADIO CHECKED) DIV STYLES */
+
+  background-color: #F15B22;
+  color: white;
+  transition: 0.2s ease-in;
+  transition: 0.2s ease-out;
+}
+
+.labl>input:checked+div {
+  /* (RADIO CHECKED) DIV STYLES */
+  background-color: #F15B22;
+  color: white;
+}
+
+/* End of testing */
 
 /* Header Image */
 #heading {
@@ -87,12 +138,6 @@ form {
   margin-right: auto;
 }
 
-#packageInfo {
-  padding-top: 5%;
-  margin-left: auto;
-  font-size: 1.3em;
-}
-
 #formElements input {
   display: flex;
   justify-content: center;
@@ -134,9 +179,6 @@ form {
   flex-direction: column;
 }
 
-#packageMain {
-  margin-top: 50px;
-}
 
 #inputgroup label {
   text-align: center;
@@ -581,19 +623,9 @@ form {
     width: 100%;
   }
 
-  #payment, #fullmsg {
+  #payment,
+  #fullmsg {
     width: 100%;
-  }
-
-
-  #packageMain {
-    margin-top: 0;
-    margin-left: 15px;
-  }
-
-  #packageInfo {
-    margin-top: 25px;
-    font-size: 1.4em;
   }
 
   .btn {
