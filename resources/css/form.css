@@ -174,15 +174,7 @@ form {
   margin-top: 25px;
 }
 
-#inputgroup {
-  display: flex;
-  flex-direction: column;
-}
 
-
-#inputgroup label {
-  text-align: center;
-}
 
 #datetime {
   margin-top: 25px;
@@ -584,12 +576,6 @@ form {
   }
 
   /*Inputs*/
-  #inputgroup {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-  }
 
   #names,
   #contact {
