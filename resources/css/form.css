@@ -21,7 +21,6 @@ li {
 }
 
 label {
-  font-weight: bold;
   font-size: 1.1em;
 }
 
@@ -29,14 +28,17 @@ label {
 
 .labl {
   display: block;
-  width: 300px;
+  width: 350px;
+  height: auto;
 }
 
 .labl p {
-  font-size: 1em;
+  font-size: em;
+  margin-bottom: 5px;
 }
 
 .labl h1 {
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -51,7 +53,7 @@ label {
 .labl>input+div {
   /* DIV STYLES */
   cursor: pointer;
-  padding: 10px 10px;
+  padding: 20px 15px;
   background: aliceblue;
 }
 
@@ -59,7 +61,7 @@ label {
   /* (RADIO CHECKED) DIV STYLES */
 
   background-color: #F15B22;
-  color: white;
+  color: black;
   transition: 0.2s ease-in;
   transition: 0.2s ease-out;
 }
@@ -67,7 +69,7 @@ label {
 .labl>input:checked+div {
   /* (RADIO CHECKED) DIV STYLES */
   background-color: #F15B22;
-  color: white;
+  color: black;
 }
 
 /* End of testing */
