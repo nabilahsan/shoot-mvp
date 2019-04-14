@@ -22,6 +22,7 @@ li {
 
 label {
   font-size: 1.1em;
+  font-weight: bold;
 }
 
 /* Testing purposes */
@@ -33,12 +34,10 @@ label {
 }
 
 .labl p {
-  font-size: em;
   margin-bottom: 5px;
 }
 
 .labl h1 {
-  font-size: 1.5em;
   font-weight: bold;
 }
 
