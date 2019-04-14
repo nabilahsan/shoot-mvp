@@ -33,10 +33,10 @@ label {
 }
 
 .labl p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
-.labl p, h2 {
+.labl h1 {
   font-weight: bold;
 }
 
