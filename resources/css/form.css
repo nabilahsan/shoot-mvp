@@ -25,10 +25,15 @@ label {
   font-weight: bold;
 }
 
+#inputgroup {
+  padding: 0;
+}
+
 /* Testing purposes */
 
 .labl {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 350px;
   height: auto;
 }
