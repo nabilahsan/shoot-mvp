@@ -269,6 +269,10 @@ li {
         margin-top: 5%;
     }
 
+    #p1 p {
+        font-size: 1em;
+    }
+
     #p1 #backb {
         display: flex;
         justify-content: center;
@@ -281,7 +285,7 @@ li {
 
     #tdisclaimer,
     #disclaimer {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     #disclaimer {

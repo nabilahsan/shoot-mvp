@@ -58,7 +58,7 @@ label {
   /* DIV STYLES */
   cursor: pointer;
   padding: 20px 15px;
-  background: aliceblue;
+  background-color: rgba(241, 93, 34, 0.082);
 }
 
 .labl>input:hover+div {
