@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
     <link rel="stylesheet" href="vendors/css/united.css">
     <!--Favicons-->
@@ -39,11 +39,14 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117171100-5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-117171100-5');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117171100-5');
+    </script>
 
     <!-- jQuery -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -76,16 +79,22 @@
     <link rel="stylesheet" type="text/css" href="resources/css/headerfooter.css">
 
     <!-- Hotjar Tracking Code for https://graduation.shootbeta.com/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1121275,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1121275,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 
     <title>Booking Philip | SHOOT</title>
 </head>
@@ -149,13 +158,6 @@
                             </a>
                         </li>
                     </div>
-
-                    <!-- <li class="nav-item">
-                        <a class="nav-link nav-a" href="index.html">Home
-                        </a>
-                    </li> -->
-
-
                 </ul>
             </div>
         </div>
@@ -217,54 +219,39 @@
                 <!-- Radio buttons for package -->
                 <div id="package">
                     <label>Which package would you like to choose?</label>
-                    <div class="row" id="row1">
-                        <div id="inputgroup" class="container row col-sm-4">
-                            <div id="" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="Package" class="custom-control-input" value="Bronze">
-                                <label class="custom-control-label" for="customRadio1">Bronze</label>
-                            </div>
 
-                            <div id="packageMain" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="Package" class="custom-control-input" value="Silver">
-                                <label class="custom-control-label" for="customRadio2">Silver</label>
-                            </div>
+                    <div id="inputgroup" class="container">
 
-                            <div id="packageMain" class="custom-control custom-radio">
-                                <input type="radio" id="customRadio3" name="Package" class="custom-control-input" value="Gold">
-                                <label class="custom-control-label" for="customRadio3">Gold</label>
+                        <label class="labl">
+                            <input type="radio" name="Package" value="Bronze" />
+                            <div class="container">
+                                <h4>Bronze</h4>
+                                <h1>$165</h1>
+                                <p>10 Photos</p>
+                                <p>30 minutes</p>
                             </div>
-                        </div>
+                        </label>
 
-                        <!-- Information on Packages -->
-                        <div id="packageInfo" class="col-md-6">
-                            <div id="p1info" style='display:none'>
-                                <!-- Package 1 -->
-                                <ul class="list-unstyled">
-                                    <li>$165</li>
-                                    <li>30 minutes</li>
-                                    <li>10 edited photos</li>
-                                    <!-- <li>1 Location</li> -->
-                                </ul>
+
+                        <label class="labl">
+                            <input type="radio" name="Package" value="Silver" />
+                            <div class="container">
+                                <h4>Silver</h4>
+                                <h1>$220</h1>
+                                <p>15 Photos</p>
+                                <p>1 hour</p>
                             </div>
-                            <div id="p2info" style='display:none'>
-                                <!-- Package 2 -->
-                                <ul class="list-unstyled">
-                                    <li>$220</li>
-                                    <li>1 hour</li>
-                                    <li>15 edited photos</li>
-                                    <!-- <li>1 Location</li> -->
-                                </ul>
+                        </label>
+
+                        <label class="labl">
+                            <input type="radio" name="Package" value="Gold" />
+                            <div class="container">
+                                <h4>Gold</h4>
+                                <h1>$275</h1>
+                                <p>20 Photos</p>
+                                <p>1 to 2 hours</p>
                             </div>
-                            <div id="p3info" style='display:none'>
-                                <!-- Package 3 -->
-                                <ul class="list-unstyled">
-                                    <li>$275</li>
-                                    <li>1 to 2 hours</li>
-                                    <li>20 edited photos</li>
-                                    <!-- <li>3 Location</li> -->
-                                </ul>
-                            </div>
-                        </div>
+                        </label>
                     </div>
 
                 </div>
@@ -273,8 +260,9 @@
                     <div id="datetime">
                         <label>Photshoot Date</label>
                         <div>
-                            <input id="calendar" placeholder="March 19th, 2019" name="Date" type='text' class="form-control datepicker-here"
-                                data-date-format="DD, MM dd, yyyy" data-language='en' required autocomplete="off">
+                            <input id="calendar" placeholder="March 19th, 2019" name="Date" type='text'
+                                class="form-control datepicker-here" data-date-format="DD, MM dd, yyyy"
+                                data-language='en' required autocomplete="off">
                         </div>
 
                         <label>Time of photoshoot</label>
@@ -329,11 +317,12 @@
                     <!-- Message section -->
                     <div>
                         <label>Message: </label>
-                        <textarea placeholder="Something like, 'Hello! I can't wait to shoot with you. I really want my graduation to stand out on Instagram.'"
+                        <textarea
+                            placeholder="Something like, 'Hello! I can't wait to shoot with you. I really want my graduation to stand out on Instagram.'"
                             type="text" name="message" class="form-control" cols=" 30" rows="5" required></textarea>
                     </div>
 
-                   
+
                     <div>
                         <label>How did you find Shoot?</label>
                         <select name="How did you find Shoot" id="refer" class="form-control">
@@ -351,7 +340,7 @@
                         <input type="text" name="promo code" placeholder="#shoot2020" class="form-control">
                     </div>
 
-<div id="payment">
+                    <div id="payment">
                         <label>Payments Method </label>
                         <select name="payment" class="form-control" required>
                             <option value="Venmo">Venmo</option>
@@ -360,7 +349,8 @@
                     </div>
 
                     <div id="bottomButtons" class="container">
-                        <button id="botBook" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary btn-lg">Book</button>
+                        <button id="botBook" type="submit" value="Subscribe" name="subscribe"
+                            class="btn btn-primary btn-lg">Book</button>
                     </div>
 
                     <div class="container" id="disclaimer">
@@ -410,7 +400,8 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link nav-a" href="https://forms.gle/iNksm6EE21VR8oS68" target="_blank"> <i class="fas fa-poll-h"></i>Survey
+                    <a class="nav-link nav-a" href="https://forms.gle/iNksm6EE21VR8oS68" target="_blank"> <i
+                            class="fas fa-poll-h"></i>Survey
                     </a>
                 </li>
             </ul>
@@ -444,12 +435,15 @@
     <script src="resources/script/packageInfo.js"></script>
 
     <!--Bootstrap JS files-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
 
 </body>
 
