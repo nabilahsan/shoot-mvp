@@ -37,14 +37,16 @@ button:visited {
   border: none;
 }
 
+
 /* Jumbotron */
 
 #hero-image {
   height: 100vh;
   width: auto;
   /* dark overlay Image location */
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.603), hsla(0, 0%, 0%, 0.603)),
-    url('https://images.unsplash.com/photo-1537758069025-b07fb3548d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1976&q=80');
+    url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
 
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -62,6 +64,7 @@ button:visited {
 
   display: flex;
   flex-direction: column;
+  padding: 0;
 
 }
 
@@ -69,7 +72,7 @@ button:visited {
 #main-text {
   display: flex;
   margin-left: 100px;
-  margin-top: 30vh;
+  margin-top: 25vh;
   margin-bottom: 100px;
   padding: 0;
   width: 80%;
@@ -85,7 +88,6 @@ button:visited {
 #cta-button button {
   font-size: 2em;
   width: 250px;
-  font-weight: bold;
 }
 
 #cta-button button:hover {
@@ -99,9 +101,6 @@ button:visited {
   color: white;
 }
 
-#header-div {
-  padding-bottom: 50px;
-}
 
 /* Main Section */
 
@@ -109,7 +108,7 @@ button:visited {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  margin-left: 100px;
+  margin-left: 85px;
 }
 
 #heading h2 {
@@ -120,23 +119,6 @@ button:visited {
 #heading p {
   font-size: 1.2em;
 }
-
-#photographers_container {
-  padding: 0;
-  margin-right: auto;
-
-  /* Change this 85px to have it left skewed */
-  margin-left: 100px;
-}
-
-#photographers {
-  display: flex;
-  margin-top: 1%;
-  margin-right: 0;
-  margin-left: auto;
-  padding: 0;
-}
-
 
 #profilecard {
   display: flex;
@@ -188,7 +170,6 @@ button:visited {
   justify-content: end;
   align-items: center;
   position: relative;
-  padding-bottom: 15px;
 }
 
 #proimg {
@@ -203,13 +184,6 @@ button:visited {
   padding-left: 35px;
 }
 
-.fa-star {
-  margin-top: 5px;
-  margin-right: -2px;
-  font-size: 12px;
-  color: #F15B22;
-}
-
 figcaption {
   padding-left: 10px;
 }
@@ -221,20 +195,22 @@ figcaption {
   margin-bottom: -5px;
 }
 
+.fa-star {
+  margin-top: 5px;
+  margin-right: -2px;
+  font-size: 12px;
+  color: #F15B22;
+}
+
 #price {
   font-size: 0.8em;
   margin-top: 5px;
 }
 
-/* Dots for slider */
-
-.flickity-page-dots {
-  bottom: 0;
-}
-
 /* Standardized Buttons for profile */
 .btn {
   border-radius: 50px;
+  font-weight: bold;
   width: 150px;
 }
 
@@ -242,7 +218,6 @@ figcaption {
   border: none;
   background-color: #F15B22;
   font-size: 0.9em;
-  font-weight: bold;
 }
 
 #topBook:hover {
@@ -267,8 +242,10 @@ figcaption {
 #mobileslider #view {
   display: flex;
   justify-content: center;
+  padding-top: 25px;
   margin-left: 0px;
 }
+
 
 
 
@@ -279,12 +256,7 @@ figcaption {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1025px) {
-
-  #mobileslider {
-    display: none;
-  }
-}
+@media (min-width: 1025px) {}
 
 /* 
   ##Device = Laptops, Desktops
@@ -294,13 +266,6 @@ figcaption {
 @media (min-width: 1025px) and (max-width: 1280px) {
 
 
-  #photographers_container {
-    padding: 0;
-    margin-right: auto;
-
-    /* Change this 85px to have it left skewed */
-    margin-left: auto;
-  }
 
   #heading h2 {
     font-size: 2em;
@@ -313,18 +278,6 @@ figcaption {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  #photographers_container {
-    padding: 0;
-    margin-right: auto;
-
-    /* Change this 85px to have it left skewed */
-    margin-left: auto;
-  }
-
-  #mobileslider {
-    display: none;
-  }
 
   /* Jumbotron */
 
@@ -372,10 +325,6 @@ figcaption {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #mobileslider {
-    display: none;
-  }
-
 
   #hero-image {
     width: 100%;
@@ -407,11 +356,6 @@ figcaption {
     padding: 0;
   }
 
-  #photographers_container {
-    display: none;
-  }
-
-
   #heading {
     display: flex;
     flex-direction: column;
@@ -431,7 +375,7 @@ figcaption {
 
   #main-text {
     display: flex;
-    margin: 25vh 25px 50px 25px;
+    margin: 15vh 25px 50px 25px;
     padding: 0;
   }
 
@@ -467,13 +411,12 @@ figcaption {
     font-size: 0.8em;
   }
 
+  #mobileslider {
+    margin-bottom: 65px;
+  }
+
   /* Profile Cards */
   #profilecard {
     margin: 25px;
   }
-
-  #photographers_container {
-    display: none;
-  }
-
 }
