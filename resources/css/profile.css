@@ -103,6 +103,9 @@ li {
     max-height: 100%;
 }
 
+#about {
+    font-size: 1.4em;
+}
 
 #about h1 {
     margin-top: 80px;
@@ -115,30 +118,24 @@ li {
 
 #packages {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     margin-top: 2%;
+    padding: 0;
 }
 
 #p1 {
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 350px;
+    background-color: rgba(241, 93, 34, 0.082);
+    margin-right: 50px;
+    padding: 10px 25px;
+    font-weight: bold;
 }
 
-#p1 ul {
-    margin-top: 15%;
-}
-
-#p1:last-child {
-    margin-right: 0;
+#p1 p {
+    font-size: 1.2em;
 }
 
 
-#packages div {
-    text-align: center;
-}
 
 #note {
     margin-top: 2%;
@@ -157,6 +154,7 @@ li {
 .btn {
     border-radius: 50px;
     width: 125px;
+    font-weight: bold;
 }
 
 #botBook,
@@ -252,12 +250,6 @@ li {
         margin-bottom: 15px;
     }
 
-    h1,
-    h2,
-    h3 {
-        text-align: center;
-    }
-
     /* Portfolio */
     .carousel-image {
         display: block;
@@ -268,7 +260,6 @@ li {
     #packages {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-top: 0;
         margin-bottom: 15%;
     }
@@ -278,10 +269,13 @@ li {
         margin-top: 5%;
     }
 
+    #p1 p {
+        font-size: 1em;
+    }
+
     #p1 #backb {
         display: flex;
         justify-content: center;
-        text-align: center;
         flex-direction: column-reverse;
     }
 
@@ -291,7 +285,7 @@ li {
 
     #tdisclaimer,
     #disclaimer {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     #disclaimer {

@@ -136,6 +136,10 @@ footer {
   color: #F15B22;
 }
 
+#social-icons a {
+  text-decoration: none;
+}
+
 /*Media Queries*/
 
 /* 
