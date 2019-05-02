@@ -60,7 +60,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!--Google Fonts, Nunito Sans-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900" rel="stylesheet">
 
     <!-- Normalize.css -->
     <link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
@@ -307,33 +307,37 @@
 
 
             <!-- Monika's profile -->
-            <figure>
-                <div id="profilecard" class="gallery-cell">
-                    <div id="items">
-                        <img id="mainImg" src="vendors/img/gp5/gp5_3.JPG" alt="Houston Graduation Photos">
-                    </div>
-
-                    <figure id="togInfo" class="container">
-                        <img id="proimg" src="vendors/img/gp5/monika_min.JPG" alt="Monika Cabading">
-
-                        <figcaption>
-                            <p for="Monika" id="pname">Monika Cabading</p>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <p id="price">Starting from <br> $55 per session.</p>
-                        </figcaption>
-
-                        <div id="buttonsec" class="container">
-                            <button id="topBook" type="button" onclick="window.location.href= 'monika.html'"
-                                class="btn btn-primary btn-lg">View
-                                Profile</button>
+            <div>
+                <span id="dis-booked">FULLY <br> BOOKED!</span>
+                
+            <figure id="dis">
+                    <div id="profilecard" class="gallery-cell">
+                        <div id="items">
+                            <img id="mainImg" src="vendors/img/gp5/gp5_3.JPG" alt="Houston Graduation Photos">
                         </div>
-                    </figure>
-                </div>
-            </figure>
+    
+                        <figure id="togInfo" class="container">
+                            <img id="proimg" src="vendors/img/gp5/monika_min.JPG" alt="Monika Cabading">
+    
+                            <figcaption>
+                                <p for="Monika" id="pname">Monika Cabading</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p id="price">Starting from <br> $55 per session.</p>
+                            </figcaption>
+    
+                            <div id="buttonsec" class="container">
+                                <button id="topBook" type="button" onclick="window.location.href= '#'"
+                                    class="btn btn-primary btn-lg">View
+                                    Profile</button>
+                            </div>
+                        </figure>
+                    </div>
+                </figure>
+            </div>
 
 
             <!-- My'Chal's profile -->
@@ -506,6 +510,7 @@
             easing: "linear"
         });
     </script>
+
     <!--Bootstrap JS files-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
