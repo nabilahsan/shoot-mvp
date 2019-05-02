@@ -37,6 +37,26 @@ button:visited {
   border: none;
 }
 
+#dis {
+
+  background-color: rgba(255, 255, 255, 0.432);
+  opacity: .3;
+  filter: alpha(opacity=00);
+  pointer-events: none;
+}
+
+#dis-booked {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 42px;
+}
+
 /* Jumbotron */
 
 #hero-image {
